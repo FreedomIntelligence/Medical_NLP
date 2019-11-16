@@ -33,6 +33,8 @@
 注：目前没有收集到中文医疗领域的开源预训练模型，以下列出英文论文供参考。
 
 #### Bio-bert
+论文题目：BioBERT: a pre-trained biomedical language representation model for biomedical text mining
+
 [论文地址](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz682/5566506)
 
 [项目地址](https://github.com/dmis-lab/biobert)
@@ -45,6 +47,8 @@
 **Availability and implementation**: We make the pre-trained weights of BioBERT freely available at https://github.com/naver/biobert-pretrained, and the source code for fine-tuning BioBERT available at https://github.com/dmis-lab/biobert.
 
 #### sci-bert
+论文题目：SCIBERT: A Pretrained Language Model for Scientific Text
+
 [论文地址](https://arxiv.org/abs/1903.10676)
 
 [项目地址](https://github.com/allenai/scibert/)
@@ -54,6 +58,8 @@
 论文摘要：Obtaining large-scale annotated data for NLP tasks in the scientific domain is challeng- ing and expensive. We release SCIBERT, a pretrained language model based on BERT (Devlin et al., 2019) to address the lack of high-quality, large-scale labeled scientific data. SCIBERT leverages unsupervised pretraining on a large multi-domain corpus of scientific publications to improve perfor- mance on downstream scientific NLP tasks. We evaluate on a suite of tasks including sequence tagging, sentence classification and dependency parsing, with datasets from a variety of scientific domains. We demon- strate statistically significant improvements over BERT and achieve new state-of-the- art results on several of these tasks. The code and pretrained models are available at https://github.com/allenai/scibert/.
 
 #### clinical-bert
+论文题目：Publicly Available Clinical BERT Embeddings
+
 [论文地址](https://www.aclweb.org/anthology/W19-1909/)
 
 [项目地址](https://github.com/EmilyAlsentzer/clinicalBERT)
@@ -63,6 +69,8 @@
 论文摘要：Contextual word embedding models such as ELMo and BERT have dramatically improved performance for many natural language processing (NLP) tasks in recent months. However, these models have been minimally explored on specialty corpora, such as clinical text; moreover, in the clinical domain, no publicly-available pre-trained BERT models yet exist. In this work, we address this need by exploring and releasing BERT models for clinical text: one for generic clinical text and another for discharge summaries specifically. We demonstrate that using a domain-specific model yields performance improvements on 3/5 clinical NLP tasks, establishing a new state-of-the-art on the MedNLI dataset. We find that these domain-specific models are not as performant on 2 clinical de-identification tasks, and argue that this is a natural consequence of the differences between de-identified source text and synthetically non de-identified task text.
 
 #### clinical-bert(另一团队的版本)
+论文题目：ClinicalBert: Modeling Clinical Notes and Predicting Hospital Readmission
+
 [论文地址](https://arxiv.org/abs/1904.05342)
 
 [项目地址](https://github.com/kexinhuang12345/clinicalBERT)
@@ -70,3 +78,16 @@
 论文概要：同样基于MIMIC-III数据库,但只随机选取了10万份医疗记录训练的临床领域bert.
 
 论文摘要：Clinical notes contain information about patients that goes beyond structured data like lab values and medications. However, clinical notes have been underused relative to structured data, because notes are high-dimensional and sparse. This work develops and evaluates representations of clinical notes using bidirectional transformers (ClinicalBert). Clini- calBert uncovers high-quality relationships between medical concepts as judged by hu- mans. ClinicalBert outperforms baselines on 30-day hospital readmission prediction using both discharge summaries and the first few days of notes in the intensive care unit. Code and model parameters are available.
+
+#### BEHRT
+论文题目：BEHRT: TRANSFORMER FOR ELECTRONIC HEALTH RECORDS
+
+[论文地址](https://arxiv.org/abs/1907.09538)
+
+项目地址: 暂未开源
+
+论文概要：这篇论文中embedding是基于医学实体训练，而不是基于单词。
+
+论文摘要：Today, despite decades of developments in medicine and the growing interest in precision healthcare, vast majority of diagnoses happen once patients begin to show noticeable signs of illness. Early indication and detection of diseases, however, can provide patients and carers with the chance of early intervention, better disease management, and efficient allocation of healthcare resources. The latest developments in machine learning (more specifically, deep learning) provides a great opportunity to address this unmet need. In this study, we introduce BEHRT: A deep neural sequence transduction model for EHR (electronic health records), capable of multitask prediction and disease trajectory mapping. When trained and evaluated on the data from nearly 1.6 million individuals, BEHRT shows a striking absolute improvement of 8.0-10.8%, in terms of Average Precision Score, compared to the existing state-of-the-art deep EHR models (in terms of average precision, when predicting for the onset of 301 conditions). In addition to its superior prediction power, BEHRT provides a personalised view of disease trajectories through its attention mechanism; its flexible architecture enables it to incorporate multiple heterogeneous concepts (e.g., diagnosis, medication, measurements, and more) to improve the accuracy of its predictions; and its (pre-)training results in disease and patient representations that can help us get a step closer to interpretable predictions.
+
+
