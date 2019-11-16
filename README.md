@@ -11,9 +11,9 @@
 
 [数据集地址](http://openkg.cn/dataset/yidu-s4k)
 
-度盘下载地址：待添加
+度盘下载地址：https://pan.baidu.com/s/1QqYtqDwhc_S51F3SYMChBQ
 
-提取码：待添加
+提取码：flql
 
 ### 2.瑞金医院糖尿病数据集
 数据集描述：
