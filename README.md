@@ -23,9 +23,9 @@
 
 [数据集地址](https://tianchi.aliyun.com/competition/entrance/231687/information)
 
-度盘下载地址：待添加
+度盘下载地址：https://pan.baidu.com/s/1CWKblBNBqR-vs2h0xiXSdQ
 
-提取码：待添加
+提取码：0c54
 
 ## 相关论文
 
