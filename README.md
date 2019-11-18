@@ -98,8 +98,10 @@
 
 数据预览：
 
+![image](https://github.com/lrs1353281004/Chinese_medical_NLP/blob/master/images/pretrain_overview.png)
 
 
-度盘下载地址：
 
-提取码：
+度盘下载地址：https://pan.baidu.com/s/1P2WHX7hNTqErZ3j1vhkr_Q
+
+提取码：xd0c
