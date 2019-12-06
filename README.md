@@ -29,7 +29,7 @@
 
 ## 英文数据集
 
-### PubMedQA:ADatasetforBiomedicalResearchQuestionAnswering
+### PubMedQA: A Dataset for Biomedical Research Question Answering
 
 数据集描述： 基于Pubmed提取的医学问答数据集。PubMedQA has 1k expert-annotated, 61.2k unlabeled and 211.3k artificially gen- erated QA instances. 
 
