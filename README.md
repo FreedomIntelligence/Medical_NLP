@@ -1,7 +1,7 @@
 # Chinese_medical_NLP
 医疗NLP领域（主要关注中文）   评测数据集 与 论文列表
 
-## 评测数据集
+## 中文评测数据集
 
 ### 1. Yidu-S4K：医渡云结构化4K数据集
 数据集描述：
@@ -26,6 +26,14 @@
 度盘下载地址：https://pan.baidu.com/s/1CWKblBNBqR-vs2h0xiXSdQ
 
 提取码：0c54
+
+## 英文数据集
+
+### PubMedQA:ADatasetforBiomedicalResearchQuestionAnswering
+
+数据集描述： 基于Pubmed提取的医学问答数据集。PubMedQA has 1k expert-annotated, 61.2k unlabeled and 211.3k artificially gen- erated QA instances. 
+
+[论文地址](https://arxiv.org/abs/1909.06146)
 
 ## 相关论文
 
