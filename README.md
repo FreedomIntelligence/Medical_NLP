@@ -42,7 +42,8 @@
 >questions.csv：所有的问题及其内容。answers.csv ：所有问题的答案。
 train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述两个文件进行了拆分。
 
-[数据集地址](https://github.com/zhangsheng93/cMedQA2)
+[数据集地址](https://www.kesci.com/home/dataset/5d313070cf76a60036e4b023/document)
+[数据集github地址](https://github.com/zhangsheng93/cMedQA2)
 
 ## 中文医学知识图谱
 
