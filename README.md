@@ -34,6 +34,16 @@
 
 [数据集地址](http://openkg.cn/dataset/yidu-n7k)
 
+### 4.中文医学问答数据集
+数据集描述：
+>中文医药方面的问答数据集，超过10万条。
+
+数据说明:
+>questions.csv：所有的问题及其内容。answers.csv ：所有问题的答案。
+train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述两个文件进行了拆分。
+
+[数据集地址](https://github.com/zhangsheng93/cMedQA2)
+
 ## 中文医学知识图谱
 
 ### CMeKG
