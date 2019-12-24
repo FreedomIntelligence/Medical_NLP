@@ -46,6 +46,14 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 [数据集github地址](https://github.com/zhangsheng93/cMedQA2)
 
+### 5.平安医疗科技疾病问答迁移学习比赛
+数据集描述：
+>本次比赛是chip2019中的评测任务二，由平安医疗科技主办。chip2019会议详情见链接：http://cips-chip.org.cn/evaluation
+迁移学习是自然语言处理中的重要一环，其主要目的是通过从已学习的相关任务中转移知识来改进新任务的学习效果，从而提高模型的泛化能力。
+本次评测任务的主要目标是针对中文的疾病问答数据，进行病种间的迁移学习。具体而言，给定来自5个不同病种的问句对，要求判定两个句子语义是否相同或者相近。所有语料来自互联网上患者真实的问题，并经过了筛选和人工的意图匹配标注。
+
+[数据集地址(需注册)](https://www.biendata.com/competition/chip2019/)
+
 ## 中文医学知识图谱
 
 ### CMeKG
