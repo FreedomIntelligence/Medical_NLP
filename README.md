@@ -189,3 +189,7 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 度盘下载地址：https://pan.baidu.com/s/1P2WHX7hNTqErZ3j1vhkr_Q
 
 提取码：xd0c
+
+## 友情链接
+[awesome_Chinese_medical_NLP](https://github.com/GanjinZero/awesome_Chinese_medical_NLP)
+
