@@ -12,6 +12,8 @@
 
 [中文医疗领域语料](#中文医疗领域语料)
 
+[开源工具包](#开源工具包)
+
 [友情链接](#友情链接)
 
 
@@ -203,6 +205,16 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 度盘下载地址：https://pan.baidu.com/s/1P2WHX7hNTqErZ3j1vhkr_Q
 
 提取码：xd0c
+
+## 开源工具包
+
+### 分词工具
+
+#### PKUSEG
+
+[项目地址](https://github.com/lancopku/pkuseg-python)
+
+项目说明： 北京大学推出的多领域中文分词工具，支持选择医学领域。
 
 ## 友情链接
 [awesome_Chinese_medical_NLP](https://github.com/GanjinZero/awesome_Chinese_medical_NLP)
