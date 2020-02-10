@@ -231,6 +231,7 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 ## 工业级产品解决方案
 [灵医智慧](https://01.baidu.com/index.html)
+
 [左手医生](https://open.zuoshouyisheng.com/)
 
 ## 友情链接
