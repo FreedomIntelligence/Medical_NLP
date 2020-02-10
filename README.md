@@ -230,7 +230,8 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 项目说明： 北京大学推出的多领域中文分词工具，支持选择医学领域。
 
 ## 工业级产品解决方案
-[灵医智慧（百度旗下）](https://01.baidu.com/index.html)
+[灵医智慧](https://01.baidu.com/index.html)
+[左手医生](https://open.zuoshouyisheng.com/)
 
 ## 友情链接
 [awesome_Chinese_medical_NLP](https://github.com/GanjinZero/awesome_Chinese_medical_NLP)
