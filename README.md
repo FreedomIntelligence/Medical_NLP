@@ -72,6 +72,24 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 [数据集地址(需注册)](https://www.biendata.com/competition/chip2019/)
 
+### 6.天池新冠肺炎问句匹配比赛
+数据集描述：
+>本次大赛数据包括：脱敏之后的医疗问题数据对和标注数据。医疗问题涉及“肺炎”、“支原体肺炎”、“支气管炎”、“上呼吸道感染”、“肺结核”、“哮喘”、“胸膜炎”、“肺气肿”、“感冒”、“咳血”等10个病种。
+数据共包含train.csv、dev.csv、test.csv三个文件，其中给参赛选手的文件包含训练集train.csv和验证集dev.csv，测试集test.csv 对参赛选手不可见。
+每一条数据由 Category，Query1，Query2，Label构成，分别表示问题类别、问句1、问句2、标签。Label表示问句之间的语义是否相同，若相同，标为1，若不相同，标为0。其中，训练集Label已知，验证集和测试集Label未知。
+示例
+类别：肺炎
+问句1：肺部发炎是什么原因引起的？
+问句2：肺部发炎是什么引起的
+标签:1
+类别：肺炎
+问句1：肺部发炎是什么原因引起的？
+问句2：肺部炎症有什么症状
+标签:0
+
+[数据集地址(需注册)](https://tianchi.aliyun.com/competition/entrance/231776/information)
+
+
 ## 中文医学知识图谱
 
 ### CMeKG
