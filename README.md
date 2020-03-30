@@ -89,6 +89,8 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 [数据集地址(需注册)](https://tianchi.aliyun.com/competition/entrance/231776/information)
 
+[线上第四名解决方案及代码](https://github.com/Makaixin/similar-sentence-pairs-in-epidemic)
+
 
 ## 中文医学知识图谱
 
