@@ -99,6 +99,10 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 [项目地址](https://github.com/UCSD-AI4H/Medical-Dialogue-System)
 
+度盘下载地址: https://pan.baidu.com/s/1ZwzNgvAAMQk4klerTspsoA
+
+提取码: lbo4
+
 ## 中文医学知识图谱
 
 ### CMeKG
