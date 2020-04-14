@@ -91,6 +91,13 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 [线上第四名解决方案及代码](https://github.com/Makaixin/similar-sentence-pairs-in-epidemic)
 
+### 7.中文医患问答对话数据
+
+数据说明: 来自某在线求医产品的中文医患对话数据。
+
+原始描述:The MedDialog dataset contains conversations (in Chinese) between doctors and patients. It has 1.1 million dialogues and 4 million utterances. The data is continuously growing and more dialogues will be added. The raw dialogues are from haodf.com. All copyrights of the data belong to haodf.com.
+
+[项目地址](https://github.com/UCSD-AI4H/Medical-Dialogue-System)
 
 ## 中文医学知识图谱
 
