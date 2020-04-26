@@ -279,3 +279,6 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 [awesome_Chinese_medical_NLP](https://github.com/GanjinZero/awesome_Chinese_medical_NLP)
 
 [中文NLP数据集搜索](https://www.cluebenchmarks.com/dataSet_search.html)
+
+[medical-data(海量医疗相关数据)](https://github.com/beamandrew/medical-data)
+
