@@ -91,6 +91,8 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 [线上第四名解决方案及代码](https://github.com/Makaixin/similar-sentence-pairs-in-epidemic)
 
+[线上第一名解决方案及代码](https://github.com/zzy99/epidemic-sentence-pair)
+
 ### 7.中文医患问答对话数据
 
 数据说明: 来自某在线求医产品的中文医患对话数据。
