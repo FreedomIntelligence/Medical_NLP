@@ -12,6 +12,8 @@
 
 [中文医疗领域语料](#中文医疗领域语料)
 
+[医学embedding](#医学embedding)
+
 [开源工具包](#开源工具包)
 
 [工业级产品/解决方案](#工业级产品解决方案)
@@ -261,6 +263,14 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 度盘下载地址：https://pan.baidu.com/s/1NG8xybrEGTVYPepMM12xNw
 
 提取码：mwmj
+
+## 医学embedding
+
+### 开源英文医学embedding
+
+项目说明：发表于AMIA 2016. 开源医学相关概念embedding. 
+
+[项目地址](https://github.com/clinicalml/embeddings)
 
 ## 开源工具包
 
