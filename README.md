@@ -107,6 +107,12 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 提取码: lbo4
 
+### 8.中文医学问答数据
+
+数据说明: 包含六个科室的医学问答数据，来源不明。
+
+[项目地址](https://github.com/Toyhom/Chinese-medical-dialogue-data)
+
 ## 中文医学知识图谱
 
 ### CMeKG
