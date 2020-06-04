@@ -18,6 +18,8 @@
 
 [工业级产品/解决方案](#工业级产品解决方案)
 
+[blog分享](#blog分享)
+
 [友情链接](#友情链接)
 
 
@@ -292,6 +294,10 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 [灵医智慧](https://01.baidu.com/index.html)
 
 [左手医生](https://open.zuoshouyisheng.com/)
+
+## blog分享
+
+[医疗领域构建自然语言处理系统的经验教训](http://www.oreilly.com.cn/radar/?p=2083)
 
 ## 友情链接
 [awesome_Chinese_medical_NLP](https://github.com/GanjinZero/awesome_Chinese_medical_NLP)
