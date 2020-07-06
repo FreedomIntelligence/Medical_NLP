@@ -245,6 +245,28 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 论文摘要：Artificial intelligence (AI)-based methods have emerged as powerful tools to transform medical care. Although machine learning classifiers (MLCs) have already demonstrated strong performance in image-based diagnoses, analysis of diverse and massive electronic health record (EHR) data remains challenging. Here, we show that MLCs can query EHRs in a manner similar to the hypothetico-deductive reasoning used by physicians and unearth associations that previous statistical methods have not found. Our model applies an automated natural language processing system using deep learning techniques to extract clinically relevant information from EHRs. In total, 101.6 million data points from 1,362,559 pediatric patient visits presenting to a major referral center were analyzed to train and validate the framework. Our model demonstrates high diagnostic accuracy across multiple organ systems and is comparable to experienced pediatricians in diagnosing common childhood diseases. Our study provides a proof of concept for implementing an AI-based system as a means to aid physicians in tackling large amounts of data, augmenting diagnostic evaluations, and to provide clinical decision support in cases of diagnostic uncertainty or complexity. Although this impact may be most evident in areas where healthcare providers are in relative shortage, the benefits of such an AI system are likely to be universal.
 
+### 7.ACL2020医学领域相关论文列表
+
+#### A Generate-and-Rank Framework with Semantic Type Regularization for Biomedical Concept Normalization
+
+[论文地址](https://www.aclweb.org/anthology/2020.acl-main.748/)
+
+#### Biomedical Entity Representations with Synonym Marginalization
+
+[论文地址](https://www.aclweb.org/anthology/2020.acl-main.335/)
+
+#### Document Translation vs. Query Translation for Cross-Lingual Information Retrieval in the Medical Domain
+
+[论文地址](https://www.aclweb.org/anthology/2020.acl-main.613/)
+
+#### MIE: A Medical Information Extractor towards Medical Dialogues
+
+[论文地址](https://www.aclweb.org/anthology/2020.acl-main.576/)
+
+#### Rationalizing Medical Relation Prediction from Corpus-level Statistics
+
+[论文地址](https://www.aclweb.org/anthology/2020.acl-main.719/)
+
 
 ## 中文医疗领域语料
 
