@@ -267,6 +267,13 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 [论文地址](https://www.aclweb.org/anthology/2020.acl-main.719/)
 
+### 8.医疗实体Linking（标准化）
+
+#### Medical Entity Linking using Triplet Network
+
+[论文地址](https://www.aclweb.org/anthology/W19-1912/)
+
+论文概要： 发表于ACL2019,论文内容为疾病实体Linking研究。使用三元组数据，（mention，正例，负例），目标使distance(mention,负例)-distance(mention,正例)>alpha（人脸识别的经典方案）,具体损失函数参看论文。论文主要包括两部分内容1）候选数据集生成,对给定mention，与标准疾病集合数据（标准词及同义词）计算余弦相似度及Jaccard overlap分数,取topK作为候选样例。 2）网络结构基于Triplet Network。详见论文。
 
 ## 中文医疗领域语料
 
