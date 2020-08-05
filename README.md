@@ -275,6 +275,12 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 论文概要： 发表于ACL2019,论文内容为疾病实体Linking研究。使用三元组数据，（mention，正例，负例），目标使distance(mention,负例)-distance(mention,正例)>alpha（人脸识别的经典方案）,具体损失函数参看论文。论文主要包括两部分内容1）候选数据集生成,对给定mention，与标准疾病集合数据（标准词及同义词）计算余弦相似度及Jaccard overlap分数,取topK作为候选样例。 2）网络结构基于Triplet Network。详见论文。
 
+#### A Generate-and-Rank Framework with Semantic Type Regularization for Biomedical Concept Normalization
+
+[论文地址](https://www.aclweb.org/anthology/2020.acl-main.748.pdf)
+
+论文概要: 发表于ACL2020。基于list-wise排序学习方法。主要分为两部分：后续数据集生成 和  基于BERT的list-wise排序。较新颖的思路：1）在样本生成过程中，对标准词进行了基于同义词的扩展。2）在loss中引入了语义类型正则化。详见论文。
+
 ## 中文医疗领域语料
 
 ### 医学教材+培训考试 （共57G）
