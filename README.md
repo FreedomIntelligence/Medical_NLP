@@ -283,19 +283,15 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 ## 中文医疗领域语料
 
-### 医学教材+培训考试 （共57G）
+### 医学教材+培训考试 
 
-语料说明：根据此[豆瓣链接](https://www.douban.com/note/692003915/)整理。整合到一个文件夹内，便于保存。去掉了其中视频部分。
+说明:由于版权原因，现在无法提供度盘下载链接了，请大家前往原豆瓣链接下载吧。
+
+语料说明：根据此[豆瓣链接](https://www.douban.com/note/692003915/)整理。
 
 数据预览：
 
 ![image](https://github.com/lrs1353281004/Chinese_medical_NLP/blob/master/images/pretrain_overview.png)
-
-
-
-度盘下载地址：https://pan.baidu.com/s/1FPoGrCWpaa6vQT9YkDBZjg
-
-提取码：ugym
 
 ### 哈工大《大词林》开放75万核心实体词及相关概念、关系列表（包含中药/医院/生物 类别）
 
