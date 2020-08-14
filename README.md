@@ -1,35 +1,55 @@
 # Chinese_medical_NLP
+
 医疗NLP领域（主要关注中文）   评测数据集 与 论文等相关资源。
 
+   * [Chinese_medical_NLP](#chinese_medical_nlp)
+     * [中文评测数据集](#中文评测数据集)
+       * [1. Yidu-S4K：医渡云结构化4K数据集](#1-yidu-s4k医渡云结构化4k数据集)
+       * [2.瑞金医院糖尿病数据集](#2瑞金医院糖尿病数据集)
+       * [3.Yidu-N7K：医渡云标准化7K数据集](#3yidu-n7k医渡云标准化7k数据集)
+       * [4.中文医学问答数据集](#4中文医学问答数据集)
+       * [5.平安医疗科技疾病问答迁移学习比赛](#5平安医疗科技疾病问答迁移学习比赛)
+       * [6.天池新冠肺炎问句匹配比赛](#6天池新冠肺炎问句匹配比赛)
+       * [7.中文医患问答对话数据](#7中文医患问答对话数据)
+       * [8.中文医学问答数据](#8中文医学问答数据)
+     * [中文医学知识图谱](#中文医学知识图谱)
+       * [CMeKG](#cmekg)
+     * [英文数据集](#英文数据集)
+       * [PubMedQA: A Dataset for Biomedical Research Question Answering](#pubmedqa-a-dataset-for-biomedical-research-question-answering)
+     * [相关论文](#相关论文)
+       * [1.医疗领域预训练embedding](#1医疗领域预训练embedding)
+       * [2.综述类文章](#2综述类文章)
+       * [3.电子病历相关文章](#3电子病历相关文章)
+       * [4.医学关系抽取](#4医学关系抽取)
+       * [5.医学知识图谱](#5医学知识图谱)
+       * [6.辅助诊断](#6辅助诊断)
+       * [7.ACL2020医学领域相关论文列表](#7acl2020医学领域相关论文列表)
+       * [8.医疗实体Linking（标准化）](#8医疗实体linking标准化)
+       * [9. AAAI2020 医学NLP相关论文列表](#9-aaai2020-医学nlp相关论文列表)
+     * [中文医疗领域语料](#中文医疗领域语料)
+       * [医学教材 培训考试](#医学教材培训考试)
+       * [哈工大《大词林》开放75万核心实体词及相关概念、关系列表（包含中药/医院/生物 类别）](#哈工大大词林开放75万核心实体词及相关概念关系列表包含中药医院生物-类别)
+     * [医学embedding](#医学embedding)
+       * [开源英文医学embedding](#开源英文医学embedding)
+     * [开源工具包](#开源工具包)
+       * [分词工具](#分词工具)
+         * [PKUSEG](#pkuseg)
+     * [工业级产品解决方案](#工业级产品解决方案)
+     * [blog分享](#blog分享)
+     * [友情链接](#友情链接)
 
-[中文评测数据集](#中文评测数据集)
 
-[中文医学知识图谱](#中文医学知识图谱)
-
-[英文数据集](#英文数据集)
-
-[相关论文](#相关论文)
-
-[中文医疗领域语料](#中文医疗领域语料)
-
-[医学embedding](#医学embedding)
-
-[开源工具包](#开源工具包)
-
-[工业级产品/解决方案](#工业级产品解决方案)
-
-[blog分享](#blog分享)
-
-[友情链接](#友情链接)
 
 
 ## 中文评测数据集
 
 ### 1. Yidu-S4K：医渡云结构化4K数据集
+
 数据集描述：
+
 > Yidu-S4K 数据集源自CCKS 2019 评测任务一，即“面向中文电子病历的命名实体识别”的数据集，包括两个子任务：
-1）医疗命名实体识别：由于国内没有公开可获得的面向中文电子病历医疗实体识别数据集，本年度保留了医疗命名实体识别任务，对2017年度数据集做了修订，并随任务一同发布。本子任务的数据集包括训练集和测试集。
-2）医疗实体及属性抽取（跨院迁移）：在医疗实体识别的基础上，对预定义实体属性进行抽取。本任务为迁移学习任务，即在只提供目标场景少量标注数据的情况下，通过其他场景的标注数据及非标注数据进行目标场景的识别任务。本子任务的数据集包括训练集（非目标场景和目标场景的标注数据、各个场景的非标注数据）和测试集（目标场景的标注数据
+> 1）医疗命名实体识别：由于国内没有公开可获得的面向中文电子病历医疗实体识别数据集，本年度保留了医疗命名实体识别任务，对2017年度数据集做了修订，并随任务一同发布。本子任务的数据集包括训练集和测试集。
+> 2）医疗实体及属性抽取（跨院迁移）：在医疗实体识别的基础上，对预定义实体属性进行抽取。本任务为迁移学习任务，即在只提供目标场景少量标注数据的情况下，通过其他场景的标注数据及非标注数据进行目标场景的识别任务。本子任务的数据集包括训练集（非目标场景和目标场景的标注数据、各个场景的非标注数据）和测试集（目标场景的标注数据
 
 [数据集地址](http://openkg.cn/dataset/yidu-s4k)
 
@@ -38,7 +58,9 @@
 提取码：flql
 
 ### 2.瑞金医院糖尿病数据集
+
 数据集描述：
+
 >数据集来自天池大赛。此数据集旨在通过糖尿病相关的教科书、研究论文来做糖尿病文献挖掘并构建糖尿病知识图谱。参赛选手需要设计高准确率，高效的算法来挑战这一科学难题。第一赛季课题为“基于糖尿病临床指南和研究论文的实体标注构建”，第二赛季课题为“基于糖尿病临床指南和研究论文的实体间关系构建”。
 
 官方提供的数据只包含训练集，真正用于最终排名的测试集没有给出。
@@ -50,46 +72,55 @@
 提取码：0c54
 
 ### 3.Yidu-N7K：医渡云标准化7K数据集
+
 数据集描述：
+
 >Yidu-N4K 数据集源自CHIP 2019 评测任务一，即“临床术语标准化任务”的数据集。
-临床术语标准化任务是医学统计中不可或缺的一项任务。临床上，关于同一种诊断、手术、药品、检查、化验、症状等往往会有成百上千种不同的写法。标准化（归一）要解决的问题就是为临床上各种不同说法找到对应的标准说法。有了术语标准化的基础，研究人员才可对电子病历进行后续的统计分析。本质上，临床术语标准化任务也是语义相似度匹配任务的一种。但是由于原词表述方式过于多样，单一的匹配模型很难获得很好的效果。
+>临床术语标准化任务是医学统计中不可或缺的一项任务。临床上，关于同一种诊断、手术、药品、检查、化验、症状等往往会有成百上千种不同的写法。标准化（归一）要解决的问题就是为临床上各种不同说法找到对应的标准说法。有了术语标准化的基础，研究人员才可对电子病历进行后续的统计分析。本质上，临床术语标准化任务也是语义相似度匹配任务的一种。但是由于原词表述方式过于多样，单一的匹配模型很难获得很好的效果。
 
 [数据集地址](http://openkg.cn/dataset/yidu-n7k)
 
 ### 4.中文医学问答数据集
+
 数据集描述：
+
 >中文医药方面的问答数据集，超过10万条。
 
 数据说明:
+
 >questions.csv：所有的问题及其内容。answers.csv ：所有问题的答案。
-train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述两个文件进行了拆分。
+>train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述两个文件进行了拆分。
 
 [数据集地址](https://www.kesci.com/home/dataset/5d313070cf76a60036e4b023/document)
 
 [数据集github地址](https://github.com/zhangsheng93/cMedQA2)
 
 ### 5.平安医疗科技疾病问答迁移学习比赛
+
 数据集描述：
+
 >本次比赛是chip2019中的评测任务二，由平安医疗科技主办。chip2019会议详情见链接：http://cips-chip.org.cn/evaluation
-迁移学习是自然语言处理中的重要一环，其主要目的是通过从已学习的相关任务中转移知识来改进新任务的学习效果，从而提高模型的泛化能力。
-本次评测任务的主要目标是针对中文的疾病问答数据，进行病种间的迁移学习。具体而言，给定来自5个不同病种的问句对，要求判定两个句子语义是否相同或者相近。所有语料来自互联网上患者真实的问题，并经过了筛选和人工的意图匹配标注。
+>迁移学习是自然语言处理中的重要一环，其主要目的是通过从已学习的相关任务中转移知识来改进新任务的学习效果，从而提高模型的泛化能力。
+>本次评测任务的主要目标是针对中文的疾病问答数据，进行病种间的迁移学习。具体而言，给定来自5个不同病种的问句对，要求判定两个句子语义是否相同或者相近。所有语料来自互联网上患者真实的问题，并经过了筛选和人工的意图匹配标注。
 
 [数据集地址(需注册)](https://www.biendata.com/competition/chip2019/)
 
 ### 6.天池新冠肺炎问句匹配比赛
+
 数据集描述：
+
 >本次大赛数据包括：脱敏之后的医疗问题数据对和标注数据。医疗问题涉及“肺炎”、“支原体肺炎”、“支气管炎”、“上呼吸道感染”、“肺结核”、“哮喘”、“胸膜炎”、“肺气肿”、“感冒”、“咳血”等10个病种。
-数据共包含train.csv、dev.csv、test.csv三个文件，其中给参赛选手的文件包含训练集train.csv和验证集dev.csv，测试集test.csv 对参赛选手不可见。
-每一条数据由 Category，Query1，Query2，Label构成，分别表示问题类别、问句1、问句2、标签。Label表示问句之间的语义是否相同，若相同，标为1，若不相同，标为0。其中，训练集Label已知，验证集和测试集Label未知。
-示例
-类别：肺炎
-问句1：肺部发炎是什么原因引起的？
-问句2：肺部发炎是什么引起的
-标签:1
-类别：肺炎
-问句1：肺部发炎是什么原因引起的？
-问句2：肺部炎症有什么症状
-标签:0
+>数据共包含train.csv、dev.csv、test.csv三个文件，其中给参赛选手的文件包含训练集train.csv和验证集dev.csv，测试集test.csv 对参赛选手不可见。
+>每一条数据由 Category，Query1，Query2，Label构成，分别表示问题类别、问句1、问句2、标签。Label表示问句之间的语义是否相同，若相同，标为1，若不相同，标为0。其中，训练集Label已知，验证集和测试集Label未知。
+>示例
+>类别：肺炎
+>问句1：肺部发炎是什么原因引起的？
+>问句2：肺部发炎是什么引起的
+>标签:1
+>类别：肺炎
+>问句1：肺部发炎是什么原因引起的？
+>问句2：肺部炎症有什么症状
+>标签:0
 
 [数据集地址(需注册)](https://tianchi.aliyun.com/competition/entrance/231776/information)
 
@@ -134,9 +165,11 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 ## 相关论文
 
 ### 1.医疗领域预训练embedding
+
 注：目前没有收集到中文医疗领域的开源预训练模型，以下列出英文论文供参考。
 
-#### Bio-bert
+**Bio-bert**
+
 论文题目：BioBERT: a pre-trained biomedical language representation model for biomedical text mining
 
 [论文地址](https://academic.oup.com/bioinformatics/advance-article/doi/10.1093/bioinformatics/btz682/5566506)
@@ -146,11 +179,13 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 论文概要：以通用领域预训练bert为初始权重，基于Pubmed上大量医疗领域英文论文训练。在多个医疗相关下游任务中超越SOTA模型的表现。
 
 论文摘要：
-> **Motivation**: Biomedical text mining is becoming increasingly important as the number of biomedical documents rapidly grows. With the progress in natural language processing (NLP), extracting valuable information from bio- medical literature has gained popularity among researchers, and deep learning has boosted the development of ef- fective biomedical text mining models. However, directly applying the advancements in NLP to biomedical text min- ing often yields unsatisfactory results due to a word distribution shift from general domain corpora to biomedical corpora. In this article, we investigate how the recently introduced pre-trained language model BERT can be adapted for biomedical corpora. 
-**Results**: We introduce BioBERT (Bidirectional Encoder Representations from Transformers for Biomedical Text Mining), which is a domain-specific language representation model pre-trained on large-scale biomedical corpora. With almost the same architecture across tasks, BioBERT largely outperforms BERT and previous state-of-the-art models in a variety of biomedical text mining tasks when pre-trained on biomedical corpora. While BERT obtains performance comparable to that of previous state-of-the-art models, BioBERT significantly outperforms them on the following three representative biomedical text mining tasks: biomedical named entity recognition (0.62% F1 score improvement), biomedical relation extraction (2.80% F1 score improvement) and biomedical question answering (12.24% MRR improvement). Our analysis results show that pre-training BERT on biomedical corpora helps it to understand complex biomedical texts. 
-**Availability and implementation**: We make the pre-trained weights of BioBERT freely available at https://github.com/naver/biobert-pretrained, and the source code for fine-tuning BioBERT available at https://github.com/dmis-lab/biobert.
 
-#### sci-bert
+> **Motivation**: Biomedical text mining is becoming increasingly important as the number of biomedical documents rapidly grows. With the progress in natural language processing (NLP), extracting valuable information from bio- medical literature has gained popularity among researchers, and deep learning has boosted the development of ef- fective biomedical text mining models. However, directly applying the advancements in NLP to biomedical text min- ing often yields unsatisfactory results due to a word distribution shift from general domain corpora to biomedical corpora. In this article, we investigate how the recently introduced pre-trained language model BERT can be adapted for biomedical corpora. 
+> **Results**: We introduce BioBERT (Bidirectional Encoder Representations from Transformers for Biomedical Text Mining), which is a domain-specific language representation model pre-trained on large-scale biomedical corpora. With almost the same architecture across tasks, BioBERT largely outperforms BERT and previous state-of-the-art models in a variety of biomedical text mining tasks when pre-trained on biomedical corpora. While BERT obtains performance comparable to that of previous state-of-the-art models, BioBERT significantly outperforms them on the following three representative biomedical text mining tasks: biomedical named entity recognition (0.62% F1 score improvement), biomedical relation extraction (2.80% F1 score improvement) and biomedical question answering (12.24% MRR improvement). Our analysis results show that pre-training BERT on biomedical corpora helps it to understand complex biomedical texts. 
+> **Availability and implementation**: We make the pre-trained weights of BioBERT freely available at https://github.com/naver/biobert-pretrained, and the source code for fine-tuning BioBERT available at https://github.com/dmis-lab/biobert.
+
+**sci-bert**
+
 论文题目：SCIBERT: A Pretrained Language Model for Scientific Text
 
 [论文地址](https://arxiv.org/abs/1903.10676)
@@ -161,7 +196,8 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 论文摘要：Obtaining large-scale annotated data for NLP tasks in the scientific domain is challeng- ing and expensive. We release SCIBERT, a pretrained language model based on BERT (Devlin et al., 2019) to address the lack of high-quality, large-scale labeled scientific data. SCIBERT leverages unsupervised pretraining on a large multi-domain corpus of scientific publications to improve perfor- mance on downstream scientific NLP tasks. We evaluate on a suite of tasks including sequence tagging, sentence classification and dependency parsing, with datasets from a variety of scientific domains. We demon- strate statistically significant improvements over BERT and achieve new state-of-the- art results on several of these tasks. The code and pretrained models are available at https://github.com/allenai/scibert/.
 
-#### clinical-bert
+**clinical-bert**
+
 论文题目：Publicly Available Clinical BERT Embeddings
 
 [论文地址](https://www.aclweb.org/anthology/W19-1909/)
@@ -172,7 +208,8 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 论文摘要：Contextual word embedding models such as ELMo and BERT have dramatically improved performance for many natural language processing (NLP) tasks in recent months. However, these models have been minimally explored on specialty corpora, such as clinical text; moreover, in the clinical domain, no publicly-available pre-trained BERT models yet exist. In this work, we address this need by exploring and releasing BERT models for clinical text: one for generic clinical text and another for discharge summaries specifically. We demonstrate that using a domain-specific model yields performance improvements on 3/5 clinical NLP tasks, establishing a new state-of-the-art on the MedNLI dataset. We find that these domain-specific models are not as performant on 2 clinical de-identification tasks, and argue that this is a natural consequence of the differences between de-identified source text and synthetically non de-identified task text.
 
-#### clinical-bert(另一团队的版本)
+**clinical-bert(另一团队的版本)**
+
 论文题目：ClinicalBert: Modeling Clinical Notes and Predicting Hospital Readmission
 
 [论文地址](https://arxiv.org/abs/1904.05342)
@@ -183,7 +220,8 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 论文摘要：Clinical notes contain information about patients that goes beyond structured data like lab values and medications. However, clinical notes have been underused relative to structured data, because notes are high-dimensional and sparse. This work develops and evaluates representations of clinical notes using bidirectional transformers (ClinicalBert). Clini- calBert uncovers high-quality relationships between medical concepts as judged by hu- mans. ClinicalBert outperforms baselines on 30-day hospital readmission prediction using both discharge summaries and the first few days of notes in the intensive care unit. Code and model parameters are available.
 
-#### BEHRT
+**BEHRT**
+
 论文题目：BEHRT: TRANSFORMER FOR ELECTRONIC HEALTH RECORDS
 
 [论文地址](https://arxiv.org/abs/1907.09538)
@@ -196,7 +234,8 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 ### 2.综述类文章
 
-#### nature medicine发表的综述
+**nature medicine发表的综述**
+
 论文题目：A guide to deep learning in healthcare
 
 [论文地址](https://www.nature.com/articles/s41591-018-0316-z)
@@ -207,7 +246,7 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 ### 3.电子病历相关文章
 
-#### Transfer Learning from Medical Literature for Section Prediction in Electronic Health Records
+**Transfer Learning from Medical Literature for Section Prediction in Electronic Health Records**
 
 [论文地址](https://www.aclweb.org/anthology/D19-1492/)
 
@@ -217,7 +256,7 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 ### 4.医学关系抽取
 
-#### Leveraging Dependency Forest for Neural Medical Relation Extraction
+**Leveraging Dependency Forest for Neural Medical Relation Extraction**
 
 [论文地址](https://www.aclweb.org/anthology/D19-1020/)
 
@@ -227,7 +266,7 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 ### 5.医学知识图谱
 
-#### Learning a Health Knowledge Graph from Electronic Medical Records
+**Learning a Health Knowledge Graph from Electronic Medical Records**
 
 [论文地址](https://www.nature.com/articles/s41598-017-05778-z)
 
@@ -237,7 +276,7 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 ### 6.辅助诊断
 
-#### Evaluation and accurate diagnoses of pediatric diseases using artificial intelligence
+**Evaluation and accurate diagnoses of pediatric diseases using artificial intelligence**
 
 [论文地址](https://www.nature.com/articles/s41591-018-0335-9)
 
@@ -247,35 +286,35 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 ### 7.ACL2020医学领域相关论文列表
 
-#### A Generate-and-Rank Framework with Semantic Type Regularization for Biomedical Concept Normalization
+**A Generate-and-Rank Framework with Semantic Type Regularization for Biomedical Concept Normalization**
 
 [论文地址](https://www.aclweb.org/anthology/2020.acl-main.748/)
 
-#### Biomedical Entity Representations with Synonym Marginalization
+**Biomedical Entity Representations with Synonym Marginalization**
 
 [论文地址](https://www.aclweb.org/anthology/2020.acl-main.335/)
 
-#### Document Translation vs. Query Translation for Cross-Lingual Information Retrieval in the Medical Domain
+**Document Translation vs. Query Translation for Cross-Lingual Information Retrieval in the Medical Domain**
 
 [论文地址](https://www.aclweb.org/anthology/2020.acl-main.613/)
 
-#### MIE: A Medical Information Extractor towards Medical Dialogues
+**MIE: A Medical Information Extractor towards Medical Dialogues**
 
 [论文地址](https://www.aclweb.org/anthology/2020.acl-main.576/)
 
-#### Rationalizing Medical Relation Prediction from Corpus-level Statistics
+**Rationalizing Medical Relation Prediction from Corpus-level Statistics**
 
 [论文地址](https://www.aclweb.org/anthology/2020.acl-main.719/)
 
 ### 8.医疗实体Linking（标准化）
 
-#### Medical Entity Linking using Triplet Network
+**Medical Entity Linking using Triplet Network**
 
 [论文地址](https://www.aclweb.org/anthology/W19-1912/)
 
 论文概要： 发表于ACL2019,论文内容为疾病实体Linking研究。使用三元组数据，（mention，正例，负例），目标使distance(mention,负例)-distance(mention,正例)>alpha（人脸识别的经典方案）,具体损失函数参看论文。论文主要包括两部分内容1）候选数据集生成,对给定mention，与标准疾病集合数据（标准词及同义词）计算余弦相似度及Jaccard overlap分数,取topK作为候选样例。 2）网络结构基于Triplet Network。详见论文。
 
-#### A Generate-and-Rank Framework with Semantic Type Regularization for Biomedical Concept Normalization
+**A Generate-and-Rank Framework with Semantic Type Regularization for Biomedical Concept Normalization**
 
 [论文地址](https://www.aclweb.org/anthology/2020.acl-main.748.pdf)
 
@@ -283,22 +322,28 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 ### 9. AAAI2020 医学NLP相关论文列表
 
-#### On the Generation of Medical Question-Answer Pairs
+**On the Generation of Medical Question-Answer Pairs**
+
 [论文地址](https://arxiv.org/pdf/1811.00681.pdf)
 
-#### LATTE: Latent Type Modeling for Biomedical Entity Linking
+**LATTE: Latent Type Modeling for Biomedical Entity Linking**
+
 [论文地址](https://arxiv.org/pdf/1911.09787.pdf)
 
-#### Learning Conceptual-Contextual Embeddings for Medical Text
+**Learning Conceptual-Contextual Embeddings for Medical Text**
+
 [论文地址](https://arxiv.org/pdf/1908.06203.pdf)
 
-#### Understanding Medical Conversations with Scattered Keyword Attention and Weak Supervision from Responses
+**Understanding Medical Conversations with Scattered Keyword Attention and Weak Supervision from Responses**
+
 [论文地址](http://ir.hit.edu.cn/~car/papers/AAAI2020-Shi-medconv.pdf)
 
-#### Simultaneously Linking Entities and Extracting Relations from Biomedical Text without Mention-level Supervision
+**Simultaneously Linking Entities and Extracting Relations from Biomedical Text without Mention-level Supervision**
+
 [论文地址](https://arxiv.org/pdf/1912.01070.pdf)
 
-#### Can Embeddings Adequately Represent Medical Terminology? New Large-Scale Medical Term Similarity Datasets Have the Answer!
+**Can Embeddings Adequately Represent Medical Terminology? New Large-Scale Medical Term Similarity Datasets Have the Answer!**
+
 [论文地址](https://arxiv.org/pdf/2003.11082.pdf)
 
 
@@ -341,6 +386,7 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 项目说明： 北京大学推出的多领域中文分词工具，支持选择医学领域。
 
 ## 工业级产品解决方案
+
 [灵医智慧](https://01.baidu.com/index.html)
 
 [左手医生](https://open.zuoshouyisheng.com/)
@@ -350,9 +396,9 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 [医疗领域构建自然语言处理系统的经验教训](http://www.oreilly.com.cn/radar/?p=2083)
 
 ## 友情链接
+
 [awesome_Chinese_medical_NLP](https://github.com/GanjinZero/awesome_Chinese_medical_NLP)
 
 [中文NLP数据集搜索](https://www.cluebenchmarks.com/dataSet_search.html)
 
 [medical-data(海量医疗相关数据)](https://github.com/beamandrew/medical-data)
-
