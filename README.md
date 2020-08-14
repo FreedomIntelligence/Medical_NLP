@@ -281,6 +281,27 @@ train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述�
 
 论文概要: 发表于ACL2020。基于list-wise排序学习方法。主要分为两部分：后续数据集生成 和  基于BERT的list-wise排序。较新颖的思路：1）在样本生成过程中，对标准词进行了基于同义词的扩展。2）在loss中引入了语义类型正则化。详见论文。
 
+### 9. AAAI2020 医学NLP相关论文列表
+
+#### On the Generation of Medical Question-Answer Pairs
+[论文地址](https://arxiv.org/pdf/1811.00681.pdf)
+
+#### LATTE: Latent Type Modeling for Biomedical Entity Linking
+[论文地址](https://arxiv.org/pdf/1911.09787.pdf)
+
+#### Learning Conceptual-Contextual Embeddings for Medical Text
+[论文地址](https://arxiv.org/pdf/1908.06203.pdf)
+
+#### Understanding Medical Conversations with Scattered Keyword Attention and Weak Supervision from Responses
+[论文地址](http://ir.hit.edu.cn/~car/papers/AAAI2020-Shi-medconv.pdf)
+
+#### Simultaneously Linking Entities and Extracting Relations from Biomedical Text without Mention-level Supervision
+[论文地址](https://arxiv.org/pdf/1912.01070.pdf)
+
+#### Can Embeddings Adequately Represent Medical Terminology? New Large-Scale Medical Term Similarity Datasets Have the Answer!
+[论文地址](https://arxiv.org/pdf/2003.11082.pdf)
+
+
 ## 中文医疗领域语料
 
 ### 医学教材+培训考试 
