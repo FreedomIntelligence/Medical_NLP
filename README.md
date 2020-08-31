@@ -320,6 +320,11 @@
 
 论文概要: 发表于ACL2020。基于list-wise排序学习方法。主要分为两部分：后续数据集生成 和  基于BERT的list-wise排序。较新颖的思路：1）在样本生成过程中，对标准词进行了基于同义词的扩展。2）在loss中引入了语义类型正则化。详见论文。
 
+**Deep Neural Models for Medical Concept Normalization in User-Generated Texts**
+
+[论文地址](https://www.aclweb.org/anthology/P19-2055.pdf)
+
+
 ### 9. AAAI2020 医学NLP相关论文列表
 
 **On the Generation of Medical Question-Answer Pairs**
