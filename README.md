@@ -408,6 +408,8 @@ CHIP2020各项评测已开放，包括医学领域的实体识别，关系抽取
 
 [左手医生](https://open.zuoshouyisheng.com/)
 
+[医渡云研究院-医学自然语言处理](https://www.yiducloud.com.cn/academy.html)
+
 ## blog分享
 
 [医疗领域构建自然语言处理系统的经验教训](http://www.oreilly.com.cn/radar/?p=2083)
