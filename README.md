@@ -19,6 +19,7 @@
        * [CMeKG](#cmekg)
      * [英文数据集](#英文数据集)
        * [PubMedQA: A Dataset for Biomedical Research Question Answering](#pubmedqa-a-dataset-for-biomedical-research-question-answering)
+       * [COMETA: A Corpus for Medical Entity Linking in the Social Media](#COMETA: A Corpus for Medical Entity Linking in the Social Media)
      * [相关论文](#相关论文)
        * [1.医疗领域预训练embedding](#1医疗领域预训练embedding)
        * [2.综述类文章](#2综述类文章)
@@ -180,6 +181,16 @@ github开源数据
 数据集描述： 基于Pubmed提取的医学问答数据集。PubMedQA has 1k expert-annotated, 61.2k unlabeled and 211.3k artificially gen- erated QA instances. 
 
 [论文地址](https://arxiv.org/abs/1909.06146)
+
+### COMETA: A Corpus for Medical Entity Linking in the Social Media
+
+数据集描述： 社交媒体中的医疗实体链接数据。发表于EMNLP2020。
+
+数据获取方式:
+COMETA is available by contacting the last author via e-mail or following the instructions on https://www.siphs.org/. We release the
+pre-trained embeddings and the code to replicate our baselines online at https://github.com/ cambridgeltl/cometa.
+
+[论文地址](https://arxiv.org/pdf/2010.03295.pdf)
 
 ## 相关论文
 
