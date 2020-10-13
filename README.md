@@ -19,7 +19,7 @@
        * [CMeKG](#cmekg)
      * [英文数据集](#英文数据集)
        * [PubMedQA: A Dataset for Biomedical Research Question Answering](#pubmedqa-a-dataset-for-biomedical-research-question-answering)
-       * [COMETA: A Corpus for Medical Entity Linking in the Social Media](#COMETA: A Corpus for Medical Entity Linking in the Social Media)
+       * [COMETA: A Corpus for Medical Entity Linking in the Social Media](#cometa-a-corpus-for-medical-entity-linking-in-the-social-media)
      * [相关论文](#相关论文)
        * [1.医疗领域预训练embedding](#1医疗领域预训练embedding)
        * [2.综述类文章](#2综述类文章)
