@@ -169,7 +169,7 @@ github开源数据
 
 ### 12.阿里发布的中文医疗标准数据集合
 
-阿里团队发布的中文医疗NLP相关评测数据集合Chinese_BLUE,发表于WSDM2020。
+阿里团队发布的中文医疗NLP相关评测数据集合Chinese_BLUE,发表于WSDM2020。另外:项目中说此项目非阿里的官方产品，所以仅供参考。
 
 [项目地址](https://github.com/alibaba-research/ChineseBLUE)
 
