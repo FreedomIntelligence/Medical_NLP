@@ -443,6 +443,8 @@ pre-trained embeddings and the code to replicate our baselines online at https:/
 
 [医疗领域构建自然语言处理系统的经验教训](http://www.oreilly.com.cn/radar/?p=2083)
 
+[大数据时代的医学公共数据库与数据挖掘技术简介](https://mp.weixin.qq.com/s/tA44U4bJUttnROfrzpNYcQ)
+
 ## 友情链接
 
 [awesome_Chinese_medical_NLP](https://github.com/GanjinZero/awesome_Chinese_medical_NLP)
