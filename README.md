@@ -197,7 +197,7 @@ github开源数据
 
 数据获取方式:
 COMETA is available by contacting the last author via e-mail or following the instructions on https://www.siphs.org/. We release the
-pre-trained embeddings and the code to replicate our baselines online at https://github.com/ cambridgeltl/cometa.
+pre-trained embeddings and the code to replicate our baselines online at https://github.com/cambridgeltl/cometa.
 
 [论文地址](https://arxiv.org/pdf/2010.03295.pdf)
 
