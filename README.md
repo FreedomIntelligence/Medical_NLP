@@ -12,7 +12,7 @@
        * [6.天池新冠肺炎问句匹配比赛](#6天池新冠肺炎问句匹配比赛)
        * [7.中文医患问答对话数据](#7中文医患问答对话数据)
        * [8.中文医学问答数据](#8中文医学问答数据)
-       * [9.CHIP2020各项评测已开放](#9CHIP2020各项评测已开放)
+       * [9.CHIP2020各项评测已开放](#9chip2020各项评测已开放)
        * [10.医学数据挖掘与算法评测大赛](#10医学数据挖掘与算法评测大赛)
        * [11.中文医疗对话数据集](#11中文医疗对话数据集)
        * [12.阿里发布的中文医疗标准数据集合](#12阿里发布的中文医疗标准数据集合)
@@ -21,6 +21,7 @@
      * [英文数据集](#英文数据集)
        * [PubMedQA: A Dataset for Biomedical Research Question Answering](#pubmedqa-a-dataset-for-biomedical-research-question-answering)
        * [COMETA: A Corpus for Medical Entity Linking in the Social Media](#cometa-a-corpus-for-medical-entity-linking-in-the-social-media)
+       * [MedMentions](#medmentions)
      * [相关论文](#相关论文)
        * [1.医疗领域预训练embedding](#1医疗领域预训练embedding)
        * [2.综述类文章](#2综述类文章)
@@ -200,6 +201,14 @@ COMETA is available by contacting the last author via e-mail or following the in
 pre-trained embeddings and the code to replicate our baselines online at https://github.com/cambridgeltl/cometa.
 
 [论文地址](https://arxiv.org/pdf/2010.03295.pdf)
+
+### MedMentions
+
+数据集描述： 基于Pubmed摘要的生物医学实体链接数据集。发表于AKBC 2019。
+
+[数据集地址](https://github.com/chanzuckerberg/MedMentions)
+
+[论文地址](https://arxiv.org/abs/1902.09476)
 
 ## 相关论文
 
