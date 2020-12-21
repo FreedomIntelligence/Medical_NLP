@@ -448,6 +448,8 @@ pre-trained embeddings and the code to replicate our baselines online at https:/
 
 [百度-医学文本结构化](https://ai.baidu.com/solution/mtp)
 
+[阿里云-医学自然语言处理](https://help.aliyun.com/document_detail/179395.html)
+
 ## blog分享
 
 [医疗领域构建自然语言处理系统的经验教训](http://www.oreilly.com.cn/radar/?p=2083)
