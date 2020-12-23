@@ -32,6 +32,7 @@
        * [7.ACL2020医学领域相关论文列表](#7acl2020医学领域相关论文列表)
        * [8.医疗实体Linking（标准化）](#8医疗实体linking标准化)
        * [9. AAAI2020 医学NLP相关论文列表](#9-aaai2020-医学nlp相关论文列表)
+       * [10. EMNLP2020 医学NLP相关论文列表](#9-emnlp2020-医学nlp相关论文列表)
      * [中文医疗领域语料](#中文医疗领域语料)
        * [医学教材 培训考试](#医学教材培训考试)
        * [哈工大《大词林》开放75万核心实体词及相关概念、关系列表（包含中药/医院/生物 类别）](#哈工大大词林开放75万核心实体词及相关概念关系列表包含中药医院生物-类别)
@@ -398,6 +399,44 @@ pre-trained embeddings and the code to replicate our baselines online at https:/
 **Can Embeddings Adequately Represent Medical Terminology? New Large-Scale Medical Term Similarity Datasets Have the Answer!**
 
 [论文地址](https://arxiv.org/pdf/2003.11082.pdf)
+
+### 9. EMNLP2020 医学NLP相关论文列表
+
+**Towards Medical Machine Reading Comprehension with Structural Knowledge and Plain Text**
+
+[论文地址](https://www.aclweb.org/anthology/2020.emnlp-main.111.pdf)
+
+**MedDialog: Large-scale Medical Dialogue Datasets**
+
+[论文地址](https://www.aclweb.org/anthology/2020.emnlp-main.743.pdf)
+
+**COMETA: A Corpus for Medical Entity Linking in the Social Media**
+
+[论文地址](https://www.aclweb.org/anthology/2020.emnlp-main.253.pdf)
+
+**Biomedical Event Extraction as Sequence Labeling**
+
+[论文地址](https://www.aclweb.org/anthology/2020.emnlp-main.431.pdf)
+
+**FedED: Federated Learning via Ensemble Distillation for Medical Relation Extraction**
+
+[论文地址](https://www.aclweb.org/anthology/2020.emnlp-main.165.pdf)
+
+**Infusing Disease Knowledge into BERT for Health Question Answering, Medical Inference and Disease Name Recognition**
+
+[论文地址](https://arxiv.org/pdf/2010.03746.pdf)
+
+**A Knowledge-driven Generative Model for Multi-implication Chinese Medical Procedure Entity Normalization**
+
+[论文地址](https://www.aclweb.org/anthology/2020.emnlp-main.116.pdf)
+
+**BioMegatron: Larger Biomedical Domain Language Model**
+
+[论文地址](https://www.aclweb.org/anthology/2020.emnlp-main.379.pdf)
+
+**Querying Across Genres for Medical Claims in News**
+
+[论文地址](https://www.aclweb.org/anthology/2020.emnlp-main.139.pdf)
 
 
 ## 中文医疗领域语料
