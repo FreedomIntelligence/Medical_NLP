@@ -32,7 +32,7 @@
        * [7.ACL2020医学领域相关论文列表](#7acl2020医学领域相关论文列表)
        * [8.医疗实体Linking（标准化）](#8医疗实体linking标准化)
        * [9. AAAI2020 医学NLP相关论文列表](#9-aaai2020-医学nlp相关论文列表)
-       * [10. EMNLP2020 医学NLP相关论文列表](#9-emnlp2020-医学nlp相关论文列表)
+       * [10. EMNLP2020 医学NLP相关论文列表](#10-emnlp2020-医学nlp相关论文列表)
      * [中文医疗领域语料](#中文医疗领域语料)
        * [医学教材 培训考试](#医学教材培训考试)
        * [哈工大《大词林》开放75万核心实体词及相关概念、关系列表（包含中药/医院/生物 类别）](#哈工大大词林开放75万核心实体词及相关概念关系列表包含中药医院生物-类别)
@@ -400,7 +400,7 @@ pre-trained embeddings and the code to replicate our baselines online at https:/
 
 [论文地址](https://arxiv.org/pdf/2003.11082.pdf)
 
-### 9. EMNLP2020 医学NLP相关论文列表
+### 10. EMNLP2020 医学NLP相关论文列表
 
 **Towards Medical Machine Reading Comprehension with Structural Knowledge and Plain Text**
 
