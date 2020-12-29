@@ -422,6 +422,8 @@ pre-trained embeddings and the code to replicate our baselines online at https:/
 
 [论文地址](https://www.aclweb.org/anthology/2020.emnlp-main.165.pdf)
 
+[论文解析:FedED:用于医学关系提取的联邦学习(基于融合蒸馏)](https://blog.csdn.net/lrs1353281004/article/details/111877017)
+
 **Infusing Disease Knowledge into BERT for Health Question Answering, Medical Inference and Disease Name Recognition**
 
 [论文地址](https://arxiv.org/pdf/2010.03746.pdf)
