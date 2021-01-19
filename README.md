@@ -504,3 +504,6 @@ pre-trained embeddings and the code to replicate our baselines online at https:/
 [中文NLP数据集搜索](https://www.cluebenchmarks.com/dataSet_search.html)
 
 [medical-data(海量医疗相关数据)](https://github.com/beamandrew/medical-data)
+
+[天池数据集(其中包含多个医疗NLP数据集)](https://tianchi.aliyun.com/dataset)
+
