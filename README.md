@@ -3,6 +3,8 @@
 医疗NLP领域（主要关注中文）   评测数据集 与 论文等相关资源。
 
    * [Chinese_medical_NLP](#chinese_medical_nlp)
+     * [评测/比赛更新](#评测及比赛更新)
+       * [1. MEDIQA 2021](#mediqa-2021)
      * [中文数据集](#中文数据集)
        * [1. Yidu-S4K：医渡云结构化4K数据集](#1-yidu-s4k医渡云结构化4k数据集)
        * [2.瑞金医院糖尿病数据集](#2瑞金医院糖尿病数据集)
@@ -45,8 +47,23 @@
      * [blog分享](#blog分享)
      * [友情链接](#友情链接)
 
+## 评测及比赛更新
 
+说明: 这部分从2021.2.20开始更新。添加当时还未截止的中英文医疗相关的NLP评测或比赛。
 
+### MEDIQA-2021
+
+来源： NAACL 2021 的 一个workshop
+
+Introduction
+
+MEDIQA 2021 tackles three summarization tasks in the medical domain: consumer health question summarization, multi-answer summarization, and radiology report summarization. In this shared task, we will also explore the use of different evaluation metrics for summarization.
+
+MEDIQA 2021 will be organized at the NAACL-BioNLP 2021 workshop.
+
+[BioNLP Workshop](https://aclweb.org/aclwiki/BioNLP_Workshop)
+
+[MEDIQA评测地址](https://sites.google.com/view/mediqa2021)
 
 ## 中文数据集
 
