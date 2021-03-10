@@ -5,6 +5,7 @@
    * [Chinese_medical_NLP](#chinese_medical_nlp)
      * [评测/比赛更新](#评测及比赛更新)
        * [1. MEDIQA 2021](#mediqa-2021)
+       * [2. ICLR 2021 医疗对话生成与自动诊断国际竞赛](#iclr-2021-医疗对话生成与自动诊断国际竞赛)
      * [中文数据集](#中文数据集)
        * [1. Yidu-S4K：医渡云结构化4K数据集](#1-yidu-s4k医渡云结构化4k数据集)
        * [2.瑞金医院糖尿病数据集](#2瑞金医院糖尿病数据集)
@@ -53,7 +54,7 @@
 
 ### MEDIQA-2021
 
-来源： NAACL 2021 的 一个workshop
+来源： NAACL 2021 workshop
 
 Introduction
 
@@ -64,6 +65,15 @@ MEDIQA 2021 will be organized at the NAACL-BioNLP 2021 workshop.
 [BioNLP Workshop](https://aclweb.org/aclwiki/BioNLP_Workshop)
 
 [MEDIQA评测地址](https://sites.google.com/view/mediqa2021)
+
+### ICLR-2021-医疗对话生成与自动诊断国际竞赛
+
+来源: ICLR 2021 workshop
+
+本次竞赛以自动医疗诊断对话系统的开发为主题，目前设置了两大赛道：医疗对话生成赛道和自动医疗诊断赛道。
+
+[竞赛官方地址](https://mlpcp21.github.io/pages/challenge)
+
 
 ## 中文数据集
 
