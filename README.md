@@ -6,6 +6,7 @@
      * [评测/比赛更新](#评测及比赛更新)
        * [1. MEDIQA 2021](#mediqa-2021)
        * [2. ICLR 2021 医疗对话生成与自动诊断国际竞赛](#iclr-2021-医疗对话生成与自动诊断国际竞赛)
+       * [3. 中文医疗信息处理挑战榜CBLUE数据集（长期开放）](#中文医疗信息处理挑战榜CBLUE数据集（长期开放）)
      * [中文数据集](#中文数据集)
        * [1. Yidu-S4K：医渡云结构化4K数据集](#1-yidu-s4k医渡云结构化4k数据集)
        * [2.瑞金医院糖尿病数据集](#2瑞金医院糖尿病数据集)
@@ -74,6 +75,15 @@ MEDIQA 2021 will be organized at the NAACL-BioNLP 2021 workshop.
 
 [竞赛官方地址](https://mlpcp21.github.io/pages/challenge)
 
+### 中文医疗信息处理挑战榜CBLUE数据集（长期开放）
+
+评测介绍:
+
+中文医疗信息处理挑战榜CBLUE(Chinese Biomedical Language Understanding Evaluation)是中国中文信息学会医疗健康与生物信息处理专业委员会在合法开放共享的理念下发起，由阿里云天池平台承办，并由医渡云（北京）技术有限公司、平安医疗科技、北京大学、郑州大学、鹏城实验室、哈尔滨工业大学(深圳）、同济大学、夸克、阿里巴巴达摩院等开展智慧医疗研究的单位共同协办，旨在推动中文医学NLP技术和社区的发展。评测长期开放。
+
+包含中文医学命名实体识别（CMeEE）,中文医学文本实体关系抽取（CMeIE）,临床术语标准化任务（CHIP-CDN）,临床试验筛选标准短文本分类（CHIP-CTC）,临床试验筛选标准短文本分类（CHIP-CTC）,医疗搜索检索词意图分类（KUAKE-QIC）,医疗搜索查询词-页面标题相关性（KUAKE-QTR）,医疗搜索查询词-查询词相关性（KUAKE-QQR）等评估任务。
+
+[CBLUE评测官方地址](https://tianchi.aliyun.com/dataset/dataDetail?dataId=95414)
 
 ## 中文数据集
 
