@@ -81,7 +81,7 @@ MEDIQA 2021 will be organized at the NAACL-BioNLP 2021 workshop.
 
 中文医疗信息处理挑战榜CBLUE(Chinese Biomedical Language Understanding Evaluation)是中国中文信息学会医疗健康与生物信息处理专业委员会在合法开放共享的理念下发起，由阿里云天池平台承办，并由医渡云（北京）技术有限公司、平安医疗科技、北京大学、郑州大学、鹏城实验室、哈尔滨工业大学(深圳）、同济大学、夸克、阿里巴巴达摩院等开展智慧医疗研究的单位共同协办，旨在推动中文医学NLP技术和社区的发展。评测长期开放。
 
-包含中文医学命名实体识别（CMeEE）,中文医学文本实体关系抽取（CMeIE）,临床术语标准化任务（CHIP-CDN）,临床试验筛选标准短文本分类（CHIP-CTC）,临床试验筛选标准短文本分类（CHIP-CTC）,医疗搜索检索词意图分类（KUAKE-QIC）,医疗搜索查询词-页面标题相关性（KUAKE-QTR）,医疗搜索查询词-查询词相关性（KUAKE-QQR）等评估任务。
+CBLUE 1.0是由CHIP会议往届的学术评测比赛和阿里夸克医疗搜索业务的数据集组成，包括医学文本信息抽取（实体识别、关系抽取）、医学术语归一化、医学文本分类、医学句子关系判定和医学QA共5大类任务8个子任务。
 
 [CBLUE评测官方地址](https://tianchi.aliyun.com/dataset/dataDetail?dataId=95414)
 
