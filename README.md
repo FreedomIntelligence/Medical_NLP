@@ -41,8 +41,9 @@
      * [中文医疗领域语料](#中文医疗领域语料)
        * [医学教材 培训考试](#医学教材培训考试)
        * [哈工大《大词林》开放75万核心实体词及相关概念、关系列表（包含中药/医院/生物 类别）](#哈工大大词林开放75万核心实体词及相关概念关系列表包含中药医院生物-类别)
-     * [医学embedding&预训练模型](#医学embedding&预训练模型)
+     * [医学embedding及预训练模型](#医学embedding及预训练模型)
        * [开源英文医学embedding](#开源英文医学embedding)
+       * [MC-BERT(中文医疗预训练模型)](MC-BERT(中文医疗预训练模型))
      * [开源工具包](#开源工具包)
        * [分词工具](#分词工具)
          * [PKUSEG](#pkuseg)
@@ -541,7 +542,7 @@ pre-trained embeddings and the code to replicate our baselines online at https:/
 
 说明: 通过网上查询，这部分资源应该是被一些公司付费使用了，可能有版权问题，所以现在下载链接都失效了。后续如果再有开源的信息再进行更新。
 
-## 医学embedding&预训练模型
+## 医学embedding及预训练模型
 
 ### 开源英文医学embedding
 
