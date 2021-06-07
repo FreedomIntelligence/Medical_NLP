@@ -43,7 +43,7 @@
        * [哈工大《大词林》开放75万核心实体词及相关概念、关系列表（包含中药/医院/生物 类别）](#哈工大大词林开放75万核心实体词及相关概念关系列表包含中药医院生物-类别)
      * [医学embedding及预训练模型](#医学embedding及预训练模型)
        * [开源英文医学embedding](#开源英文医学embedding)
-       * [MC-BERT，中文医疗预训练模型](#MC-BERT，中文医疗预训练模型)
+       * [MC-BERT中文医疗预训练模型](#MC-BERT中文医疗预训练模型)
      * [开源工具包](#开源工具包)
        * [分词工具](#分词工具)
          * [PKUSEG](#pkuseg)
@@ -550,7 +550,7 @@ pre-trained embeddings and the code to replicate our baselines online at https:/
 
 [项目地址](https://github.com/clinicalml/embeddings)
 
-### MC-BERT，中文医疗预训练模型
+### MC-BERT中文医疗预训练模型
 
 论文名称：Conceptualized Representation Learning for Chinese Biomedical Text Mining
 
