@@ -87,6 +87,11 @@ CBLUE 1.0是由CHIP会议往届的学术评测比赛和阿里夸克医疗搜索�
 
 [CBLUE评测官方地址](https://tianchi.aliyun.com/dataset/dataDetail?dataId=95414)
 
+[论文地址](https://arxiv.org/abs/2106.08087)
+
+[Github项目地址](https://github.com/CBLUEbenchmark/CBLUE)
+
+
 ### 中国计算语言学大会CCL-2021智能医疗对话诊疗评测任务
 
 中国计算语言学大会（CCL 2021）发布5项技术评测任务，其中包含“智能医疗对话诊疗”任务。
