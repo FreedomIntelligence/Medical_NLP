@@ -1,5 +1,13 @@
 # Chinese_medical_NLP
 
+>🚀🚀🚀欢迎大家参与共建：
+>由于本人2021年离开医疗NLP领域，这个repo已经较长时间没有更新，如果有从事相关领域的同学想要继续维护此repo，可以联系我把你添加为共建者（或其他方式）。
+>🤝🤝🤝
+>wx: 18810877926  备注： github 医疗
+
+
+
+
 医疗NLP领域（主要关注中文）   评测数据集 与 论文等相关资源。
 
    * [Chinese_medical_NLP](#chinese_medical_nlp)
