@@ -1,7 +1,7 @@
 # Chinese_medical_NLP
 
 
->由于[Cris Lee](https://github.com/lrs1353281004)2021年离开医疗NLP领域，此repo现由[Xidong Wang](https://github.com/wangxidong06)继续维护
+>由于[Cris Lee](https://github.com/lrs1353281004)2021年离开医疗NLP领域，此repo现由[Xidong Wang](https://github.com/wangxidong06)继续维护。
 
 医疗NLP领域（主要关注中文）   评测数据集 与 论文等相关资源。
 
@@ -571,6 +571,28 @@ pre-trained embeddings and the code to replicate our baselines online at https:/
 [项目地址](https://github.com/alibaba-research/ChineseBLUE)
 
 [解读文章](https://zhuanlan.zhihu.com/p/208721884)
+
+### PubMedGPT 2.7B
+
+[项目地址](https://github.com/stanford-crfm/BioMedLM)
+
+[解读文章](https://crfm.stanford.edu/2022/12/15/pubmedgpt.html)
+
+[模型](https://huggingface.co/stanford-crfm/pubmedgpt/tree/main)
+
+[MosaicML Composer](https://github.com/mosaicml/composer)
+
+### BioGPT
+
+[项目地址](https://github.com/microsoft/BioGPT) 
+
+### Medical-chatgpt
+
+[项目地址](https://github.com/lucidrains/medical-chatgpt)
+
+
+
+
 
 ## 开源工具包
 
