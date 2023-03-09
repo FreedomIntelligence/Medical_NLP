@@ -1,13 +1,7 @@
 # Chinese_medical_NLP
 
 
->
->由于本人2021年离开医疗NLP领域，此repo移交给[wangxidong06](https://github.com/wangxidong06)继续维护~希望能继续发光发热。
->
-
-
-
-
+>由于[Cris Lee](https://github.com/lrs1353281004)2021年离开医疗NLP领域，此repo现由[Xidong Wang](https://github.com/wangxidong06)继续维护
 
 医疗NLP领域（主要关注中文）   评测数据集 与 论文等相关资源。
 
