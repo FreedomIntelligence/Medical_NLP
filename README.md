@@ -1,9 +1,12 @@
 # Medical_NLP
 
-
->由于[Cris Lee](https://github.com/lrs1353281004)2021年离开医疗NLP领域，此repo现由[Xidong Wang](https://github.com/wangxidong06)继续维护。
-
 医疗NLP领域  评测/比赛，数据集，论文和预训练模型资源汇总。
+
+Summary of medical NLP evaluations/competitions, datasets, papers and pre-trained models.
+
+中文版本 English_version
+
+> 由于[Cris Lee](https://github.com/lrs1353281004)2021年离开医疗NLP领域，此repo现由[Xidong Wang](https://github.com/wangxidong06)继续维护。
 
 * [Medical_NLP](#Medical_nlp)
    * [一. 评测/比赛](#一-评测比赛)
