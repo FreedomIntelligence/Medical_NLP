@@ -4,7 +4,7 @@
 
 Summary of medical NLP evaluations/competitions, datasets, papers and pre-trained models.
 
-中文版本 English_version
+[中文版本](https://github.com/FreedomIntelligence/Chinese_medical_NLP) [English_version](https://github.com/FreedomIntelligence/Chinese_medical_NLP/blob/master/English_vision.md)
 
 > 由于[Cris Lee](https://github.com/lrs1353281004)2021年离开医疗NLP领域，此repo现由[Xidong Wang](https://github.com/wangxidong06)继续维护。
 

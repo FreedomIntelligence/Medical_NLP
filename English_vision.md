@@ -5,6 +5,8 @@
 
 Summary of medical NLP evaluations/competitions, datasets, papers and pre-trained models.
 
+[中文版本](https://github.com/FreedomIntelligence/Chinese_medical_NLP) [English_version](https://github.com/FreedomIntelligence/Chinese_medical_NLP/blob/master/English_vision.md)
+
 * [Medical_NLP](#medical_nlp)
    * [一. Evaluation/Competition](#一-evaluationcompetition)
       * [1. Ongoing Contests:](#1-ongoing-contests)
