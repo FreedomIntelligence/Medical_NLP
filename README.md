@@ -92,7 +92,7 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
                * [0.0.2.5 <a href="https://openai.com/research/learning-complex-goals-with-iterated-amplification" rel="nofollow">通过放大弱专家来监督强学习者</a> (2018.10 openai)   迭代放大的 RL 安全技术 解决0.0.2.2](#0025-通过放大弱专家来监督强学习者-201810-openai---迭代放大的-rl-安全技术-解决0022)
                * [0.0.2.6 <a href="https://openai.com/research/fine-tuning-gpt-2" rel="nofollow">根据人类偏好微调语言模型</a>(根据人类偏好微调 GPT-2) (2019 openai) First NLP+RLHF!](#0026-根据人类偏好微调语言模型根据人类偏好微调-gpt-2-2019-openai-first-nlprlhf)
                * [0.0.2.7 <a href="https://openai.com/research/learning-to-summarize-with-human-feedback" rel="nofollow">RLHF in 摘要生成</a>(openai 2020)  Second try NLP+RLHF!](#0027-rlhf-in-摘要生成openai-2020--second-try-nlprlhf)
-               * [0.0.2.8 <a href="https://openai.com/research/truthfulqa" rel="nofollow">TruthfulQA</a>：衡量模型如何模仿人类的谎言 (2021.8.9)  摘要最后一句话：最大的模型通常是最不真实的，我们建议单独扩大模型在提高真实性方面不如使用训练目标进行微调而不是模仿网络文本。   directly lead to 0.0.2.8](#0028-truthfulqa衡量模型如何模仿人类的谎言-202189--摘要最后一句话最大的模型通常是最不真实的我们建议单独扩大模型在提高真实性方面不如使用训练目标进行微调而不是模仿网络文本---directly-lead-to-0028)
+               * [0.0.2.8 <a href="https://openai.com/research/truthfulqa" rel="nofollow">TruthfulQA</a>：衡量模型如何模仿人类的谎言 (2021.8.9)  摘要最后一句话：最大的模型通常是最不真实的，我们建议单独扩大模型在提高真实性方面不如使用训练目标进行微调而不是模仿网络文本。   directly lead to 0.0.2.9](#0028-truthfulqa衡量模型如何模仿人类的谎言-202189--摘要最后一句话最大的模型通常是最不真实的我们建议单独扩大模型在提高真实性方面不如使用训练目标进行微调而不是模仿网络文本---directly-lead-to-0028)
                * [0.0.2.9 <a href="https://openai.com/research/instruction-following" rel="nofollow">instruct GPT</a>(2022.1 openai)  0.0.2.6/7中探索的技术终于和GPT-3进行了对齐！  重点：尽管参数少了 100 多倍，但我们的标签制作者更喜欢1.3B InstructGPT模型的输出，而不是175BGPT-3模型的输出。 I have a question: What if ChatGPT IS MOE of instructGPT-1.3B/6B?](#0029-instruct-gpt20221-openai--00267中探索的技术终于和gpt-3进行了对齐--重点尽管参数少了-100-多倍但我们的标签制作者更喜欢13b-instructgpt模型的输出而不是175bgpt-3模型的输出-i-have-a-question-what-if-chatgpt-is-moe-of-instructgpt-13b6b)
          * [0.1 GPT-x 及其变体的迭代过程](#01-gpt-x-及其变体的迭代过程)
             * [0.1.0 硬件资源和调度的迭代](#010-硬件资源和调度的迭代)
@@ -641,7 +641,7 @@ https://www.wolterskluwer.com/en/expert-insights/health
 
 
 
-###### 0.0.2.8 [TruthfulQA](https://openai.com/research/truthfulqa)：衡量模型如何模仿人类的谎言 (2021.8.9)  摘要最后一句话：最大的模型通常是最不真实的，我们建议单独扩大模型在提高真实性方面不如使用训练目标进行微调而不是模仿网络文本。   directly lead to 0.0.2.8
+###### 0.0.2.8 [TruthfulQA](https://openai.com/research/truthfulqa)：衡量模型如何模仿人类的谎言 (2021.8.9)  摘要最后一句话：最大的模型通常是最不真实的，我们建议单独扩大模型在提高真实性方面不如使用训练目标进行微调而不是模仿网络文本。   directly lead to 0.0.2.9
 
 - 论文地址：https://arxiv.org/abs/2109.07958
 - Blog:https://openai.com/research/truthfulqa
