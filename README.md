@@ -8,7 +8,7 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 > 由于[Cris Lee](https://github.com/lrs1353281004)2021年离开医疗NLP领域，此repo现由[Xidong Wang](https://github.com/wangxidong06)继续维护。
 
-* [Medical_NLP](#Medical_nlp)
+* [Medical_NLP](#medical_nlp)
    * [一. 评测/比赛](#一-评测比赛)
       * [1. 正在进行的评测/比赛：](#1-正在进行的评测比赛)
          * [1.1 中文：影像学NLP —— 医学影像诊断报告生成](#11-中文影像学nlp--医学影像诊断报告生成)
@@ -76,6 +76,37 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
             * [2.5.3 <a href="https://openi.pcl.ac.cn/PCL-Platform.Intelligence/PanGu-Alpha" rel="nofollow">Pangu-Alpha(200B)</a>](#253-pangu-alpha200b)
             * [2.5.4 <a href="https://github.com/Shawn-Inspur/Yuan-1.0">源1.0(245B)</a>](#254-源10245b)
    * [四. 相关论文](#四-相关论文)
+      * [0. ChatGPT/GPT-4 从何而来？(Thanks to CloseAI, strictly speaking we don't know how ChatGPT and GPT-4 came about. But show the respect to the scientists and engineers at this institution who pushed the boundaries of AI's capability.)](#0-chatgptgpt-4-从何而来thanks-to-closeai-strictly-speaking-we-dont-know-how-chatgpt-and-gpt-4-came-about-but-show-the-respect-to-the-scientists-and-engineers-at-this-institution-who-pushed-the-boundaries-of-ais-capability)
+         * [0.0 RLHF](#00-rlhf)
+            * [0.0.1 openai RLHF+NLP之前 出现在RLHF领域的工作](#001-openai-rlhfnlp之前-出现在rlhf领域的工作)
+               * [0.0.1.1 从轨迹偏好查询中学习政策的贝叶斯方法(NIPS 2012)](#0011-从轨迹偏好查询中学习政策的贝叶斯方法nips-2012)
+               * [0.0.1.2 通过人类反馈训练机器人：案例研究(ICSR 2013)](#0012-通过人类反馈训练机器人案例研究icsr-2013)
+               * [0.0.1.3 APRIL：基于主动偏好学习的强化学习(2012)](#0013-april基于主动偏好学习的强化学习2012)
+               * [0.0.1.4 通过反馈编程(2014)](#0014-通过反馈编程2014)
+               * [0.0.1.5 在 Atari 中从人类偏好和示范中进行奖励学习(2018)](#0015-在-atari-中从人类偏好和示范中进行奖励学习2018)
+            * [0.0.2 openai RLHF思维链路(有一点个人主观biase)](#002-openai-rlhf思维链路有一点个人主观biase)
+               * [0.0.2.1 高效反馈(2015) Start from this <a href="https://ai-alignment.com/efficient-feedback-a347748b1557#.exjnsupts" rel="nofollow">blog</a>！ 促成了0.0.2.3 的尝试](#0021-高效反馈2015-start-from-this-blog-促成了0023-的尝试)
+               * [0.0.2.2 <a href="https://openai.com/research/faulty-reward-functions" rel="nofollow">使用损坏的奖励渠道进行强化学习</a>(2017.3 openai) openai对RL Policy安全性的考虑 促成了0.0.2.4/5 的尝试](#0022-使用损坏的奖励渠道进行强化学习20173-openai-openai对rl-policy安全性的考虑-促成了00245-的尝试)
+               * [0.0.2.3 <a href="https://openai.com/research/learning-from-human-preferences" rel="nofollow">从人类偏好中深度强化学习</a>(2017.6 openai) RLHF in RL 初探](#0023-从人类偏好中深度强化学习20176-openai-rlhf-in-rl-初探)
+               * [0.0.2.4  <a href="https://openai.com/research/debate" rel="nofollow">通过辩论提升人工智能安全</a> (2018.5 openai)  通过辩论 实现RL安全 解决0.0.2.2](#0024--通过辩论提升人工智能安全-20185-openai--通过辩论-实现rl安全-解决0022)
+               * [0.0.2.5 <a href="https://openai.com/research/learning-complex-goals-with-iterated-amplification" rel="nofollow">通过放大弱专家来监督强学习者</a> (2018.10 openai)   迭代放大的 RL 安全技术 解决0.0.2.2](#0025-通过放大弱专家来监督强学习者-201810-openai---迭代放大的-rl-安全技术-解决0022)
+               * [0.0.2.6 <a href="https://openai.com/research/fine-tuning-gpt-2" rel="nofollow">根据人类偏好微调语言模型</a>(根据人类偏好微调 GPT-2) (2019 openai) First NLP+RLHF!](#0026-根据人类偏好微调语言模型根据人类偏好微调-gpt-2-2019-openai-first-nlprlhf)
+               * [0.0.2.7 <a href="https://openai.com/research/learning-to-summarize-with-human-feedback" rel="nofollow">RLHF in 摘要生成</a>(openai 2020)  Second try NLP+RLHF!](#0027-rlhf-in-摘要生成openai-2020--second-try-nlprlhf)
+               * [0.0.2.8 <a href="https://openai.com/research/truthfulqa" rel="nofollow">TruthfulQA</a>：衡量模型如何模仿人类的谎言 (2021.8.9)  摘要最后一句话：最大的模型通常是最不真实的，我们建议单独扩大模型在提高真实性方面不如使用训练目标进行微调而不是模仿网络文本。   directly lead to 0.0.2.8](#0028-truthfulqa衡量模型如何模仿人类的谎言-202189--摘要最后一句话最大的模型通常是最不真实的我们建议单独扩大模型在提高真实性方面不如使用训练目标进行微调而不是模仿网络文本---directly-lead-to-0028)
+               * [0.0.2.9 <a href="https://openai.com/research/instruction-following" rel="nofollow">instruct GPT</a>(2022.1 openai)  0.0.2.6/7中探索的技术终于和GPT-3进行了对齐！  重点：尽管参数少了 100 多倍，但我们的标签制作者更喜欢1.3B InstructGPT模型的输出，而不是175BGPT-3模型的输出。 I have a question: What if ChatGPT IS MOE of instructGPT-1.3B/6B?](#0029-instruct-gpt20221-openai--00267中探索的技术终于和gpt-3进行了对齐--重点尽管参数少了-100-多倍但我们的标签制作者更喜欢13b-instructgpt模型的输出而不是175bgpt-3模型的输出-i-have-a-question-what-if-chatgpt-is-moe-of-instructgpt-13b6b)
+         * [0.1 GPT-x 及其变体的迭代过程](#01-gpt-x-及其变体的迭代过程)
+            * [0.1.0 硬件资源和调度的迭代](#010-硬件资源和调度的迭代)
+               * [0.1.0.1 <a href="https://kubernetes.io/" rel="nofollow">kubernetes</a>](#0101-kubernetes)
+               * [0.1.0.2 <a href="https://openai.com/research/scaling-kubernetes-to-2500-nodes" rel="nofollow">将 Kubernetes 扩展到 2,500 个节点</a>](#0102-将-kubernetes-扩展到-2500-个节点)
+               * [0.1.0.3 将 <a href="https://openai.com/research/scaling-kubernetes-to-7500-nodes" rel="nofollow">Kubernetes 扩展到 7,500 个节点</a> 为大型模型提供了可扩展的基础设施。同时也为神经语言模型的缩放定律等快速小规模迭代研究提供了基础设施。](#0103-将-kubernetes-扩展到-7500-个节点-为大型模型提供了可扩展的基础设施同时也为神经语言模型的缩放定律等快速小规模迭代研究提供了基础设施)
+            * [0.1.1 模型的迭代](#011-模型的迭代)
+               * [0.1.1.1 <a href="https://openai.com/research/language-unsupervised" rel="nofollow">GPT</a>(2018.6.11 openai)](#0111-gpt2018611-openai)
+               * [0.1.1.2 <a href="https://openai.com/research/better-language-models" rel="nofollow">GPT-2</a>(2019.2.14 openai)](#0112-gpt-22019214-openai)
+               * [0.1.1.3 <a href="https://openai.com/research/language-models-are-few-shot-learners" rel="nofollow">GPT-3: 语言模型是小样本学习者</a> (2020.3.28 openai)](#0113-gpt-3-语言模型是小样本学习者-2020328-openai)
+               * [0.1.1.4 <a href="https://openai.com/research/clip" rel="nofollow">CLIP</a> 从自然语言监督中学习可迁移视觉模型(2021.1.5openai)](#0114-clip-从自然语言监督中学习可迁移视觉模型202115openai)
+               * [0.1.1.5 <a href="https://openai.com/blog/openai-codex" rel="nofollow">CodeX</a> 评估在代码上训练的大型语言模型 (2021.6.7 openai)](#0115-codex-评估在代码上训练的大型语言模型-202167-openai)
+               * [0.1.1.6 <a href="https://openai.com/research/instruction-following" rel="nofollow">instruct GPT</a>(2022.6.27 openai)](#0116-instruct-gpt2022627-openai)
+               * [0.1.1.7 <a href="https://openai.com/research/gpt-4" rel="nofollow">GPT-4</a> (openai 2023.3.14)](#0117-gpt-4-openai-2023314)
       * [1. 后ChatGPT时代 可能有帮助的论文(持续更新)](#1-后chatgpt时代-可能有帮助的论文持续更新)
          * [1.1 <strong>ChatGPT在USMLE上的表现</strong>：使用大型语言模型进行 AI 辅助医学教育的潜力](#11-chatgpt在usmle上的表现使用大型语言模型进行-ai-辅助医学教育的潜力)
          * [1.2 对 <strong>ChatGPT 的医疗建议进行（图灵）测试</strong>](#12-对-chatgpt-的医疗建议进行图灵测试)
@@ -515,6 +546,193 @@ https://www.wolterskluwer.com/en/expert-insights/health
 
 此部分 更加侧重于收集 后ChatGPT时代的相关论文，大致以论文发表时间为序。
 
+### 0. ChatGPT/GPT-4 从何而来？(Thanks to CloseAI, strictly speaking we don't know how ChatGPT and GPT-4 came about. But show the respect to the scientists and engineers at this institution who pushed the boundaries of AI's capability.)
+
+#### 0.0 RLHF
+
+##### 0.0.1 openai RLHF+NLP之前 出现在RLHF领域的工作
+
+###### 0.0.1.1 从轨迹偏好查询中学习政策的贝叶斯方法(NIPS 2012)
+
+- 论文地址：https://papers.nips.cc/paper/2012/hash/16c222aa19898e5058938167c8ab6c57-Abstract.html
+- 摘要翻译：我们考虑通过向专家查询轨迹偏好来学习控制策略的问题。特别是，学习代理可以向专家展示源自同一状态的一对策略的短期运行，然后专家指示首选轨迹。代理的目标是用尽可能少的查询从专家那里引出一个潜在的目标策略。为了解决这个问题，我们提出了一种新颖的查询过程贝叶斯模型，并介绍了两种利用该模型主动选择专家查询的方法。四个基准问题的实验结果表明，我们的模型可以有效地从轨迹偏好查询中学习策略，并且主动查询选择可以比随机选择更有效。
+
+###### 0.0.1.2 通过人类反馈训练机器人：案例研究(ICSR 2013)
+
+- 论文地址：https://link.springer.com/chapter/10.1007/978-3-319-02675-6_46
+- 摘要翻译：我们提出了一个案例研究，该案例研究将用于从数字人类反馈中学习的框架 - TAMER - 应用于物理体现的机器人。在此过程中，我们还首次展示了无需算法修改即可通过此类反馈训练多种行为的能力，以及机器人无需任何进一步指导或评估反馈即可从自由形式的人类生成的反馈中学习的能力。我们描述了从人类反馈和调整中学习以应对这些挑战的物理机器人所特有的透明度挑战。
+
+###### 0.0.1.3 APRIL：基于主动偏好学习的强化学习(2012)
+
+- 论文地址：https://arxiv.org/abs/1208.0984
+- 摘要翻译：本文侧重于先验知识有限的强化学习 (RL)。例如，在群体机器人领域，专家很难设计奖励函数或展示目标行为，禁止使用标准 RL 和逆强化学习。尽管专业知识有限，人类专家仍然经常能够发出偏好并对代理演示进行排名。早期的工作提出了一种基于迭代偏好的 RL 框架：利用专家偏好来学习近似的策略回报，从而使代理能够实现直接策略搜索。迭代地，智能体选择一个新的候选策略并进行演示；专家将新的演示与之前的最佳演示进行比较；专家的排名反馈使代理能够细化近似的政策回报，并且这个过程是迭代的。在本文中，基于偏好的强化学习与主动排名相结合，以减少对产生令人满意的策略所需的专家的排名查询数量。在山地车和癌症治疗试验台上进行的实验证明，几十个排名能够学习出有效的策略。
+
+###### 0.0.1.4 通过反馈编程(2014)
+
+- 论文地址：https://hal.inria.fr/hal-00980839
+- 摘要翻译：本文提倡一种新的基于 ML 的编程框架，称为反馈编程 (PF)，它涉及活动计算机和用户之间的一系列交互。后者仅提供对活动计算机提供的成对解决方案的偏好判断。主动计算机涉及一个学习和一个优化组件；学习部分估计用户的效用函数并说明用户的（可能有限的）能力；优化组件探索搜索空间并返回最合适的候选解决方案。提出了该方法的原理证明，表明 PF 需要少量交互才能解决一些离散和连续的基准问题。
+
+###### 0.0.1.5 在 Atari 中从人类偏好和示范中进行奖励学习(2018)
+
+- 论文地址：https://arxiv.org/abs/1811.06521
+- 摘要翻译：要通过强化学习解决复杂的现实世界问题，我们不能依赖手动指定的奖励函数。相反，我们可以让人类直接向代理传达目标。在这项工作中，我们结合了两种从人类反馈中学习的方法：专家演示和轨迹偏好。我们训练一个深度神经网络来模拟奖励函数，并使用其预测奖励在 9 个 Atari 游戏上训练一个基于 DQN 的深度强化学习代理。我们的方法在 7 场比赛中击败了模仿学习基线，并在 2 场比赛中在不使用游戏奖励的情况下实现了严格的超人表现。此外，我们调查了奖励模型的拟合优度，提出了一些奖励黑客问题，并研究了人类标签中噪声的影响。
+
+##### 0.0.2 openai RLHF思维链路(有一点个人主观biase)
+
+###### 0.0.2.1 高效反馈(2015) Start from this [blog](https://ai-alignment.com/efficient-feedback-a347748b1557#.exjnsupts)！ 促成了0.0.2.3 的尝试
+
+- 论文地址：https://ai-alignment.com/efficient-feedback-a347748b1557#.exjnsupts
+
+- 摘要翻译：在某些机器学习领域，例如图像分类，我们可以产生一堆标记的训练数据，并使用相同的数据来训练许多模型。这种范式非常有效，但并不总是适用。例如：
+
+  - 与其模仿人类的决定，我们可能更想训练一个系统来做出人类会积极评价的决定。如果可能输出的空间很大，反馈将有效地特定于正在训练的特定算法。
+
+  - 如果一个学习系统与一个复杂的环境交互，不同的算法将以不同的方式塑造它们的环境，并发现自己处于不同的情况——需要不同的训练数据。
+
+  这些情况很自然，但很难用通常的范例来解决。如果我们有兴趣将数据密集型算法应用于具有这些特征的领域，这就是一个问题。在这种情况下，每当我们想要训练一个新模型时，甚至在单个模型的训练过程中，我们可能需要收集大量新数据。
+
+  这是实施反事实监督的一个特别重要的挑战；我认为这也是当今实施许多实用的AI控制项目的重要障碍。
+
+###### 0.0.2.2 [使用损坏的奖励渠道进行强化学习](https://openai.com/research/faulty-reward-functions)(2017.3 openai) openai对RL Policy安全性的考虑 促成了0.0.2.4/5 的尝试
+
+- 论文地址：https://arxiv.org/abs/1705.08417
+- Blog: https://openai.com/research/faulty-reward-functions
+- 摘要翻译：现实世界中没有一个奖励函数是完美的。感官错误和软件错误可能会导致 RL 智能体观察到比他们应有的更高（或更低）的奖励。例如，强化学习代理可能更喜欢感觉错误为其提供最大奖励但真正奖励实际上很小的状态。我们将此问题形式化为称为腐败奖励 MDP 的广义马尔可夫决策问题。传统的 RL 方法在 CRMDP 中表现不佳，即使在强大的简化假设下以及试图补偿可能腐败的奖励时也是如此。研究了解决该问题的两种方法。首先，通过为代理提供更丰富的数据，例如在逆向强化学习和半监督强化学习中，有时可能会完全控制由系统性感官错误引起的奖励腐败。其次，通过使用随机化来削弱代理的优化，奖励腐败可以在某些假设下得到部分管理。
+
+###### 0.0.2.3 [从人类偏好中深度强化学习](https://openai.com/research/learning-from-human-preferences)(2017.6 openai) RLHF in RL 初探
+
+- 论文地址：https://arxiv.org/abs/1706.03741
+- Blog：https://openai.com/research/learning-from-human-preferences
+- 摘要翻译：为了使复杂的强化学习 (RL) 系统与现实环境进行有效交互，我们需要将复杂的目标传达给这些系统。在这项工作中，我们探索了根据成对轨迹段之间的（非专家）人类偏好定义的目标。我们表明，这种方法可以有效地解决复杂的 RL 任务，而无需访问奖励功能，包括 Atari 游戏和模拟机器人运动，同时提供不到 1% 的智能体与环境交互的反馈。这大大降低了人类监督的成本，以至于它可以实际应用于最先进的 RL 系统。为了证明我们方法的灵活性，我们表明我们可以用大约一个小时的人类时间成功训练复杂的新行为。这些行为和环境比以前从人类反馈中学到的任何行为和环境都要复杂得多。
+
+
+
+###### 0.0.2.4  [通过辩论提升人工智能安全](https://openai.com/research/debate) (2018.5 openai)  通过辩论 实现RL安全 解决0.0.2.2
+
+- 论文地址：https://arxiv.org/abs/1805.00899
+- Blog：https://openai.com/research/debate
+- 摘要翻译：为了使人工智能系统广泛用于具有挑战性的现实世界任务，我们需要它们学习复杂的人类目标和偏好。一种指定复杂目标的方法要求人类在训练期间判断哪些代理行为是安全和有用的，但如果任务太复杂以至于人类无法直接判断，这种方法可能会失败。为了帮助解决这个问题，我们建议通过在零和辩论游戏中自我对弈来训练代理。给定一个问题或建议采取的行动，两个代理人轮流在一定限度内做出简短陈述，然后由人类判断哪个代理人提供了最真实、最有用的信息。类比于复杂性理论，最优玩法的辩论可以回答给定多项式时间判断的 PSPACE 中的任何问题（直接判断只回答 NP 问题）。在实践中，辩论是否有效涉及关于人类和我们希望人工智能执行的任务的经验问题，以及关于人工智能对齐意义的理论问题。我们报告了初始 MNIST 实验的结果，其中代理竞争说服稀疏分类器，将分类器的准确度从 59.4% 提高到 88.9%，给定 6 个像素，从 48.2% 提高到 85.2%，给定 4 个像素。最后，我们讨论了辩论模型的理论和实践方面，重点关注模型扩大时的潜在弱点，我们提出未来的人类和计算机实验来测试这些特性。9% 给定 6 个像素，48.2% 到 85.2% 给定 4 个像素。最后，我们讨论了辩论模型的理论和实践方面，重点关注模型扩大时的潜在弱点，我们提出未来的人类和计算机实验来测试这些特性。9% 给定 6 个像素，48.2% 到 85.2% 给定 4 个像素。最后，我们讨论了辩论模型的理论和实践方面，重点关注模型扩大时的潜在弱点，我们提出未来的人类和计算机实验来测试这些特性。
+
+
+
+###### 0.0.2.5 [通过放大弱专家来监督强学习者](https://openai.com/research/learning-complex-goals-with-iterated-amplification) (2018.10 openai)   迭代放大的 RL 安全技术 解决0.0.2.2
+
+- 论文地址：https://arxiv.org/abs/1810.08575
+- Blog：https://openai.com/research/learning-complex-goals-with-iterated-amplification
+- 摘要翻译：许多现实世界的学习任务涉及复杂或难以指定的目标，使用更容易指定的代理可能会导致性能不佳或行为失调。一种解决方案是让人类通过演示或判断性能来提供训练信号，但如果任务太复杂以至于人类无法直接评估，这种方法就会失败。我们提出了迭代放大，这是一种替代训练策略，它通过组合更简单的子问题的解决方案来逐步建立困难问题的训练信号。 Iterated Amplification 与 Expert Iteration 密切相关 (Anthony et al., 2017; Silver et al., 2017)，只是它不使用外部奖励函数。我们在算法环境中展示结果，表明迭代放大可以有效地学习复杂的行为。
+
+
+
+###### 0.0.2.6 [根据人类偏好微调语言模型]( https://openai.com/research/fine-tuning-gpt-2)(根据人类偏好微调 GPT-2) (2019 openai) First NLP+RLHF!
+
+- 论文地址：https://arxiv.org/abs/1909.08593
+- Blog: https://openai.com/research/fine-tuning-gpt-2
+- 代码地址：https://github.com/openai/lm-human-preferences
+- 摘要翻译：奖励学习使强化学习 (RL) 能够应用于奖励由人类判断定义的任务，通过向人类提问来建立奖励模型。大多数关于奖励学习的工作都使用了模拟环境，但关于价值的复杂信息通常用自然语言表达，我们认为语言奖励学习是使 RL 在现实世界任务中实用和安全的关键。在本文中，我们基于语言模型生成预训练的进展，将奖励学习应用于四种自然语言任务：具有积极情绪的连续文本或物理描述性语言，以及 TL；DR 和 CNN/每日邮报数据集上的摘要任务。对于风格的延续，我们仅通过人工评估的 5,000 次比较就取得了良好的效果。对于总结，经过 60,000 次比较训练的模型从输入中复制整个句子，但跳过不相关的序言；根据我们的人类贴标机，这会导致合理的 ROUGE 分数和非常好的性能，但可能利用了贴标机依赖简单启发式的事实。
+
+
+
+###### 0.0.2.7 [RLHF in 摘要生成](https://openai.com/research/learning-to-summarize-with-human-feedback)(openai 2020)  Second try NLP+RLHF!
+
+- 论文地址：https://arxiv.org/abs/2009.01325
+- Blog：https://openai.com/research/learning-to-summarize-with-human-feedback
+- 代码地址：https://github.com/openai/summarize-from-feedback
+- 摘要翻译：随着语言模型变得越来越强大，训练和评估越来越受到用于特定任务的数据和指标的瓶颈。例如，摘要模型通常经过训练以预测人类参考摘要并使用 ROUGE 进行评估，但这两个指标都粗略地代表了我们真正关心的内容——摘要质量。在这项工作中，我们表明可以通过训练模型来优化人类偏好来显着提高摘要质量。我们收集了一个大型、高质量的人类比较摘要数据集，训练一个模型来预测人类偏好的摘要，并将该模型用作奖励函数，以使用强化学习微调摘要策略。我们将我们的方法应用于 TL 的一个版本；Reddit 帖子的 DR 数据集发现我们的模型明显优于人类参考摘要和仅通过监督学习进行微调的更大模型。我们的模型还转移到 CNN/DM 新闻文章，生成的摘要几乎与人类参考一样好，无需任何新闻特定的微调。我们进行广泛的分析以了解我们的人类反馈数据集和微调模型我们确定我们的奖励模型可以推广到新的数据集，并且优化我们的奖励模型会比根据人类优化 ROUGE 产生更好的总结。我们希望我们论文中的证据能够激励机器学习研究人员更加关注他们的训练损失如何影响他们实际想要的模型行为。我们的模型还转移到 CNN/DM 新闻文章，生成的摘要几乎与人类参考一样好，无需任何新闻特定的微调。我们进行广泛的分析以了解我们的人类反馈数据集和微调模型我们确定我们的奖励模型可以推广到新的数据集，并且优化我们的奖励模型会比根据人类优化 ROUGE 产生更好的总结。我们希望我们论文中的证据能够激励机器学习研究人员更加关注他们的训练损失如何影响他们实际想要的模型行为。我们的模型还转移到 CNN/DM 新闻文章，生成的摘要几乎与人类参考一样好，无需任何新闻特定的微调。我们进行广泛的分析以了解我们的人类反馈数据集和微调模型我们确定我们的奖励模型可以推广到新的数据集，并且优化我们的奖励模型会比根据人类优化 ROUGE 产生更好的总结。我们希望我们论文中的证据能够激励机器学习研究人员更加关注他们的训练损失如何影响他们实际想要的模型行为。我们进行广泛的分析以了解我们的人类反馈数据集和微调模型我们确定我们的奖励模型可以推广到新的数据集，并且优化我们的奖励模型会比根据人类优化 ROUGE 产生更好的总结。我们希望我们论文中的证据能够激励机器学习研究人员更加关注他们的训练损失如何影响他们实际想要的模型行为。我们进行广泛的分析以了解我们的人类反馈数据集和微调模型我们确定我们的奖励模型可以推广到新的数据集，并且优化我们的奖励模型会比根据人类优化 ROUGE 产生更好的总结。我们希望我们论文中的证据能够激励机器学习研究人员更加关注他们的训练损失如何影响他们实际想要的模型行为。
+
+
+
+###### 0.0.2.8 [TruthfulQA](https://openai.com/research/truthfulqa)：衡量模型如何模仿人类的谎言 (2021.8.9)  摘要最后一句话：最大的模型通常是最不真实的，我们建议单独扩大模型在提高真实性方面不如使用训练目标进行微调而不是模仿网络文本。   directly lead to 0.0.2.8
+
+- 论文地址：https://arxiv.org/abs/2109.07958
+- Blog:https://openai.com/research/truthfulqa
+- 摘要翻译：我们提出了一个基准来衡量语言模型在生成问题答案时是否真实。该基准包括 817 个问题，涵盖 38 个类别，包括健康、法律、金融和政治。我们精心设计了一些人会由于错误的信念或误解而错误回答的问题。为了表现良好，模型必须避免生成从模仿人类文本中学到的错误答案。我们测试了 GPT-3、GPT-Neo/J、GPT-2 和基于 T5 的模型。最好的模型在 58% 的问题上是真实的，而人类的表现是 94%。模型生成了许多错误答案，模仿流行的误解并有可能欺骗人类。最大的模型通常是最不真实的。这与其他 NLP 任务形成对比，在其他 NLP 任务中，性能随模型大小而提高。然而，如果从训练分布中学习到错误答案，则此结果是预期的。我们建议单独扩大模型在提高真实性方面不如使用训练目标进行微调而不是模仿网络文本。
+
+
+
+###### 0.0.2.9 [instruct GPT]( https://openai.com/research/instruction-following)(2022.1 openai)  0.0.2.6/7中探索的技术终于和GPT-3进行了对齐！  重点：尽管参数少了 100 多倍，但我们的标签制作者更喜欢1.3B InstructGPT模型的输出，而不是175BGPT-3模型的输出。 I have a question: What if ChatGPT IS MOE of instructGPT-1.3B/6B?
+
+- 论文地址：https://arxiv.org/abs/2203.02155
+- Blog: https://openai.com/research/instruction-following
+- 摘要翻译：使语言模型更大并不能从本质上使它们更好地遵循用户的意图。例如，大型语言模型可能会生成不真实的、有毒的或对用户没有帮助的输出。换句话说，这些模型与其用户不一致。在本文中，我们展示了一种途径，可以通过根据人类反馈进行微调，使语言模型与用户对各种任务的意图保持一致。从一组标记器编写的提示和通过 OpenAI API 提交的提示开始，我们收集了所需模型行为的标记器演示数据集，我们用它来使用监督学习微调 GPT-3。然后，我们收集模型输出排名的数据集，我们使用该数据集通过人类反馈的强化学习进一步微调该监督模型。我们将生成的模型称为 InstructGPT。在对我们的提示分布的人工评估中，1.3B 参数 InstructGPT 模型的输出优于 175B GPT-3 的输出，尽管参数少 100 倍。此外，InstructGPT 模型显示了真实性的提高和有毒输出生成的减少，同时对公共 NLP 数据集的性能回归最小。尽管 InstructGPT 仍然会犯一些简单的错误，但我们的结果表明，根据人类反馈进行微调是使语言模型与人类意图保持一致的一个有前途的方向。
+- **重点：尽管参数少了 100 多倍，但我们的标签制作者更喜欢 1.3B InstructGPT 模型的输出，而不是 175B GPT-3 模型的输出。**
+
+
+
+
+
+#### 0.1 GPT-x 及其变体的迭代过程
+
+##### 0.1.0 硬件资源和调度的迭代
+
+###### 0.1.0.1 [kubernetes](https://kubernetes.io/)
+
+###### 0.1.0.2 [将 Kubernetes 扩展到 2,500 个节点](https://openai.com/research/scaling-kubernetes-to-2500-nodes)
+
+- Blog地址：https://openai.com/research/scaling-kubernetes-to-2500-nodes
+
+###### 0.1.0.3 将 [Kubernetes 扩展到 7,500 个节点](https://openai.com/research/scaling-kubernetes-to-7500-nodes) 为大型模型提供了可扩展的基础设施。同时也为神经语言模型的缩放定律等快速小规模迭代研究提供了基础设施。
+
+- Blog地址：https://openai.com/research/scaling-kubernetes-to-7500-nodes
+
+
+
+##### 0.1.1 模型的迭代
+
+###### 0.1.1.1 [GPT](https://openai.com/research/language-unsupervised)(2018.6.11 openai)
+
+- 论文地址：https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
+- 代码地址：https://github.com/openai/finetune-transformer-lm
+
+- Blog地址：https://openai.com/research/language-unsupervised
+- 摘要翻译：自然语言理解包括范围广泛的不同任务，例如文本蕴含、问答、语义相似性评估和文档分类。 尽管大量未标记的文本语料库很丰富，但用于学习这些特定任务的标记数据却很少，这使得经过判别训练的模型难以充分执行。 我们证明，通过在不同的未标记文本语料库上对语言模型进行生成式预训练，然后对每个特定任务进行判别式微调，可以实现这些任务的巨大收益。 与以前的方法相比，我们在微调期间使用任务感知输入转换来实现有效传输，同时需要对模型架构进行最少的更改。 我们证明了我们的方法在广泛的自然语言理解基准上的有效性。 我们的通用任务不可知模型优于使用专门为每项任务设计的架构的有区别训练的模型，显着改进了所研究的 12 项任务中的 9 项的最新技术水平。 例如，我们在常识推理（Stories Cloze Test）上实现了 8.9% 的绝对改进，在问题回答（RACE）上实现了 5.7%，在文本蕴含（MultiNLI）上实现了 1.5% 的绝对改进。
+
+###### 0.1.1.2 [GPT-2](https://openai.com/research/better-language-models)(2019.2.14 openai)
+
+- 论文地址：https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+
+- BLog地址：https://openai.com/research/better-language-models
+- 摘要翻译：自然语言处理任务，例如问答、机器翻译、阅读理解和摘要，通常通过对任务特定数据集的监督学习来处理。 我们证明，当在一个名为 WebText 的数百万网页的新数据集上接受训练时，语言模型在没有任何明确监督的情况下开始学习这些任务。 当以文档加问题为条件时，语言模型生成的答案在 CoQA 数据集上达到 55F1——在不使用 127、000+ 训练示例的情况下匹配或超过 3out of 4 基线系统的性能。 语言模型的容量对于零样本任务传输的成功至关重要，并且增加它可以跨任务以对数线性方式提高性能。 我们最大的模型 GPT-2 是一个 1.5B 参数 Transformer，它在零样本设置中的 8 个测试语言建模数据集中的 7 个上取得了最先进的结果，但仍然不适合 WebText。 模型中的示例反映了这些改进并包含连贯的文本段落。 这些发现为构建语言处理系统提供了一条有前途的途径，这些系统可以从自然发生的演示中学习执行任务。
+- 代码地址：https://github.com/openai/gpt-2
+
+
+
+###### 0.1.1.3 [GPT-3: 语言模型是小样本学习者](https://openai.com/research/language-models-are-few-shot-learners) (2020.3.28 openai)
+
+- 论文地址：https://arxiv.org/abs/2005.14165
+- Blog地址：https://openai.com/research/language-models-are-few-shot-learners
+- 摘要翻译：最近的工作表明，通过对大量文本语料库进行预训练，然后对特定任务进行微调，许多 NLP 任务和基准测试取得了实质性进展。虽然在体系结构中通常与任务无关，但此方法仍然需要特定于任务的微调数据集，其中包含数千或数万个示例。相比之下，人类通常只能通过几个例子或简单的指令来执行一项新的语言任务——这是当前的 NLP 系统在很大程度上仍然难以做到的。在这里，我们展示了扩大语言模型极大地提高了与任务无关的、少样本的性能，有时甚至可以与之前最先进的微调方法相媲美。具体来说，我们训练 GPT-3，这是一种具有 1750 亿个参数的自回归语言模型，比以前的任何非稀疏语言模型多 10 倍，并测试其在少镜头设置中的性能。对于所有任务，GPT-3 都在没有任何梯度更新或微调的情况下应用，任务和小样本演示完全通过与模型的文本交互来指定。GPT-3 在许多 NLP 数据集上实现了强大的性能，包括翻译、问答和完形填空任务，以及一些需要即时推理或领域适应的任务，例如解读单词，在句子，或执行 3 位数算术。同时，我们还确定了一些 GPT-3 的少样本学习仍然困难的数据集，以及一些 GPT-3 面临与大型网络语料库训练相关的方法论问题的数据集。最后，我们发现 GPT-3 可以生成新闻文章样本，人类评估者很难将这些文章与人类撰写的文章区分开来。我们总体上讨论了这一发现和 GPT-3 的更广泛的社会影响。
+
+###### 0.1.1.4 [CLIP](https://openai.com/research/clip) 从自然语言监督中学习可迁移视觉模型(2021.1.5openai)
+
+- 论文地址：https://arxiv.org/abs/2103.00020
+- Blog地址：https://openai.com/research/clip
+- 摘要翻译：最先进的计算机视觉系统经过训练可以预测一组固定的预定对象类别。这种受限的监督形式限制了它们的通用性和可用性，因为需要额外的标记数据来指定任何其他视觉概念。直接从有关图像的原始文本中学习是一种很有前途的替代方案，它可以利用更广泛的监督资源。我们证明了预测哪个标题与哪个图像对应的简单预训练任务是一种有效且可扩展的方式，可以在从互联网收集的 4 亿（图像、文本）对数据集上从头开始学习 SOTA 图像表示。预训练后，使用自然语言来引用学习到的视觉概念（或描述新概念），从而实现模型到下游任务的零样本迁移。我们通过对 30 多个不同的现有计算机视觉数据集进行基准测试来研究这种方法的性能，涵盖 OCR、视频中的动作识别、地理定位和许多类型的细粒度对象分类等任务。该模型可以轻松地迁移到大多数任务，并且通常可以与完全监督的基线相媲美，而无需任何数据集特定的训练。例如，我们在 ImageNet 零镜头上匹配原始 ResNet-50 的准确性，而无需使用它所训练的 128 万个训练示例中的任何一个。我们发布我们的代码和预训练模型权重 该模型可以轻松地迁移到大多数任务，并且通常可以与完全监督的基线相媲美，而无需任何数据集特定的训练。例如，我们在 ImageNet 零镜头上匹配原始 ResNet-50 的准确性，而无需使用它所训练的 128 万个训练示例中的任何一个。我们发布我们的代码和预训练模型权重 该模型可以轻松地迁移到大多数任务，并且通常可以与完全监督的基线相媲美，而无需任何数据集特定的训练。例如，我们在 ImageNet 零镜头上匹配原始 ResNet-50 的准确性，而无需使用它所训练的 128 万个训练示例中的任何一个。
+
+###### 0.1.1.5 [CodeX](https://openai.com/blog/openai-codex) 评估在代码上训练的大型语言模型 (2021.6.7 openai)
+
+- 论文地址：https://arxiv.org/abs/2107.03374
+- Blog地址：https://openai.com/blog/openai-codex
+- 摘要翻译：我们介绍了 Codex，一种根据 GitHub 的公开可用代码进行微调的 GPT 语言模型，并研究了其 Python 代码编写能力。Codex 的独特生产版本为 GitHub Copilot 提供支持。在 HumanEval 上，我们发布了一个新的评估集来衡量从文档字符串合成程序的功能正确性，我们的模型解决了 28.8% 的问题，而 GPT-3 解决了 0%，GPT-J 解决了 11.4%。此外，我们发现从模型中重复抽样是一种非常有效的策略，可以为困难的提示生成有效的解决方案。使用这种方法，我们解决了 70.2% 的问题，每个问题有 100 个样本。对我们模型的仔细调查揭示了它的局限性，包括难以描述长操作链的文档字符串以及难以将操作绑定到变量。最后，我们讨论了部署强大的代码生成技术的潜在更广泛影响，涵盖安全性、保障性和经济性。
+
+###### 0.1.1.6 [instruct GPT]( https://openai.com/research/instruction-following)(2022.6.27 openai)  
+
+- 论文地址：https://arxiv.org/abs/2203.02155
+- Blog: https://openai.com/research/instruction-following
+- 摘要翻译：使语言模型更大并不能从本质上使它们更好地遵循用户的意图。例如，大型语言模型可能会生成不真实的、有毒的或对用户没有帮助的输出。换句话说，这些模型与其用户不一致。在本文中，我们展示了一种途径，可以通过根据人类反馈进行微调，使语言模型与用户对各种任务的意图保持一致。从一组标记器编写的提示和通过 OpenAI API 提交的提示开始，我们收集了所需模型行为的标记器演示数据集，我们用它来使用监督学习微调 GPT-3。然后，我们收集模型输出排名的数据集，我们使用该数据集通过人类反馈的强化学习进一步微调该监督模型。我们将生成的模型称为 InstructGPT。在对我们的提示分布的人工评估中，1.3B 参数 InstructGPT 模型的输出优于 175B GPT-3 的输出，尽管参数少 100 倍。此外，InstructGPT 模型显示了真实性的提高和有毒输出生成的减少，同时对公共 NLP 数据集的性能回归最小。尽管 InstructGPT 仍然会犯一些简单的错误，但我们的结果表明，根据人类反馈进行微调是使语言模型与人类意图保持一致的一个有前途的方向。
+- **重点：0.0.2.6/7中探索的技术终于和GPT-3进行了对齐！  尽管参数少了 100 多倍，但我们的标签制作者更喜欢1.3B InstructGPT模型的输出，而不是175BGPT-3模型的输出。 I have a question: What if ChatGPT IS MOE of instructGPT-1.3B/6B?**
+
+
+
+###### 0.1.1.7 [GPT-4](https://openai.com/research/gpt-4) (openai 2023.3.14)
+
+- 论文地址：https://cdn.openai.com/papers/gpt-4.pdf
+- Blog：https://openai.com/research/gpt-4
+- 摘要翻译：我们报告了 GPT-4 的开发，这是一种大规模的多模式模型，可以接受图像和文本输入并产生文本输出。 虽然在许多现实场景中的能力不如人类，但 GPT-4 在各种专业和学术基准上表现出人类水平的表现，包括通过模拟律师考试，得分在应试者的前 10% 左右。 GPT-4 是一种基于 Transformer 的模型，经过预训练可以预测文档中的下一个标记。 培训后的对齐过程会提高真实性和遵守所需行为的措施的性能。 该项目的核心组成部分是开发可在广泛范围内表现可预测的基础设施和优化方法。 这使我们能够根据使用不超过 GPT-4 计算量的 1/1000 分之一训练的模型准确预测 GPT-4 性能的某些方面。
+
+
+
+
+
 ### 1. 后ChatGPT时代 可能有帮助的论文(持续更新)
 
 #### 1.1 **ChatGPT在USMLE上的表现**：使用大型语言模型进行 AI 辅助医学教育的潜力
@@ -536,8 +754,6 @@ https://www.wolterskluwer.com/en/expert-insights/health
 
 - 论文地址：https://arxiv.org/abs/2302.12813
 - 摘要翻译：大型语言模型 (LLM)，例如 ChatGPT，能够为许多下游任务生成类似人类的流畅响应，例如面向任务的对话和问答。 然而，将 LLM 应用于现实世界的关键任务应用程序仍然具有挑战性，主要是因为它们倾向于产生幻觉并且无法使用外部知识。 本文提出了一个 LLM-Augmenter 系统，它使用一组即插即用模块来增强黑盒 LLM。 我们的系统使 LLM 生成基于外部知识的响应，例如存储在任务特定的数据库中。 它还迭代地修改 LLM 提示，以使用实用函数生成的反馈改进模型响应，例如LLM 生成的响应的真实性分数。 LLM-Augmenter 的有效性在两种类型的场景中得到了实证验证，即面向任务的对话和开放域问答。 LLM-Augmenter 在不牺牲其响应的流畅性和信息量的情况下显着减少了 ChatGPT 的幻觉。 我们公开提供源代码和模型。
-
-
 
 
 
