@@ -46,12 +46,17 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
          * [3.2 COMETA](#32-cometa)
          * [3.3 MedMentions](#33-medmentions)
    * [三. Open source pre-trained model](#三-open-source-pre-trained-model)
-      * [1. Existing Medical NLP large model](#1-existing-medical-nlp-large-model)
+      * [0. Existing Medical NLP large model after ChatGPT](#0-existing-medical-nlp-large-model-after-chatgpt)
+         * [0.0 HuatuoGPT  (Bloom  ChatGLM Llama based)](#00-huatuogpt--bloom--chatglm-llama-based)
+         * [0.1 ChatDoctor (LLaMa based)](#01-chatdoctor-llama-based)
+         * [0.2 DoctorGLM  (GLM based)](#02-doctorglm--glm-based)
+         * [0.3  Huatuo-Llama-Med-Chinese (LLaMa based)](#03--huatuo-llama-med-chinese-llama-based)
+         * [0.4  visual-med-alpaca (LLaMa based)](#04--visual-med-alpaca-llama-based)
+      * [1. Existing Medical NLP large model before ChatGPT](#1-existing-medical-nlp-large-model-before-chatgpt)
          * [1.1 BioMedLM (2.7B)](#11-biomedlm-27b)
          * [1.2 BioGPT  (1.5B)](#12-biogpt--15b)
-         * [1.3 Medical-chatgpt](#13-medical-chatgpt)
-         * [1.4 BioBERT](#14-biobert)
-         * [1.5 PubMedBERT](#15-pubmedbert)
+         * [1.3 BioBERT](#13-biobert)
+         * [1.4 PubMedBERT](#14-pubmedbert)
       * [2.Other large models in Chinese that can be fine-tuned in the medical field](#2other-large-models-in-chinese-that-can-be-fine-tuned-in-the-medical-field)
          * [2.1 <a href="https://github.com/lonePatient/awesome-pretrained-chinese-nlp-models#GPT">Awesome List</a>](#21-awesome-list)
          * [2.2 Model parameter scale 0B-5B:](#22-model-parameter-scale-0b-5b)
@@ -91,7 +96,7 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
                * [0.0.2.5 <a href="https://openai.com/research/learning-complex-goals-with-iterated-amplification" rel="nofollow">Supervising Strong Learners by Amplifying Weak Experts</a> (2018.10 openai) Iterated Amplification RL security technology solution 0.0.2.2](#0025-supervising-strong-learners-by-amplifying-weak-experts-201810-openai-iterated-amplification-rl-security-technology-solution-0022)
                * [0.0.2.6 <a href="https://openai.com/research/fine-tuning-gpt-2" rel="nofollow">Fine-tuning language model according to human preference</a>(Fine-tuning GPT-2 according to human preference) (2019 openai) First NLP+RLHF!](#0026-fine-tuning-language-model-according-to-human-preferencefine-tuning-gpt-2-according-to-human-preference-2019-openai-first-nlprlhf)
                * [0.0.2.7 <a href="https://openai.com/research/learning-to-summarize-with-human-feedback" rel="nofollow">RLHF in Summary Generation</a>(openai 2020) Second try NLP+RLHF!](#0027-rlhf-in-summary-generationopenai-2020-second-try-nlprlhf)
-               * [0.0.2.8 <a href="https://openai.com/research/truthfulqa" rel="nofollow">TruthfulQA</a>: Measuring how well models imitate human lies (2021.8.9) Summary Last word: the largest models are usually the least True, we suggest that augmenting the model alone is less effective in improving realism than fine-tuning with training objectives rather than imitating web text. directly lead to 0.0.2.9](#0028-truthfulqa-measuring-how-well-models-imitate-human-lies-202189-summary-last-word-the-largest-models-are-usually-the-least-true-we-suggest-that-augmenting-the-model-alone-is-less-effective-in-improving-realism-than-fine-tuning-with-training-objectives-rather-than-imitating-web-text-directly-lead-to-0028)
+               * [0.0.2.8 <a href="https://openai.com/research/truthfulqa" rel="nofollow">TruthfulQA</a>: Measuring how well models imitate human lies (2021.8.9) Summary Last word: the largest models are usually the least True, we suggest that augmenting the model alone is less effective in improving realism than fine-tuning with training objectives rather than imitating web text. directly lead to 0.0.2.9](#0028-truthfulqa-measuring-how-well-models-imitate-human-lies-202189-summary-last-word-the-largest-models-are-usually-the-least-true-we-suggest-that-augmenting-the-model-alone-is-less-effective-in-improving-realism-than-fine-tuning-with-training-objectives-rather-than-imitating-web-text-directly-lead-to-0029)
                * [0.0.2.9 <a href="https://openai.com/research/instruction-following" rel="nofollow">instruct GPT</a>(2022.1 openai) The techniques explored in 0.0.2.6/7 are finally aligned with GPT-3! Important: Our labelers prefer the output of the 1.3B InstructGPT model over the output of the 175BGPT-3 model, despite having over 100x fewer parameters. I have a question: What if ChatGPT IS MOE of instructGPT-1.3B/6B?](#0029-instruct-gpt20221-openai-the-techniques-explored-in-00267-are-finally-aligned-with-gpt-3-important-our-labelers-prefer-the-output-of-the-13b-instructgpt-model-over-the-output-of-the-175bgpt-3-model-despite-having-over-100x-fewer-parameters-i-have-a-question-what-if-chatgpt-is-moe-of-instructgpt-13b6b)
          * [0.1 Iterative process for GPT-x and its variants](#01-iterative-process-for-gpt-x-and-its-variants)
             * [0.1.0 Iteration of hardware resources and scheduling](#010-iteration-of-hardware-resources-and-scheduling)
@@ -107,10 +112,12 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
                * [0.1.1.6 <a href="https://openai.com/research/instruction-following" rel="nofollow">instruct GPT</a>(2022.6.27 openai)](#0116-instruct-gpt2022627-openai)
                * [0.1.1.7 <a href="https://openai.com/research/gpt-4" rel="nofollow">GPT-4</a> (openai 2023.3.14)](#0117-gpt-4-openai-2023314)
       * [1. Papers that may be helpful in the post-ChatGPT era (continuously updated)](#1-papers-that-may-be-helpful-in-the-post-chatgpt-era-continuously-updated)
+         * [1.0 Large Language Models Encode Clinical Knowledge](#10-large-language-models-encode-clinical-knowledge)
          * [1.1 <strong>ChatGPT Performance on USMLE</strong>: The Potential of Using Large Language Models for AI-Assisted Medical Education](#11-chatgpt-performance-on-usmle-the-potential-of-using-large-language-models-for-ai-assisted-medical-education)
          * [1.2 Conducting a (Turing) Test on <strong>ChatGPT's Medical Advice</strong>](#12-conducting-a-turing-test-on-chatgpts-medical-advice)
          * [1.3 <strong>Toolformer</strong>: The language model can learn to use tools by itself](#13-toolformer-the-language-model-can-learn-to-use-tools-by-itself)
          * [1.4 Check your facts and try again: <strong>Leverage external knowledge and automatic feedback to improve large language models</strong>](#14-check-your-facts-and-try-again-leverage-external-knowledge-and-automatic-feedback-to-improve-large-language-models)
+         * [1.5 Capabilities of GPT-4 on Medical Challenge Problems](#15-capabilities-of-gpt-4-on-medical-challenge-problems)
       * [2 Review articles](#2-review-articles)
          * [1. Pretrained Language Models in Biomedical Domains: A Systematic Survey](#1-pretrained-language-models-in-biomedical-domains-a-systematic-survey)
          * [2. A Guide to Deep Learning in Healthcare](#2-a-guide-to-deep-learning-in-healthcare)
@@ -554,7 +561,66 @@ https://dxy.com/
 
 This section introduces large-scale language models in the field of medical NLP, and provides practitioners with references to initialization parameters and training methods. Sort basically by model size in descending order.
 
-### 1. Existing Medical NLP large model
+### 0. Existing Medical NLP large model after ChatGPT
+
+#### 0.0 HuatuoGPT  (Bloom  ChatGLM Llama based)
+
+- Source： Chinese University of Hong Kong, Shenzhen (CUHKSZ)
+- Intro ：HuatuoGPT, a large language model (LLM) trained on a vast Chinese medical corpus. Our objective with HuatuoGPT is to construct a more professional ‘ChatGPT’ for medical consultation scenarios. Here is a list of what has been released:
+  1. Huatuo-200K (Medical Instruction Dataset): a high-qulity instruction dataset that sampled from HuatuoGPT training corpus.
+  2. Medical-Chat LLMs: weights of a set of popular LLMs trained on our Huatuo-200K.
+  3. HuatuoGPT: a currently beta version HuatuoGPT online.
+  4. Medical evaluation benchmark: an evaluation method used to evaluate several LLMs in medical domain.
+- [Project address](https://github.com/FreedomIntelligence/HuatuoGPT)
+- [Model](https://github.com/FreedomIntelligence/HuatuoGPT)
+
+
+
+
+
+#### 0.1 ChatDoctor (LLaMa based)
+
+- Source: University of Texas Southwestern Medical Center, Dallas, USA ， University of Illinois at Urbana-Champaign, Urbana, USA  Ohio State University, Columbus, USA  Hangzhou Dianzi University, Hangzhou, China
+- Introduction: Recent large language models (LLMs) in the general domain, such as ChatGPT, have shown remarkable success in following instructions and producing human-like responses. However, such language models have not been tailored to the medical domain, resulting in poor answer accuracy and inability to give plausible recommendations for medical diagnosis, medications, etc. To address this issue, we collected more than 700 diseases and their corresponding symptoms, required medical tests, and recommended medications, from which we generated 5K doctor-patient conversations. In addition, we obtained 200K real patient-doctor conversations from online Q\&A medical consultation sites. By fine-tuning LLMs using these 205k doctor-patient conversations, the resulting models emerge with great potential to understand patients' needs, provide informed advice, and offer valuable assistance in a variety of medical-related fields. The integration of these advanced language models into healthcare can revolutionize the way healthcare professionals and patients communicate, ultimately improving the overall efficiency and quality of patient care and outcomes. In addition, we made public all the source codes, datasets, and model weights to facilitate the further development of dialogue models in the medical field. 
+- [Project Address](https://github.com/Kent0n-Li/ChatDoctor)
+- [Paper](https://arxiv.org/abs/2303.14070)
+
+
+
+#### 0.2 DoctorGLM  (GLM based)
+
+- Source：ShanghaiTech University, hanghai Jiao Tong University, United Imaging Intelligence, Huashan Hospital, Fudan University
+- Intro：The recent progress of large language models (LLMs), including ChatGPT and GPT-4, in comprehending and responding to human instructions has been remarkable. Nevertheless, these models typically perform better in English and have not been explicitly trained for the medical domain, resulting in suboptimal precision in diagnoses, drug recommendations, and other medical advice. Additionally, training and deploying a dialogue model is still believed to be impossible for hospitals, hindering the promotion of LLMs. To tackle these challenges, we have collected databases of medical dialogues in Chinese with ChatGPT's help and adopted several techniques to train an easy-deploy LLM. Remarkably, we were able to fine-tune the ChatGLM-6B on a single A100 80G in 13 hours, which means having a healthcare-purpose LLM can be very affordable. DoctorGLM is currently an early-stage engineering attempt and contain various mistakes. 
+
+- [Project address](https://github.com/xionghonglin/doctorglm)
+- [Paper](https://arxiv.org/abs/2304.01097)
+- [Model](https://github.com/xionghonglin/doctorglm) 
+
+
+
+#### 0.3  Huatuo-Llama-Med-Chinese (LLaMa based)
+
+- Source： Research Center for Social Computing and Information Retrieval, Harbin Institute of Technology, China
+- 介绍：Large Language Models (LLMs), such as the LLaMA model, have demonstrated their effectiveness in various general-domain natural language processing (NLP) tasks. Nevertheless, LLMs have not yet performed optimally in biomedical domain tasks due to the need for medical expertise in the responses. In response to this challenge, we propose HuaTuo, a LLaMA-based model that has been supervised-fine-tuned with generated QA (Question-Answer) instances. The experimental results demonstrate that HuaTuo generates responses that possess more reliable medical knowledge. 
+- [Project address](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese)
+- [Paper](https://arxiv.org/pdf/2304.06975.pdf)
+- [Model](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese)
+
+
+
+#### 0.4  visual-med-alpaca (LLaMa based)
+
+- Source： University of Cambridge , Ruiping Health, Monash University
+- Intro：Introducing Visual Med-Alpaca, an open-source, parameter-efficient biomedical foundation model that can be integrated with medical "visual experts" for multimodal biomedical tasks. Built upon the LLaMa-7B architecture (Touvron et al., 2023), this model is trained using an instruction set curated collaboratively by GPT-3.5-Turbo and human experts. Leveraging a few hours of instruction-tuning and the inclusion of plug-and-play visual modules, Visual Med-Alpaca can perform a diverse range of tasks, from interpreting radiological images to addressing complex clinical inquiries. The model can be replicated with ease, necessitating only a single consumer GPU.
+- [Project address](https://github.com/cambridgeltl/visual-med-alpaca)
+- [Paper](https://cambridgeltl.github.io/visual-med-alpaca/)
+- [Model](https://github.com/cambridgeltl/visual-med-alpaca)
+
+
+
+
+
+### 1. Existing Medical NLP large model before ChatGPT
 
 #### 1.1 BioMedLM (2.7B)
 
@@ -576,26 +642,25 @@ This section introduces large-scale language models in the field of medical NLP,
 
 - [Project Address](https://github.com/microsoft/BioGPT)
 
-#### 1.3 Medical-chatgpt 
 
-- Source: Google Research and Deep AI
-- Presentation: The implementation of ChatGPT tailored to the primary medical health domain, however, rewarding the ability to collect patient histories and present sound differential diagnoses in a thorough and efficient manner
-- [Project Address](https://github.com/lucidrains/medical-chatgpt)
-- [Paper Address](https://arxiv.org/pdf/2212.13138.pdf)
 
-#### 1.4 BioBERT
+#### 1.3 BioBERT
 
 - Source: Department of Computer Science and Engineering, Korea University, Interdisciplinary Graduate Program in Bioinformatics, Korea University,
 - Introduction: BioBERT (Bidirectional Encoder Representations with Transformers for Biomedical Text Mining) is a domain-specific language representation model pretrained on large-scale biomedical corpora.
 - [Project Address](https://github.com/dmis-lab/biobert)
 - [Paper Address](https://arxiv.org/ftp/arxiv/papers/1901/1901.08746.pdf)
 
-#### 1.5 PubMedBERT
+
+
+#### 1.4 PubMedBERT
 
 - Source: National Center for Biotechnology Information National Library of Medicine, National Institutes of Health Bethesda, MD, USA
 - Introduction: PubMedBERT is pretrained from scratch using abstracts from PubMed.
 - [Paper Address](https://arxiv.org/pdf/2007.15779.pdf)
 - [Model Address](https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract)
+
+
 
 ### 2.Other large models in Chinese that can be fine-tuned in the medical field
 
@@ -968,6 +1033,11 @@ This part focuses more on collecting related papers in the post-ChatGPT era, rou
 
 ### 1. Papers that may be helpful in the post-ChatGPT era (continuously updated)
 
+#### 1.0 Large Language Models Encode Clinical Knowledge
+
+- Paper address: https://arxiv.org/abs/2212.13138
+- Abstract:  Large language models (LLMs) have demonstrated impressive capabilities in natural language understanding and generation, but the quality bar for medical and clinical applications is high. Today, attempts to assess models' clinical knowledge typically rely on automated evaluations on limited benchmarks. There is no standard to evaluate model predictions and reasoning across a breadth of tasks. To address this, we present MultiMedQA, a benchmark combining six existing open question answering datasets spanning professional medical exams, research, and consumer queries; and HealthSearchQA, a new free-response dataset of medical questions searched online. We propose a framework for human evaluation of model answers along multiple axes including factuality, precision, possible harm, and bias. In addition, we evaluate PaLM (a 540-billion parameter LLM) and its instruction-tuned variant, Flan-PaLM, on MultiMedQA. Using a combination of prompting strategies, Flan-PaLM achieves state-of-the-art accuracy on every MultiMedQA multiple-choice dataset (MedQA, MedMCQA, PubMedQA, MMLU clinical topics), including 67.6% accuracy on MedQA (US Medical License Exam questions), surpassing prior state-of-the-art by over 17%. However, human evaluation reveals key gaps in Flan-PaLM responses. To resolve this we introduce instruction prompt tuning, a parameter-efficient approach for aligning LLMs to new domains using a few exemplars. The resulting model, Med-PaLM, performs encouragingly, but remains inferior to clinicians. We show that comprehension, recall of knowledge, and medical reasoning improve with model scale and instruction prompt tuning, suggesting the potential utility of LLMs in medicine. Our human evaluations reveal important limitations of today's models, reinforcing the importance of both evaluation frameworks and method development in creating safe, helpful LLM models for clinical applications.  
+
 #### 1.1 **ChatGPT Performance on USMLE**: The Potential of Using Large Language Models for AI-Assisted Medical Education
 
 - Paper address: https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0000198
@@ -986,9 +1056,12 @@ This part focuses more on collecting related papers in the post-ChatGPT era, rou
 #### 1.4 Check your facts and try again: **Leverage external knowledge and automatic feedback to improve large language models**
 
 - Paper address: https://arxiv.org/abs/2302.12813
-- Summary Translation: Large language models (LLMs), such as ChatGPT, are capable of generating fluent human-like responses for many downstream tasks, such as task-oriented dialogue and question answering. However, applying LLMs to real-world mission-critical applications remains challenging mainly due to their tendency to hallucinate and the inability to use external knowledge. This paper presents an LLM-Augmenter system that augments black-box LLMs with a set of plug-and-play modules. Our system enables the LLM to generate responses based on external knowledge, e.g. stored in a task-specific database. It also iteratively modifies LLM cues to improve model responses using feedback generated by utility functions, such as the ground-truth scores of LLM-generated responses. The effectiveness of LLM-Augmenter is empirically verified in two types of scenarios, task-oriented dialogue and open-domain question answering. LLM-Augmenter significantly reduces ChatGPT hallucinations without sacrificing the fluency and informativeness of its responses. We make the source code and models publicly available.
+- Abstract:  Large language models (LLMs), such as ChatGPT, are capable of generating fluent human-like responses for many downstream tasks, such as task-oriented dialogue and question answering. However, applying LLMs to real-world mission-critical applications remains challenging mainly due to their tendency to hallucinate and the inability to use external knowledge. This paper presents an LLM-Augmenter system that augments black-box LLMs with a set of plug-and-play modules. Our system enables the LLM to generate responses based on external knowledge, e.g. stored in a task-specific database. It also iteratively modifies LLM cues to improve model responses using feedback generated by utility functions, such as the ground-truth scores of LLM-generated responses. The effectiveness of LLM-Augmenter is empirically verified in two types of scenarios, task-oriented dialogue and open-domain question answering. LLM-Augmenter significantly reduces ChatGPT hallucinations without sacrificing the fluency and informativeness of its responses. We make the source code and models publicly available.
 
+#### 1.5 Capabilities of GPT-4 on Medical Challenge Problems
 
+- Paper address: https://arxiv.org/abs/2303.13375
+- Abstract: Large language models (LLMs) have demonstrated remarkable capabilities in natural language understanding and generation across various domains, including medicine. We present a comprehensive evaluation of GPT-4, a state-of-the-art LLM, on medical competency examinations and benchmark datasets. GPT-4 is a general-purpose model that is not specialized for medical problems through training or engineered to solve clinical tasks. Our analysis covers two sets of official practice materials for the USMLE, a three-step examination program used to assess clinical competency and grant licensure in the United States. We also evaluate performance on the MultiMedQA suite of benchmark datasets. Beyond measuring model performance, experiments were conducted to investigate the influence of test questions containing both text and images on model performance, probe for memorization of content during training, and study probability calibration, which is of critical importance in high-stakes applications like medicine. Our results show that GPT-4, without any specialized prompt crafting, exceeds the passing score on USMLE by over 20 points and outperforms earlier general-purpose models (GPT-3.5) as well as models specifically fine-tuned on medical knowledge (Med-PaLM, a prompt-tuned version of Flan-PaLM 540B). In addition, GPT-4 is significantly better calibrated than GPT-3.5, demonstrating a much-improved ability to predict the likelihood that its answers are correct. We also explore the behavior of the model qualitatively through a case study that shows the ability of GPT-4 to explain medical reasoning, personalize explanations to students, and interactively craft new counterfactual scenarios around a medical case. Implications of the findings are discussed for potential uses of GPT-4 in medical education, assessment, and clinical practice, with appropriate attention to challenges of accuracy and safety.
 
 ### 2 Review articles
 

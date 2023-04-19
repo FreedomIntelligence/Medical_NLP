@@ -47,12 +47,17 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
          * [3.2 COMETA](#32-cometa)
          * [3.3 MedMentions](#33-medmentions)
    * [三. 开源预训练模型](#三-开源预训练模型)
-      * [1. 现有Medical NLP大模型](#1-现有medical-nlp大模型)
+      * [0. ChatGPT后 Medical NLP大模型](#0-chatgpt后-medical-nlp大模型)
+         * [0.0 HuatuoGPT  (Bloom  ChatGLM Llama based)](#00-huatuogpt--bloom--chatglm-llama-based)
+         * [0.1 ChatDoctor (LLaMa based)](#01-chatdoctor-llama-based)
+         * [0.2 DoctorGLM  (GLM based)](#02-doctorglm--glm-based)
+         * [0.3  Huatuo-Llama-Med-Chinese (LLaMa based)](#03--huatuo-llama-med-chinese-llama-based)
+         * [0.4  visual-med-alpaca (LLaMa based)](#04--visual-med-alpaca-llama-based)
+      * [1. ChatGPT前 Medical NLP大模型](#1-chatgpt前-medical-nlp大模型)
          * [1.1 BioMedLM (2.7B)](#11-biomedlm-27b)
          * [1.2 BioGPT  (1.5B)](#12-biogpt--15b)
-         * [1.3 Medical-chatgpt](#13-medical-chatgpt)
-         * [1.4 BioBERT](#14-biobert)
-         * [1.5 PubMedBERT](#15-pubmedbert)
+         * [1.3 BioBERT](#13-biobert)
+         * [1.4 PubMedBERT](#14-pubmedbert)
       * [2. 其他可供在医疗领域微调的中文大模型](#2-其他可供在医疗领域微调的中文大模型)
          * [2.1 <a href="https://github.com/lonePatient/awesome-pretrained-chinese-nlp-models#GPT">Awesome List</a>](#21-awesome-list)
          * [2.2 模型参数规模 0B-5B:](#22-模型参数规模-0b-5b)
@@ -92,7 +97,7 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
                * [0.0.2.5 <a href="https://openai.com/research/learning-complex-goals-with-iterated-amplification" rel="nofollow">通过放大弱专家来监督强学习者</a> (2018.10 openai)   迭代放大的 RL 安全技术 解决0.0.2.2](#0025-通过放大弱专家来监督强学习者-201810-openai---迭代放大的-rl-安全技术-解决0022)
                * [0.0.2.6 <a href="https://openai.com/research/fine-tuning-gpt-2" rel="nofollow">根据人类偏好微调语言模型</a>(根据人类偏好微调 GPT-2) (2019 openai) First NLP+RLHF!](#0026-根据人类偏好微调语言模型根据人类偏好微调-gpt-2-2019-openai-first-nlprlhf)
                * [0.0.2.7 <a href="https://openai.com/research/learning-to-summarize-with-human-feedback" rel="nofollow">RLHF in 摘要生成</a>(openai 2020)  Second try NLP+RLHF!](#0027-rlhf-in-摘要生成openai-2020--second-try-nlprlhf)
-               * [0.0.2.8 <a href="https://openai.com/research/truthfulqa" rel="nofollow">TruthfulQA</a>：衡量模型如何模仿人类的谎言 (2021.8.9)  摘要最后一句话：最大的模型通常是最不真实的，我们建议单独扩大模型在提高真实性方面不如使用训练目标进行微调而不是模仿网络文本。   directly lead to 0.0.2.9](#0028-truthfulqa衡量模型如何模仿人类的谎言-202189--摘要最后一句话最大的模型通常是最不真实的我们建议单独扩大模型在提高真实性方面不如使用训练目标进行微调而不是模仿网络文本---directly-lead-to-0028)
+               * [0.0.2.8 <a href="https://openai.com/research/truthfulqa" rel="nofollow">TruthfulQA</a>：衡量模型如何模仿人类的谎言 (2021.8.9)  摘要最后一句话：最大的模型通常是最不真实的，我们建议单独扩大模型在提高真实性方面不如使用训练目标进行微调而不是模仿网络文本。   directly lead to 0.0.2.9](#0028-truthfulqa衡量模型如何模仿人类的谎言-202189--摘要最后一句话最大的模型通常是最不真实的我们建议单独扩大模型在提高真实性方面不如使用训练目标进行微调而不是模仿网络文本---directly-lead-to-0029)
                * [0.0.2.9 <a href="https://openai.com/research/instruction-following" rel="nofollow">instruct GPT</a>(2022.1 openai)  0.0.2.6/7中探索的技术终于和GPT-3进行了对齐！  重点：尽管参数少了 100 多倍，但我们的标签制作者更喜欢1.3B InstructGPT模型的输出，而不是175BGPT-3模型的输出。 I have a question: What if ChatGPT IS MOE of instructGPT-1.3B/6B?](#0029-instruct-gpt20221-openai--00267中探索的技术终于和gpt-3进行了对齐--重点尽管参数少了-100-多倍但我们的标签制作者更喜欢13b-instructgpt模型的输出而不是175bgpt-3模型的输出-i-have-a-question-what-if-chatgpt-is-moe-of-instructgpt-13b6b)
          * [0.1 GPT-x 及其变体的迭代过程](#01-gpt-x-及其变体的迭代过程)
             * [0.1.0 硬件资源和调度的迭代](#010-硬件资源和调度的迭代)
@@ -108,10 +113,12 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
                * [0.1.1.6 <a href="https://openai.com/research/instruction-following" rel="nofollow">instruct GPT</a>(2022.6.27 openai)](#0116-instruct-gpt2022627-openai)
                * [0.1.1.7 <a href="https://openai.com/research/gpt-4" rel="nofollow">GPT-4</a> (openai 2023.3.14)](#0117-gpt-4-openai-2023314)
       * [1. 后ChatGPT时代 可能有帮助的论文(持续更新)](#1-后chatgpt时代-可能有帮助的论文持续更新)
+         * [1.0 大型语言模型编码临床知识](#10-大型语言模型编码临床知识)
          * [1.1 <strong>ChatGPT在USMLE上的表现</strong>：使用大型语言模型进行 AI 辅助医学教育的潜力](#11-chatgpt在usmle上的表现使用大型语言模型进行-ai-辅助医学教育的潜力)
          * [1.2 对 <strong>ChatGPT 的医疗建议进行（图灵）测试</strong>](#12-对-chatgpt-的医疗建议进行图灵测试)
          * [1.3 <strong>Toolformer</strong>：语言模型可以自学使用工具](#13-toolformer语言模型可以自学使用工具)
          * [1.4 检查你的事实并再试一次：<strong>利用外部知识和自动反馈改进大型语言模型</strong>](#14-检查你的事实并再试一次利用外部知识和自动反馈改进大型语言模型)
+         * [1.5  GPT-4 在医学挑战问题上的能力](#15--gpt-4-在医学挑战问题上的能力)
       * [2 综述类文章](#2-综述类文章)
          * [1.生物医学领域的预训练语言模型：系统调查](#1生物医学领域的预训练语言模型系统调查)
          * [2.医疗保健深度学习指南](#2医疗保健深度学习指南)
@@ -443,7 +450,73 @@ https://www.wolterskluwer.com/en/expert-insights/health
 
 该部分介绍医疗NLP领域的大型语言模型，为从业人员提供初始化参数参考和训练方法参考。 基本按照模型大小降序排序。
 
-### 1. 现有Medical NLP大模型
+
+
+### 0. ChatGPT后 Medical NLP大模型
+
+#### 0.0 HuatuoGPT  (Bloom  ChatGLM Llama based)
+
+- 来源： Chinese University of Hong Kong, Shenzhen (CUHKSZ)
+
+- 介绍：HuatuoGPT是一个在庞大的中文医学语料库上训练的大型语言模型 (LLM)。我们与HuatuoGPT的目标是为医疗咨询场景构建更专业的“ChatGPT”。以下是已发布内容的列表：
+
+  1. Huatuo-200K (Medical Instruction Dataset)：从 HuatuoGPT 训练语料库中采样的高质量指令数据集。
+  2. Medical-Chat LLM：一组在我们的 Huatuo-200K 上训练的流行 LLM 的权重。
+  3. HuatuoGPT：HuatuoGPT 在线测试版。
+  4. 医学评估基准：用于评估医学领域多个LLM的评估方法。
+
+  希望我们的知识库将有助于增强智能医学及其相关应用领域。
+
+- [项目地址](https://github.com/FreedomIntelligence/HuatuoGPT)
+
+- [模型](https://github.com/FreedomIntelligence/HuatuoGPT)
+
+
+
+#### 0.1 ChatDoctor (LLaMa based)
+
+- 来源： University of Texas Southwestern Medical Center, Dallas, USA ， University of Illinois at Urbana-Champaign, Urbana, USA  Ohio State University, Columbus, USA  Hangzhou Dianzi University, Hangzhou, China
+- 介绍：通用领域中最近的大型语言模型 (LLM)，例如 ChatGPT，在遵循指令和产生类似人类的响应方面取得了显着的成功。然而，此类语言模型并未针对医学领域量身定制，导致答案准确性较差，无法为医学诊断、药物等提供合理的建议。为了解决这个问题，我们收集了 700 多种疾病及其相应的症状，需要医学测试和推荐的药物，我们从中产生了 5K 次医患对话。此外，我们还从在线问答医疗咨询网站获得了 20 万条真实的医患对话。通过使用这些 205,000 次医患对话对 LLM 进行微调，由此产生的模型具有理解患者需求、提供明智建议、并在各种医疗相关领域提供有价值的帮助。将这些高级语言模型集成到医疗保健中可以彻底改变医疗保健专业人员和患者的沟通方式，最终提高患者护理和结果的整体效率和质量。此外，我们公开了所有源代码、数据集和模型权重，以促进医疗领域对话模型的进一步发展。本项目的训练数据、代码和权重可在： 本项目的训练数据、代码和权重可在：最终提高患者护理和结果的整体效率和质量。此外，我们公开了所有源代码、数据集和模型权重，以促进医疗领域对话模型的进一步发展。本项目的训练数据、代码和权重可在： 本项目的训练数据、代码和权重可在：最终提高患者护理和结果的整体效率和质量。此外，我们公开了所有源代码、数据集和模型权重，以促进医疗领域对话模型的进一步发展。
+- [项目地址](https://github.com/Kent0n-Li/ChatDoctor)
+- [解读文章](https://arxiv.org/abs/2303.14070)
+- [模型](https://github.com/Kent0n-Li/ChatDoctor)
+
+
+
+#### 0.2 DoctorGLM  (GLM based)
+
+- 来源：ShanghaiTech University, hanghai Jiao Tong University, United Imaging Intelligence, Huashan Hospital, Fudan University
+- 介绍：包括 ChatGPT 和 GPT-4 在内的大型语言模型 (LLM) 最近在理解和响应人类指令方面取得了显着进展。然而，这些模型通常在英语中表现更好，并且没有针对医学领域进行明确的训练，导致诊断、药物推荐和其他医学建议的精度不佳。此外，医院仍然认为培训和部署对话模型是不可能的，这阻碍了法学硕士的推广。为了应对这些挑战，我们在 ChatGPT 的帮助下收集了中文医学对话数据库，并采用了多种技术来训练易于部署的 LLM。值得注意的是，我们能够在 13 小时内在单个 A100 80G 上微调 ChatGLM-6B，这意味着拥有医疗保健用途的 LLM 是非常实惠的。DoctorGLM目前是一个早期的工程尝试，存在各种错误。 
+
+- [项目地址](https://github.com/xionghonglin/doctorglm)
+- [解读文章](https://arxiv.org/abs/2304.01097)
+- [模型](https://github.com/xionghonglin/doctorglm) 
+
+
+
+#### 0.3  Huatuo-Llama-Med-Chinese (LLaMa based)
+
+- 来源： Research Center for Social Computing and Information Retrieval, Harbin Institute of Technology, China
+- 介绍：大型语言模型 (LLM)，例如 LLaMA 模型，已经证明了它们在各种通用领域自然语言处理 (NLP) 任务中的有效性。然而，由于响应中需要医学专业知识，法学硕士尚未在生物医学领域的任务中表现最佳。为了应对这一挑战，我们提出了 HuaTuo，这是一种基于 LLaMA 的模型，该模型已通过生成的 QA（问题-答案）实例进行了监督微调。实验结果表明，华佗生成的响应具有更可靠的医学知识。
+- [项目地址](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese)
+- [解读文章](https://arxiv.org/pdf/2304.06975.pdf)
+- [模型](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese)
+
+
+
+#### 0.4  visual-med-alpaca (LLaMa based)
+
+- 来源： University of Cambridge , Ruiping Health, Monash University
+- 介绍：引入Visual Med-Alpaca，这是一种开源、参数高效的生物医学基础模型，可以与医学“视觉专家”集成，用于多模态生物医学任务。该模型基于LLaMa-7B架构（Touvron 等人，2023 年）构建，使用由 GPT-3.5-Turbo 和人类专家共同策划的指令集进行训练。利用几个小时的指令调整和即插即用视觉模块的包含，Visual Med-Alpaca 可以执行各种各样的任务，从解释放射图像到解决复杂的临床查询。该模型可以轻松复制，只需要一个消费类 GPU。
+- [项目地址](https://github.com/cambridgeltl/visual-med-alpaca)
+- [解读文章](https://cambridgeltl.github.io/visual-med-alpaca/)
+- [模型](https://github.com/cambridgeltl/visual-med-alpaca)
+
+
+
+
+
+### 1. ChatGPT前 Medical NLP大模型
 
 #### 1.1 BioMedLM (2.7B)
 
@@ -467,16 +540,9 @@ https://www.wolterskluwer.com/en/expert-insights/health
 
 
 
-#### 1.3 Medical-chatgpt 
-
-- 来源：Google Research and Deep AI
-- 介绍：针对初级医学健康领域量身定制的ChatGPT的实施，但，奖励能够以彻底有效的方式收集患者病史并提出合理的鉴别诊断
-- [项目地址](https://github.com/lucidrains/medical-chatgpt)
-- [论文地址](https://arxiv.org/pdf/2212.13138.pdf)
 
 
-
-#### 1.4 BioBERT
+#### 1.3 BioBERT
 
 - 来源：Department of Computer Science and Engineering, Korea University，Interdisciplinary Graduate Program in Bioinformatics, Korea University, 
 - 介绍： BioBERT（用于生物医学文本挖掘的 Transformers 的双向编码器表示）是一个在大规模生物医学语料库上预训练的特定领域语言表示模型。
@@ -485,12 +551,14 @@ https://www.wolterskluwer.com/en/expert-insights/health
 
 
 
-#### 1.5 PubMedBERT
+#### 1.4 PubMedBERT
 
 - 来源：National Center for Biotechnology Information National Library of Medicine, National Institutes of Health Bethesda, MD, USA
 - 介绍：PubMedBERT使用PubMed 的摘要从头开始预训练。
 - [论文地址](https://arxiv.org/pdf/2007.15779.pdf)
 - [模型地址](https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract)
+
+
 
 
 
@@ -719,7 +787,7 @@ https://www.wolterskluwer.com/en/expert-insights/health
 - 论文地址：https://arxiv.org/abs/2203.02155
 - Blog: https://openai.com/research/instruction-following
 - 摘要翻译：使语言模型更大并不能从本质上使它们更好地遵循用户的意图。例如，大型语言模型可能会生成不真实的、有毒的或对用户没有帮助的输出。换句话说，这些模型与其用户不一致。在本文中，我们展示了一种途径，可以通过根据人类反馈进行微调，使语言模型与用户对各种任务的意图保持一致。从一组标记器编写的提示和通过 OpenAI API 提交的提示开始，我们收集了所需模型行为的标记器演示数据集，我们用它来使用监督学习微调 GPT-3。然后，我们收集模型输出排名的数据集，我们使用该数据集通过人类反馈的强化学习进一步微调该监督模型。我们将生成的模型称为 InstructGPT。在对我们的提示分布的人工评估中，1.3B 参数 InstructGPT 模型的输出优于 175B GPT-3 的输出，尽管参数少 100 倍。此外，InstructGPT 模型显示了真实性的提高和有毒输出生成的减少，同时对公共 NLP 数据集的性能回归最小。尽管 InstructGPT 仍然会犯一些简单的错误，但我们的结果表明，根据人类反馈进行微调是使语言模型与人类意图保持一致的一个有前途的方向。
-- **重点：0.0.2.6/7中探索的技术终于和GPT-3进行了对齐！  尽管参数少了 100 多倍，但我们的标签制作者更喜欢1.3B InstructGPT模型的输出，而不是175BGPT-3模型的输出。 I have a question: What if ChatGPT IS MOE of instructGPT-1.3B/6B?**
+- **重点：0.0.2.6/7中探索的技术终于和GPT-3进行了对齐！  尽管参数少了 100 多倍，但我们的标签制作者更喜欢1.3B InstructGPT模型的输出，而不是175BGPT-3模型的输出。**
 
 
 
@@ -734,6 +802,12 @@ https://www.wolterskluwer.com/en/expert-insights/health
 
 
 ### 1. 后ChatGPT时代 可能有帮助的论文(持续更新)
+
+#### 1.0 大型语言模型编码临床知识
+
+- 论文地址：https://arxiv.org/abs/2212.13138
+
+- 摘要翻译：大型语言模型 (LLM) 在自然语言理解和生成方面展示了令人印象深刻的能力，但医疗和临床应用的质量标准很高。如今，评估模型临床知识的尝试通常依赖于对有限基准的自动评估。没有标准来评估跨任务范围的模型预测和推理。为了解决这个问题，我们提出了 MultiMedQA，这是一个基准，它结合了六个现有的开放式问答数据集，涵盖专业医学检查、研究和消费者查询；和 HealthSearchQA，一个新的在线搜索医学问题的自由回答数据集。我们提出了一个框架，用于沿多个轴对模型答案进行人工评估，包括真实性、精确性、可能的危害和偏见。此外，我们在 MultiMedQA 上评估 PaLM（一个 5400 亿参数的 LLM）及其指令调整变体 Flan-PaLM。通过结合提示策略，Flan-PaLM 在每个 MultiMedQA 多项选择数据集（MedQA、MedMCQA、PubMedQA、MMLU 临床主题）上实现了最先进的准确率，包括 67.6% 在 MedQA（美国医学执照考试问题）上的准确率)，比之前的最先进技术高出 17% 以上。然而，人类评估揭示了 Flan-PaLM 响应中的关键差距。为了解决这个问题，我们引入了指令提示调整，这是一种使用一些示例将 LLM 与新域对齐的参数高效方法。由此产生的模型 Med-PaLM 表现令人鼓舞，但仍然不如临床医生。我们表明，理解、知识回忆和医学推理随着模型规模和指令提示调整而提高，表明法学硕士在医学中的潜在效用。我们的人类评估揭示了当今模型的重要局限性，强化了评估框架和方法开发在为临床应用创建安全、有用的 LLM 模型方面的重要性。
 
 #### 1.1 **ChatGPT在USMLE上的表现**：使用大型语言模型进行 AI 辅助医学教育的潜力
 
@@ -755,7 +829,10 @@ https://www.wolterskluwer.com/en/expert-insights/health
 - 论文地址：https://arxiv.org/abs/2302.12813
 - 摘要翻译：大型语言模型 (LLM)，例如 ChatGPT，能够为许多下游任务生成类似人类的流畅响应，例如面向任务的对话和问答。 然而，将 LLM 应用于现实世界的关键任务应用程序仍然具有挑战性，主要是因为它们倾向于产生幻觉并且无法使用外部知识。 本文提出了一个 LLM-Augmenter 系统，它使用一组即插即用模块来增强黑盒 LLM。 我们的系统使 LLM 生成基于外部知识的响应，例如存储在任务特定的数据库中。 它还迭代地修改 LLM 提示，以使用实用函数生成的反馈改进模型响应，例如LLM 生成的响应的真实性分数。 LLM-Augmenter 的有效性在两种类型的场景中得到了实证验证，即面向任务的对话和开放域问答。 LLM-Augmenter 在不牺牲其响应的流畅性和信息量的情况下显着减少了 ChatGPT 的幻觉。 我们公开提供源代码和模型。
 
+#### 1.5  GPT-4 在医学挑战问题上的能力
 
+- 论文地址：https://arxiv.org/abs/2303.13375
+- 摘要翻译：大型语言模型 (LLM) 在包括医学在内的各个领域展示了自然语言理解和生成方面的卓越能力。我们对 GPT-4（一种最先进的 LLM）在医学能力考试和基准数据集上进行了全面评估。GPT-4 是一种通用模型，它不是专门用于通过训练解决医学问题，也不是为解决临床任务而设计的。我们的分析涵盖了 USMLE 的两套官方实践材料，USMLE 是一个三步考试程序，用于评估美国的临床能力和授予执照。我们还评估了 MultiMedQA 基准数据集套件的性能。除了测量模型性能外，还进行了实验以研究包含文本和图像的测试问题对模型性能的影响，探索训练期间对内容的记忆，并研究概率校准，这在医学等高风险应用中至关重要。我们的结果表明，在没有任何专门提示制作的情况下，GPT-4 比 USMLE 的及格分数高出 20 多分，并且优于早期的通用模型 (GPT-3.5) 以及专门针对医学知识进行微调的模型 (Med- PaLM，Flan-PaLM 540B 的快速调整版本）。此外，GPT-4 的校准明显好于 GPT-3.5，表明预测其答案正确可能性的能力大大提高。我们还通过一个案例研究定性地探索了模型的行为，该案例研究展示了 GPT-4 解释医学推理、向学生提供个性化解释的能力，并围绕医疗案例交互式地设计新的反事实场景。讨论了这些发现对 GPT-4 在医学教育、评估和临床实践中的潜在用途的影响，并适当关注准确性和安全性方面的挑战。
 
 ### 2 综述类文章
 
