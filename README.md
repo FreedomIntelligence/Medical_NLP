@@ -8,609 +8,126 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 > 由于[Cris Lee](https://github.com/lrs1353281004)2021年离开医疗NLP领域，此repo现由[Xidong Wang](https://github.com/wangxidong06)继续维护。
 
+
+
 * [Medical_NLP](#medical_nlp)
-   * [一. 评测/比赛](#一-评测比赛)
-      * [1. 正在进行的评测/比赛：](#1-正在进行的评测比赛)
-         * [1.1 中文：影像学NLP —— 医学影像诊断报告生成](#11-中文影像学nlp--医学影像诊断报告生成)
-         * [1.2 英文：BioNLP Workshop 2023 共享任务：](#12-英文bionlp-workshop-2023-共享任务)
-         * [1.3 英文：MedVidQA 2023](#13-英文medvidqa-2023)
-         * [1.4 中文 (长期有效)：医疗信息处理挑战榜CBLUE数据集](#14-中文-长期有效医疗信息处理挑战榜cblue数据集)
-      * [2. 已结束的评测/比赛(从2021开始)：](#2-已结束的评测比赛从2021开始)
-         * [2.1 中文：非标准化疾病诉求的简单分诊挑战赛2.0](#21-中文非标准化疾病诉求的简单分诊挑战赛20)
-         * [2.2 中文：第八届中国健康信息处理大会(CHIP2022)测评任务](#22-中文第八届中国健康信息处理大会chip2022测评任务)
-         * [2.3 中文：科大讯飞-医疗实体及关系识别挑战赛](#23-中文科大讯飞-医疗实体及关系识别挑战赛)
-         * [2.4 中文：第一届智能对话诊疗评测比赛（CCL 2021）](#24-中文第一届智能对话诊疗评测比赛ccl-2021)
-         * [2.5 英文：MEDIQA-2021](#25-英文mediqa-2021)
-         * [2.6 英文： ICLR-2021-医疗对话生成与自动诊断国际竞赛](#26-英文-iclr-2021-医疗对话生成与自动诊断国际竞赛)
-   * [二. 数据集](#二-数据集)
-      * [1. 中文数据集](#1-中文数据集)
-         * [1.1 中文医患问答对话数据 (1.1M)](#11-中文医患问答对话数据-11m)
-         * [1.2 中文医疗对话数据集（792K）](#12-中文医疗对话数据集792k)
-         * [1.3 CPubMed-KG (4.4M三元组)](#13-cpubmed-kg-44m三元组)
-         * [1.4 CBLUE测评](#14-cblue测评)
-         * [1.5 中文医学知识图谱 CMeKG (1M三元组)](#15-中文医学知识图谱-cmekg-1m三元组)
-         * [1.6 cMedQA2 (108K)](#16-cmedqa2-108k)
-         * [1.7 xywy-KG(294K三元组)](#17-xywy-kg294k三元组)
-         * [1.8 39Health-KG (210K三元组)](#18-39health-kg-210k三元组)
-         * [1.9 CHIP历年测评 (官方测评)](#19-chip历年测评-官方测评)
-         * [1.10 瑞金医院糖尿病数据集 (糖尿病)](#110-瑞金医院糖尿病数据集-糖尿病)
-         * [1.11 天池新冠肺炎问句匹配比赛 (新冠)](#111-天池新冠肺炎问句匹配比赛-新冠)
-      * [2. 中国临床医生常用知识信息源](#2-中国临床医生常用知识信息源)
-         * [2.1 pubMed](#21-pubmed)
-         * [2.2 Up-to-date](#22-up-to-date)
-         * [2.3 临床指南](#23-临床指南)
-         * [2.4 用药助手](#24-用药助手)
-         * [2.5 丁香园](#25-丁香园)
-         * [2.6 丁香医生](#26-丁香医生)
-      * [3. 英文数据集](#3-英文数据集)
-         * [3.1 PubMedQA](#31-pubmedqa)
-         * [3.2 COMETA](#32-cometa)
-         * [3.3 MedMentions](#33-medmentions)
-   * [三. 开源预训练模型](#三-开源预训练模型)
-      * [0. ChatGPT后 Medical NLP大模型](#0-chatgpt后-medical-nlp大模型)
-         * [0.0 HuatuoGPT  (Bloom  ChatGLM Llama based)](#00-huatuogpt--bloom--chatglm-llama-based)
-         * [0.1 ChatDoctor (LLaMa based)](#01-chatdoctor-llama-based)
-         * [0.2 DoctorGLM  (GLM based)](#02-doctorglm--glm-based)
-         * [0.3  Huatuo-Llama-Med-Chinese (LLaMa based)](#03--huatuo-llama-med-chinese-llama-based)
-         * [0.4  visual-med-alpaca (LLaMa based)](#04--visual-med-alpaca-llama-based)
-      * [1. ChatGPT前 Medical NLP大模型](#1-chatgpt前-medical-nlp大模型)
-         * [1.1 BioMedLM (2.7B)](#11-biomedlm-27b)
-         * [1.2 BioGPT  (1.5B)](#12-biogpt--15b)
-         * [1.3 BioBERT](#13-biobert)
-         * [1.4 PubMedBERT](#14-pubmedbert)
-      * [2. 其他可供在医疗领域微调的中文大模型](#2-其他可供在医疗领域微调的中文大模型)
-         * [2.1 <a href="https://github.com/lonePatient/awesome-pretrained-chinese-nlp-models#GPT">Awesome List</a>](#21-awesome-list)
-         * [2.2 模型参数规模 0B-5B:](#22-模型参数规模-0b-5b)
-            * [2.2.1 <a href="https://github.com/Langboat/Mengzi">孟子(1B)</a>](#221-孟子1b)
-            * [2.2.2 <a href="https://github.com/THUDM/glm">GLM-2b</a>](#222-glm-2b)
-            * [2.2.3 <a href="https://github.com/TsinghuaAI/CPM-1-Generate">CPM-1(2.6B)</a>](#223-cpm-126b)
-            * [2.2.4 <a href="https://github.com/imcaspar/gpt2-ml">gpt2-ml(1.5B)</a>](#224-gpt2-ml15b)
-            * [2.2.5 <a href="https://openi.pcl.ac.cn/PCL-Platform.Intelligence/PanGu-Alpha" rel="nofollow">Pangu-Alpha(2.6B)</a>](#225-pangu-alpha26b)
-            * [2.2.6 <a href="https://github.com/THUDM/Chinese-Transformer-XL">Chinese-Transformer-XL(2.9B)</a>](#226-chinese-transformer-xl29b)
-         * [2.3  模型参数规模 5B-10B:](#23--模型参数规模-5b-10b)
-            * [2.3.1 <a href="https://github.com/THUDM/ChatGLM-6B"><strong>ChatGLM-6B</strong></a>](#231-chatglm-6b)
-            * [2.3.2 <a href="https://github.com/tatsu-lab/stanford_alpaca">Stanford Alpaca(7B)</a>](#232-stanford-alpaca7b)
-            * [2.3.2 <a href="https://github.com/THUDM/glm">GLM-10B</a>](#232-glm-10b)
-            * [2.3.3 <a href="https://github.com/PaddlePaddle/ERNIE">ERNIE3.0(10B)</a>](#233-ernie3010b)
-         * [2.4  模型参数规模 10B-100B:](#24--模型参数规模-10b-100b)
-            * [2.4.1 <a href="https://openi.pcl.ac.cn/PCL-Platform.Intelligence/PanGu-Alpha" rel="nofollow">Pangu-Alpha(13B)</a>](#241-pangu-alpha13b)
-            * [2.4.2 <a href="https://github.com/TsinghuaAI/CPM-2-Finetune">CPM-2(11B)</a>](#242-cpm-211b)
-         * [2.5  模型参数规模 100B--:](#25--模型参数规模-100b--)
-            * [2.5.1 <a href="https://github.com/THUDM/GLM-130B"><strong>GLM-130B</strong></a>   向坚定地克服困难最终实现该项目 并且无私分享<a href="https://keg.cs.tsinghua.edu.cn/glm-130b/zh/posts/glm-130b" rel="nofollow">细节经验</a>的大佬们献上尊敬！](#251-glm-130b---向坚定地克服困难最终实现该项目-并且无私分享细节经验的大佬们献上尊敬)
-            * [2.5.2 <a href="https://openi.pcl.ac.cn/BAAI/WuDao-Model/src/branch/master/CPM" rel="nofollow">CPM-2-MoE(198B)</a>](#252-cpm-2-moe198b)
-            * [2.5.3 <a href="https://openi.pcl.ac.cn/PCL-Platform.Intelligence/PanGu-Alpha" rel="nofollow">Pangu-Alpha(200B)</a>](#253-pangu-alpha200b)
-            * [2.5.4 <a href="https://github.com/Shawn-Inspur/Yuan-1.0">源1.0(245B)</a>](#254-源10245b)
-   * [四. 相关论文](#四-相关论文)
-      * [0. ChatGPT/GPT-4 从何而来？(Thanks to CloseAI, strictly speaking we don't know how ChatGPT and GPT-4 came about. But show the respect to the scientists and engineers at this institution who pushed the boundaries of AI's capability.)](#0-chatgptgpt-4-从何而来thanks-to-closeai-strictly-speaking-we-dont-know-how-chatgpt-and-gpt-4-came-about-but-show-the-respect-to-the-scientists-and-engineers-at-this-institution-who-pushed-the-boundaries-of-ais-capability)
-         * [0.0 RLHF](#00-rlhf)
-            * [0.0.1 openai RLHF+NLP之前 出现在RLHF领域的工作](#001-openai-rlhfnlp之前-出现在rlhf领域的工作)
-               * [0.0.1.1 从轨迹偏好查询中学习政策的贝叶斯方法(NIPS 2012)](#0011-从轨迹偏好查询中学习政策的贝叶斯方法nips-2012)
-               * [0.0.1.2 通过人类反馈训练机器人：案例研究(ICSR 2013)](#0012-通过人类反馈训练机器人案例研究icsr-2013)
-               * [0.0.1.3 APRIL：基于主动偏好学习的强化学习(2012)](#0013-april基于主动偏好学习的强化学习2012)
-               * [0.0.1.4 通过反馈编程(2014)](#0014-通过反馈编程2014)
-               * [0.0.1.5 在 Atari 中从人类偏好和示范中进行奖励学习(2018)](#0015-在-atari-中从人类偏好和示范中进行奖励学习2018)
-            * [0.0.2 openai RLHF思维链路(有一点个人主观biase)](#002-openai-rlhf思维链路有一点个人主观biase)
-               * [0.0.2.1 高效反馈(2015) Start from this <a href="https://ai-alignment.com/efficient-feedback-a347748b1557#.exjnsupts" rel="nofollow">blog</a>！ 促成了0.0.2.3 的尝试](#0021-高效反馈2015-start-from-this-blog-促成了0023-的尝试)
-               * [0.0.2.2 <a href="https://openai.com/research/faulty-reward-functions" rel="nofollow">使用损坏的奖励渠道进行强化学习</a>(2017.3 openai) openai对RL Policy安全性的考虑 促成了0.0.2.4/5 的尝试](#0022-使用损坏的奖励渠道进行强化学习20173-openai-openai对rl-policy安全性的考虑-促成了00245-的尝试)
-               * [0.0.2.3 <a href="https://openai.com/research/learning-from-human-preferences" rel="nofollow">从人类偏好中深度强化学习</a>(2017.6 openai) RLHF in RL 初探](#0023-从人类偏好中深度强化学习20176-openai-rlhf-in-rl-初探)
-               * [0.0.2.4  <a href="https://openai.com/research/debate" rel="nofollow">通过辩论提升人工智能安全</a> (2018.5 openai)  通过辩论 实现RL安全 解决0.0.2.2](#0024--通过辩论提升人工智能安全-20185-openai--通过辩论-实现rl安全-解决0022)
-               * [0.0.2.5 <a href="https://openai.com/research/learning-complex-goals-with-iterated-amplification" rel="nofollow">通过放大弱专家来监督强学习者</a> (2018.10 openai)   迭代放大的 RL 安全技术 解决0.0.2.2](#0025-通过放大弱专家来监督强学习者-201810-openai---迭代放大的-rl-安全技术-解决0022)
-               * [0.0.2.6 <a href="https://openai.com/research/fine-tuning-gpt-2" rel="nofollow">根据人类偏好微调语言模型</a>(根据人类偏好微调 GPT-2) (2019 openai) First NLP+RLHF!](#0026-根据人类偏好微调语言模型根据人类偏好微调-gpt-2-2019-openai-first-nlprlhf)
-               * [0.0.2.7 <a href="https://openai.com/research/learning-to-summarize-with-human-feedback" rel="nofollow">RLHF in 摘要生成</a>(openai 2020)  Second try NLP+RLHF!](#0027-rlhf-in-摘要生成openai-2020--second-try-nlprlhf)
-               * [0.0.2.8 <a href="https://openai.com/research/truthfulqa" rel="nofollow">TruthfulQA</a>：衡量模型如何模仿人类的谎言 (2021.8.9)  摘要最后一句话：最大的模型通常是最不真实的，我们建议单独扩大模型在提高真实性方面不如使用训练目标进行微调而不是模仿网络文本。   directly lead to 0.0.2.9](#0028-truthfulqa衡量模型如何模仿人类的谎言-202189--摘要最后一句话最大的模型通常是最不真实的我们建议单独扩大模型在提高真实性方面不如使用训练目标进行微调而不是模仿网络文本---directly-lead-to-0029)
-               * [0.0.2.9 <a href="https://openai.com/research/instruction-following" rel="nofollow">instruct GPT</a>(2022.1 openai)  0.0.2.6/7中探索的技术终于和GPT-3进行了对齐！  重点：尽管参数少了 100 多倍，但我们的标签制作者更喜欢1.3B InstructGPT模型的输出，而不是175BGPT-3模型的输出。 I have a question: What if ChatGPT IS MOE of instructGPT-1.3B/6B?](#0029-instruct-gpt20221-openai--00267中探索的技术终于和gpt-3进行了对齐--重点尽管参数少了-100-多倍但我们的标签制作者更喜欢13b-instructgpt模型的输出而不是175bgpt-3模型的输出-i-have-a-question-what-if-chatgpt-is-moe-of-instructgpt-13b6b)
-         * [0.1 GPT-x 及其变体的迭代过程](#01-gpt-x-及其变体的迭代过程)
-            * [0.1.0 硬件资源和调度的迭代](#010-硬件资源和调度的迭代)
-               * [0.1.0.1 <a href="https://kubernetes.io/" rel="nofollow">kubernetes</a>](#0101-kubernetes)
-               * [0.1.0.2 <a href="https://openai.com/research/scaling-kubernetes-to-2500-nodes" rel="nofollow">将 Kubernetes 扩展到 2,500 个节点</a>](#0102-将-kubernetes-扩展到-2500-个节点)
-               * [0.1.0.3 将 <a href="https://openai.com/research/scaling-kubernetes-to-7500-nodes" rel="nofollow">Kubernetes 扩展到 7,500 个节点</a> 为大型模型提供了可扩展的基础设施。同时也为神经语言模型的缩放定律等快速小规模迭代研究提供了基础设施。](#0103-将-kubernetes-扩展到-7500-个节点-为大型模型提供了可扩展的基础设施同时也为神经语言模型的缩放定律等快速小规模迭代研究提供了基础设施)
-            * [0.1.1 模型的迭代](#011-模型的迭代)
-               * [0.1.1.1 <a href="https://openai.com/research/language-unsupervised" rel="nofollow">GPT</a>(2018.6.11 openai)](#0111-gpt2018611-openai)
-               * [0.1.1.2 <a href="https://openai.com/research/better-language-models" rel="nofollow">GPT-2</a>(2019.2.14 openai)](#0112-gpt-22019214-openai)
-               * [0.1.1.3 <a href="https://openai.com/research/language-models-are-few-shot-learners" rel="nofollow">GPT-3: 语言模型是小样本学习者</a> (2020.3.28 openai)](#0113-gpt-3-语言模型是小样本学习者-2020328-openai)
-               * [0.1.1.4 <a href="https://openai.com/research/clip" rel="nofollow">CLIP</a> 从自然语言监督中学习可迁移视觉模型(2021.1.5openai)](#0114-clip-从自然语言监督中学习可迁移视觉模型202115openai)
-               * [0.1.1.5 <a href="https://openai.com/blog/openai-codex" rel="nofollow">CodeX</a> 评估在代码上训练的大型语言模型 (2021.6.7 openai)](#0115-codex-评估在代码上训练的大型语言模型-202167-openai)
-               * [0.1.1.6 <a href="https://openai.com/research/instruction-following" rel="nofollow">instruct GPT</a>(2022.6.27 openai)](#0116-instruct-gpt2022627-openai)
-               * [0.1.1.7 <a href="https://openai.com/research/gpt-4" rel="nofollow">GPT-4</a> (openai 2023.3.14)](#0117-gpt-4-openai-2023314)
-      * [1. 后ChatGPT时代 可能有帮助的论文(持续更新)](#1-后chatgpt时代-可能有帮助的论文持续更新)
-         * [1.0 大型语言模型编码临床知识](#10-大型语言模型编码临床知识)
-         * [1.1 <strong>ChatGPT在USMLE上的表现</strong>：使用大型语言模型进行 AI 辅助医学教育的潜力](#11-chatgpt在usmle上的表现使用大型语言模型进行-ai-辅助医学教育的潜力)
-         * [1.2 对 <strong>ChatGPT 的医疗建议进行（图灵）测试</strong>](#12-对-chatgpt-的医疗建议进行图灵测试)
-         * [1.3 <strong>Toolformer</strong>：语言模型可以自学使用工具](#13-toolformer语言模型可以自学使用工具)
-         * [1.4 检查你的事实并再试一次：<strong>利用外部知识和自动反馈改进大型语言模型</strong>](#14-检查你的事实并再试一次利用外部知识和自动反馈改进大型语言模型)
-         * [1.5  GPT-4 在医学挑战问题上的能力](#15--gpt-4-在医学挑战问题上的能力)
-      * [2 综述类文章](#2-综述类文章)
-         * [1.生物医学领域的预训练语言模型：系统调查](#1生物医学领域的预训练语言模型系统调查)
-         * [2.医疗保健深度学习指南](#2医疗保健深度学习指南)
-      * [3. 2021前仓库论文总结存档](#3-2021前仓库论文总结存档)
-         * [3.1 电子病历相关文章](#31-电子病历相关文章)
-         * [3.2 医学关系抽取](#32-医学关系抽取)
-         * [3.3 医学知识图谱](#33-医学知识图谱)
-         * [3.4 辅助诊断](#34-辅助诊断)
-         * [3.5 ACL2020医学领域相关论文列表](#35-acl2020医学领域相关论文列表)
-         * [3.6 医疗实体Linking（标准化）](#36-医疗实体linking标准化)
-         * [3.7 AAAI2020 医学NLP相关论文列表](#37-aaai2020-医学nlp相关论文列表)
-         * [3.8 EMNLP2020 医学NLP相关论文列表](#38-emnlp2020-医学nlp相关论文列表)
-   * [五. 开源工具包](#五-开源工具包)
-      * [1. 分词工具：PKUSEG](#1-分词工具pkuseg)
-   * [六. 工业级产品解决方案](#六-工业级产品解决方案)
-      * [1. <a href="https://01.baidu.com/index.html" rel="nofollow">灵医智慧</a>](#1-灵医智慧)
-      * [2. <a href="https://open.zuoshouyisheng.com/" rel="nofollow">左手医生</a>](#2-左手医生)
-      * [3. <a href="https://www.yiducloud.com.cn/academy.html" rel="nofollow">医渡云研究院-医学自然语言处理</a>](#3-医渡云研究院-医学自然语言处理)
-      * [4. <a href="https://ai.baidu.com/solution/mtp" rel="nofollow">百度-医学文本结构化</a>](#4-百度-医学文本结构化)
-      * [5. <a href="https://help.aliyun.com/document_detail/179395.html" rel="nofollow">阿里云-医学自然语言处理</a>](#5-阿里云-医学自然语言处理)
-   * [七. blog分享](#七-blog分享)
-      * [1. 后ChatGPT时代 可能有帮助的博客(持续更新)](#1-后chatgpt时代-可能有帮助的博客持续更新)
-         * [1.1 <a href="https://crfm.stanford.edu/2023/03/13/alpaca.html" rel="nofollow">Alpaca：一个强大的开源指令跟随模型</a>](#11-alpaca一个强大的开源指令跟随模型)
-      * [2. 2021前仓库blog分享存档](#2-2021前仓库blog分享存档)
-         * [2.1 <a href="http://www.oreilly.com.cn/radar/?p=2083" rel="nofollow">医疗领域构建自然语言处理系统的经验教训</a>](#21-医疗领域构建自然语言处理系统的经验教训)
-         * [2.2 <a href="https://mp.weixin.qq.com/s/tA44U4bJUttnROfrzpNYcQ" rel="nofollow">大数据时代的医学公共数据库与数据挖掘技术简介</a>](#22-大数据时代的医学公共数据库与数据挖掘技术简介)
-         * [2.3 <a href="https://mp.weixin.qq.com/s/RhcHvRWHRnYUg6u9vXoIGA" rel="nofollow">从ACL 2021中看NLP在医疗领域应用的发展，附资源下载</a>](#23-从acl-2021中看nlp在医疗领域应用的发展附资源下载)
-   * [八. 友情链接](#八-友情链接)
-      * [1. <a href="https://github.com/GanjinZero/awesome_Chinese_medical_NLP">awesome_Chinese_medical_NLP</a>](#1-awesome_chinese_medical_nlp)
-      * [2. <a href="https://www.cluebenchmarks.com/dataSet_search.html" rel="nofollow">中文NLP数据集搜索</a>](#2-中文nlp数据集搜索)
-      * [3. <a href="https://github.com/beamandrew/medical-data">medical-data(海量医疗相关数据)</a>](#3-medical-data海量医疗相关数据)
-      * [4. <a href="https://tianchi.aliyun.com/dataset" rel="nofollow">天池数据集(其中包含多个医疗NLP数据集)</a>](#4-天池数据集其中包含多个医疗nlp数据集)
-
-## 一. 评测/比赛
-
-### 1. 正在进行的评测/比赛：
-
-#### 1.1 中文：影像学NLP —— 医学影像诊断报告生成
-
-- 来源：2023全球人工智能技术创新大赛 赛道一
-- 介绍：本赛道任务要求参赛队伍根据医生对CT的影像描述文本数据（即对医学影像特征的描述），生成诊断报告文本。与传统文本生成任务不同的是，医学影像诊断报告内容具有专业性、明确性和离散性，因此也需要针对性的算法与模型设计。报告生成结果按照指定评价指标进行评测和排名，得分最优者获胜。
-- [官方地址](https://gaiic.caai.cn/ai2023/) 
-
-#### 1.2 英文：BioNLP Workshop 2023 共享任务：
-
-[官方地址](https://aclweb.org/aclwiki/BioNLP_Workshop#SHARED_TASKS_2023)
+   * [1. 评测](#1-评测)
+      * [1.1  中文医疗基准测评：CMB / CMExam / PromptCBLUE](#11--中文医疗基准测评cmb--cmexam--promptcblue)
+      * [1.2  英文医疗基准测评:](#12--英文医疗基准测评)
+   * [2. 比赛](#2-比赛)
+      * [2.1 正在进行的比赛](#21-正在进行的比赛)
+      * [2.2 已经结束的比赛](#22-已经结束的比赛)
+   * [3. 数据集](#3-数据集)
+      * [3.1 中文](#31-中文)
+      * [3.2 英文](#32-英文)
+   * [4. 开源预训练模型](#4-开源预训练模型)
+      * [4.1 中文医疗 请参考<a href="https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#%E5%8C%BB%E7%96%97">这里</a>](#41-中文医疗-请参考这里)
+      * [4.2 中文通用大模型 请参考<a href="https://github.com/HqWu-HITCS/Awesome-Chinese-LLM">这里</a>](#42-中文通用大模型-请参考这里)
+   * [5. 相关论文](#5-相关论文)
+   * [6. 开源工具包](#6-开源工具包)
+   * [7. 工业级产品解决方案](#7-工业级产品解决方案)
+   * [8. blog分享](#8-blog分享)
+   * [9. 友情链接](#9-友情链接)
+     
 
-- 1A：问题列表总结
-  - 介绍：从电子健康记录中的日常护理笔记中自动总结患者的主要问题，有助于减轻临床医生的信息和认知超载，并通过床边的计算机化诊断决策支持提供增强智能。Problem List Summarization 的任务旨在使用住院期间提供者的进度记录输入生成患者日常护理计划中的诊断和问题列表。
-  - [详细信息](https://physionet.org/content/bionlp-workshop-2023-task-1a/1.0.0/)
-- 1B：放射学报告摘要
-  - 介绍：放射学报告摘要的研究领域目前面临一个重要的局限性：大多数研究是在胸部X光片上进行的。为了减轻这些限制，我们提出了两个数据集：一个共享摘要任务，包括六种不同的模式和解剖结构，总共 79,779 个样本，基于 MIMIC-III 数据库。一项关于胸部 X 光放射学报告的共享摘要任务，其中包含斯坦福大学的图像和全新的域外测试集。
-  - [详细信息](https://vilmedic.app/misc/bionlp23/sharedtask)
-- 2：生物医学研究文章的外行摘要
-  - 介绍：生物医学出版物包含与健康相关的突出主题的最新研究，从常见疾病到全球流行病。这通常会导致他们的内容引起广泛的受众兴趣，包括研究人员、医疗专业人员、记者，甚至公众。然而，此类文章中使用的高度技术性和专业性语言通常会使非专业观众难以理解其内容。因此，这些模型在经过训练以生成更具可读性、包含更多背景信息和更少技术术语（即“外行摘要”）的摘要时，有可能帮助扩大对高技术文档的访问。这项共同任务围绕生物医学研究文章的抽象总结，强调可控性和迎合非专家观众。
-  - [详细信息](https://biolaysumm.org/)
 
-#### 1.3 英文：MedVidQA 2023
 
-- 来源：美国国立卫生研究院
-- 介绍：在线视频可用性的激增改变了获取信息和知识的方式。以类似的方式，医疗教学视频更适合和有益于通过视觉和口头交流向消费者需要指导的医疗保健问题传递关键信息。本任务由两个主要任务组成：视频语料库视觉答案定位 (VCVAL) 和医学教学问题生成 (MIQG)。
-- [官方地址](https://medvidqa.github.io/index.html)
+## 1. 评测
 
-#### 1.4 中文 (长期有效)：医疗信息处理挑战榜CBLUE数据集
+### 1.1  中文医疗基准测评：CMB / CMExam / PromptCBLUE 
 
-- CBLUE 1.0：
-  - 来源：中国中文信息学会医疗健康与生物信息处理专业委员会在合法开放共享的理念下发起，由阿里云天池平台承办，并由医渡云（北京）技术有限公司、平安医疗科技、北京大学、郑州大学、鹏城实验室、哈尔滨工业大学(深圳）、同济大学、夸克、阿里巴巴达摩院等开展智慧医疗研究的单位共同协办，旨在推动中文医学NLP技术和社区的发展。**由CHIP会议往届的学术评测比赛和阿里夸克医疗搜索业务的数据集组成。**
-  - 介绍：涵盖了医学文本信息抽取（实体识别、关系抽取）、医学术语归一化、医学文本分类、医学句子语义相关性判定4大类常见的医疗信息处理任务，共包含8个子任务。
-- CBLUE 2.0：
-  - 来源：相比1.0 新增 复旦大学、腾讯天衍实验室和中山大学。
-  - 介绍：涵盖了医学文本信息抽取（实体识别、关系抽取）、医学术语归一化、医学文本分类、医学句子语义相关性判定、医疗对话理解和生成5大类常见的医疗信息处理任务，共包含15个子任务。
-    - 详细对比请参考 https://zhuanlan.zhihu.com/p/469465499 
+| 名称        | 来源                                                         | 介绍                                                         | github地址                                  | 官方测评网站地址                                             |
+| ----------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------- | ------------------------------------------------------------ |
+| CMB         | 各个临床医学工种各阶段考试；临床复杂病例问诊                 | 300K选择题，高质量病例问诊题目；全方位多层次注入和测评医疗知识和复杂临床问诊能力 | https://github.com/FreedomIntelligence/CMB  | [https://cmedbenchmark.llmzoo.com](https://cmedbenchmark.llmzoo.com/) |
+| CMExam      | 执业医师资格考试往年题                                       | 60K+ 多项选择题和 5 个附加问题注释                           | https://github.com/williamliujl/CMExam      |                                                              |
+| PromptCBLUE | CBLUE                                                        | 将CBLUE基准进行二次开发，将16种不同的医疗场景NLP任务全部转化为基于提示的语言生成任务,形成首个中文医疗场景的LLM评测基准。 | https://github.com/michael-wzhu/PromptCBLUE | https://tianchi.aliyun.com/competition/entrance/532085/introduction |
+| CBLUE       | CHIP会议往届的学术评测比赛和阿里夸克医疗搜索业务的数据集组成 | 医学文本信息抽取（实体识别、关系抽取）、医学术语归一化、医学文本分类、医学句子关系判定和医学QA共5大类任务8个子任务 | https://github.com/CBLUEbenchmark/CBLUE     | https://tianchi.aliyun.com/dataset/95414                     |
 
-- [CBLUE评测官方地址](https://tianchi.aliyun.com/dataset/dataDetail?dataId=95414)
-- [论文地址](https://arxiv.org/abs/2106.08087)
-- [Github项目地址](https://github.com/CBLUEbenchmark/CBLUE)
+### 1.2  英文医疗基准测评: 
 
-### 2. 已结束的评测/比赛(从2021开始)：
+| 名称          | 来源   | 介绍                                                         | github地址 | 官方测评网站地址 |
+| ------------- | ------ | ------------------------------------------------------------ | ---------- | ---------------- |
+| MultiMedBench | Google | 是一种大型多模态生成模型，可以使用相同的模型权重集灵活地编码和解释生物医学数据，包括临床语言、成像和基因组学 |            |                  |
 
-> 此部分包含从2021.2.20开始的测评/比赛 按照比赛出现时间倒序整理
 
-#### 2.1 中文：非标准化疾病诉求的简单分诊挑战赛2.0
 
-- 来源：科大讯飞
-- 介绍：进行简单分诊需要一定的数据和经验知识进行支撑。本次比赛提供了部分好大夫在线的真实问诊数据，经过严格脱敏，提供给参赛者进行单分类任务。具体为：通过处理文字诉求，给出20个常见的就诊方向之一和61个疾病方向之一。
-- [官方地址](http://challenge.xfyun.cn/topic/info?type=disease-claims-2022&ch=ds22-dw-sq03)
+## 2. 比赛
 
-#### 2.2 中文：第八届中国健康信息处理大会(CHIP2022)测评任务
+### 2.1 正在进行的比赛
 
-[官方地址](http://cips-chip.org.cn/) 
+暂无 欢迎补充~
 
-1. 测评一：面向“基因-疾病”的关联语义挖掘任务
-   - 介绍：在海量科学文献中，“基因-疾病”的关联机理通过突变、基因等系列分子对象及其触发词获得描述，自然语言处理为自动挖掘这一隐性知识条目提供了可能，亦为健康医学信息的自动化处理提供解决方案。任务包括三个子任务：1、触发词实体识别；2、语义角色标注，3、“基因，调控类型，疾病”三元组抽取。所有数据取自AGAC语料库。
-   - [任务网址](http://cips-chip.org.cn/2022/eval1)
-2. 测评二：医疗因果实体关系抽取任务
-   - 介绍：现代医疗很强调解释性，互联网上存在大量的医疗的问答和知识类的文本中存在大量的因果关系解释。任务为构建医疗因果知识图谱。
-   - [任务网址](http://cips-chip.org.cn/2022/eval2)
-3. 测评三：从医疗文本中抽取诊疗决策树
-   - 介绍：探索如何从诊疗决策知识源（临床诊疗指南、医学教科书）中自动抽取诊疗决策树。
-   - [任务网址](http://cips-chip.org.cn/2022/eval3)
-4. 测评四：医疗纸质文档电子档(ePaper)OCR识别
-   - 介绍：利用OCR及NLP技术将纸质材料上的信息进行电子化、结构化很有必要。  任务数据集中包括：出院小结、门诊发票、购药发票、住院发票这四类病历材料。主要针对需求：生活场景图片，提取数据，并生成电子结构化数据。
-   - [任务网址](http://cips-chip.org.cn/2022/eval4)
-5. 测评五：临床诊断编码任务
-   - 介绍：疾病分类与手术操作分类编码是对患者疾病诊断和治疗信息的加工过程，是病案信息管理的重要环节。中国推出了疾病分类与代码国家临床版2.0和手术操作分类代码国家临床版2.0，在部分医院中得到了应用。本次评测任务主要目标是针对中文电子病历中进行诊断编码。给定一次就诊的相关诊断信息（包括入院诊断、术前诊断、术后诊断、出院诊断），以及手术名称、药品名称、医嘱名称，要求给出其对应的国家临床版2.0标准词。所有就诊数据均来自于真实医疗数据，并以《疾病分类与代码国家临床版2.0》词表为标准进行了标注。
-   - [任务网址](http://cips-chip.org.cn/2022/eval5)
+### 2.2 已经结束的比赛
 
-#### 2.3 中文：科大讯飞-医疗实体及关系识别挑战赛
+**英文**
 
-- 来源：科大讯飞
+| 名称                                     | 来源                        | 介绍                                                         | 地址                                                         |
+| ---------------------------------------- | --------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| BioNLP Workshop 2023 共享任务            | BioNLP Workshop             | 问题列表总结;放射学报告摘要;生物医学研究文章的外行摘要       | https://aclweb.org/aclwiki/BioNLP_Workshop#SHARED_TASKS_2023 |
+| MedVidQA 2023                            | 美国国立卫生研究院          | 在线视频可用性的激增改变了获取信息和知识的方式。以类似的方式，医疗教学视频更适合和有益于通过视觉和口头交流向消费者需要指导的医疗保健问题传递关键信息。本任务由两个主要任务组成：视频语料库视觉答案定位  (VCVAL) 和医学教学问题生成 (MIQG)。 | https://medvidqa.github.io/index.html                        |
+| MEDIQA-2021                              | NAACL-BioNLP 2021 workshop. | 解决医疗领域的三项摘要任务：消费者健康问题摘要、多答案摘要和放射报告摘要，并探索使用不同的评估指标进行总结。 | https://sites.google.com/view/mediqa2021                     |
+| ICLR-2021-医疗对话生成与自动诊断国际竞赛 | ICLR 2021 workshop          | 本次竞赛以自动医疗诊断对话系统的开发为主题，目前设置了两大赛道：医疗对话生成赛道和自动医疗诊断赛道。 | https://mlpcp21.github.io/pages/challenge                    |
 
-- 介绍：针对医技报告单(一种半结构化的数据，不同医生的表述风格不一致，文本形式缺乏统一的规范)的命名实体识别和实体关系抽取。
-- [评测官网](https://challenge.xfyun.cn/topic/info?type=medical-entity&ch=dc-web-35)
+**中文**
 
-#### 2.4 中文：第一届智能对话诊疗评测比赛（CCL 2021）
+| 名称                                         | 来源                                | 介绍                                                         | 地址                                                         |
+| -------------------------------------------- | ----------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 影像学NLP —— 医学影像诊断报告生成            | 2023全球人工智能技术创新大赛 赛道一 | 本赛道任务要求参赛队伍根据医生对CT的影像描述文本数据（即对医学影像特征的描述），生成诊断报告文本。与传统文本生成任务不同的是，医学影像诊断报告内容具有专业性、明确性和离散性，因此也需要针对性的算法与模型设计。报告生成结果按照指定评价指标进行评测和排名，得分最优者获胜。 | https://gaiic.caai.cn/ai2023/                                |
+| 非标准化疾病诉求的简单分诊挑战赛2.0          | 科大讯飞                            | 进行简单分诊需要一定的数据和经验知识进行支撑。本次比赛提供了部分好大夫在线的真实问诊数据，经过严格脱敏，提供给参赛者进行单分类任务。具体为：通过处理文字诉求，给出20个常见的就诊方向之一和61个疾病方向之一。 | http://challenge.xfyun.cn/topic/info?type=disease-claims-2022&ch=ds22-dw-sq03 |
+| 第八届中国健康信息处理大会(CHIP2022)测评任务 | CHIP2022                            | 面向“基因-疾病”的关联语义挖掘任务;  医疗因果实体关系抽取任务;从医疗文本中抽取诊疗决策树;医疗纸质文档电子档(ePaper)OCR识别;临床诊断编码任务 | http://cips-chip.org.cn/)                                    |
+| 科大讯飞-医疗实体及关系识别挑战赛            | 科大讯飞                            | 针对医技报告单(一种半结构化的数据，不同医生的表述风格不一致，文本形式缺乏统一的规范)的命名实体识别和实体关系抽取。 | http://www.fudan-disc.com/sharedtask/imcs21/index.html       |
 
-- 来源：中国计算语言学大会2021（CCL 2021）：中山医院姚璐老师对数据标注框架设计提供专业指导建议。陈伟，钟宗烨，王静致远， 葛羽，王亚丽，温惠梅，司若琰等同学参与数据标注过程。
 
-- 介绍: 发布5项技术评测任务，其中包含“智能医疗对话诊疗”任务。 本次智能对话诊疗评测设置医患对话理解(命名实体识别、症状识别)、医疗报告自动生成和智能化医疗诊断3个赛道共四个任务。
-- [任务网址](http://www.fudan-disc.com/sharedtask/imcs21/index.html)
 
-#### 2.5 英文：MEDIQA-2021
 
-- 来源： NAACL-BioNLP 2021 workshop.
-- 介绍：解决医疗领域的三项摘要任务：消费者健康问题摘要、多答案摘要和放射报告摘要，并探索使用不同的评估指标进行总结。
-- [MEDIQA评测地址](https://sites.google.com/view/mediqa2021)
 
-#### 2.6 英文： ICLR-2021-医疗对话生成与自动诊断国际竞赛
+## 3. 数据集
 
-- 来源：ICLR 2021 workshop
+### 3.1 中文
 
+| 名称                              | 介绍                                                         | 地址                                                         |
+| --------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Huatuo-26M                        | Huatuo-26M 是迄今为止最大的中医问答数据集。该数据集包含超过 2600  万条高质量医学问答对，涵盖疾病、症状、治疗和药物信息等广泛主题。Huatuo-26M  对于希望增强医疗领域人工智能应用（例如聊天机器人、智能诊断系统等）的研究人员、开发人员和公司来说是宝贵的资源。 | https://github.com/FreedomIntelligence/Huatuo-26M            |
+| Yidu-S4K                          | 命名实体识别,实体及属性抽取                                  | http://openkg.cn/dataset/yidu-s4k                            |
+| Yidu-N7K                          | 临床语标准化                                                 | http://openkg.cn/dataset/yidu-n7k                            |
+| 中文医药方面的问答数据集          | 医疗问答                                                     | https://github.com/zhangsheng93/cMedQA2                      |
+| 中文医患问答对话数据              | 医疗问答                                                     | https://github.com/UCSD-AI4H/Medical-Dialogue-System         |
+| 中文医疗对话数据集                | 包含六个科室的医学问答数据，github开源数据 ，来源不明。      | https://github.com/Toyhom/Chinese-medical-dialogue-data      |
+| CPubMed-KG (4.4M三元组)           | 中华医学会高质量全文期刊数据所构建的大规模中文开放医学知识图谱及开放式医学知识在线协同构建平台，旨在通过完全开放、协作的机制来打破中文医学知识的瓶颈，支撑智慧医疗技术的发展。 | https://cpubmed.openi.org.cn/graph/wiki                      |
+| CBLUE                             | 涵盖了医学文本信息抽取（实体识别、关系抽取）、医学术语归一化、医学文本分类、医学句子语义相关性判定、医疗对话理解和生成5大类常见的医疗信息处理任务，共包含15个子任务。 | https://github.com/CBLUEbenchmark/CBLUE                      |
+| 中文医学知识图谱 CMeKG (1M三元组) | CMeKG（Chinese Medical Knowledge  Graph）是利用自然语言处理与文本挖掘技术，基于大规模医学文本数据，以人机结合的方式研发的中文医学知识图谱。 | http://cmekg.pcl.ac.cn/                                      |
+| cMedQA2 (108K)                    | 中文医药方面的问答数据集，超过10万条。                       | https://github.com/zhangsheng93/cMedQA2                      |
+| xywy-KG(294K三元组)               | 44.1K实体 294.1K 三元组                                      | https://github.com/baiyang2464/chatbot-base-on-Knowledge-Graph |
+| 39Health-KG (210K三元组)          | 包括15项信息，其中7类实体，约3.7万实体，21万实体关系。       | https://github.com/zhihao-chen/QASystemOnMedicalGraph        |
+| CHIP历年测评 (官方测评)           | CHIP历年测评 (官方测评)                                      | http://cips-chip.org.cn/2022/callforeval ;  http://www.cips-chip.org.cn/2021/ ;   http://cips-chip.org.cn/2020/ |
+| 瑞金医院糖尿病数据集 (糖尿病)     | 数据集来自天池大赛。此数据集旨在通过糖尿病相关的教科书、研究论文来做糖尿病文献挖掘并构建糖尿病知识图谱。参赛选手需要设计高准确率，高效的算法来挑战这一科学难题。第一赛季课题为“基于糖尿病临床指南和研究论文的实体标注构建”，第二赛季课题为“基于糖尿病临床指南和研究论文的实体间关系构建”。 | https://tianchi.aliyun.com/competition/entrance/231687/information |
+| 天池新冠肺炎问句匹配比赛 (新冠)   | 本次大赛数据包括：脱敏之后的医疗问题数据对和标注数据。医疗问题涉及“肺炎”、“支原体肺炎”、“支气管炎”、“上呼吸道感染”、“肺结核”、“哮喘”、“胸膜炎”、“肺气肿”、“感冒”、“咳血”等10个病种。 | https://tianchi.aliyun.com/competition/entrance/231776/information |
 
-- 介绍：本次竞赛以自动医疗诊断对话系统的开发为主题，目前设置了两大赛道：医疗对话生成赛道和自动医疗诊断赛道。
-- [竞赛官方地址](https://mlpcp21.github.io/pages/challenge) 
+### 3.2 英文
 
+| 名称        | 介绍                                          | 地址                                          |
+| ----------- | --------------------------------------------- | --------------------------------------------- |
+| PubMedQA    | 基于Pubmed提取的医学问答数据集                | https://arxiv.org/abs/1909.06146              |
+| COMETA      | 社交媒体中的医疗实体链接数据。发表于EMNLP2020 | https://www.siphs.org/                        |
+| MedMentions | 基于Pubmed摘要的生物医学实体链接数据集        | https://github.com/chanzuckerberg/MedMentions |
+| webMedQA    | 医疗问答                                      | https://github.com/hejunqing/webMedQA         |
+| MediQA      | 文本概括                                      | https://sites.google.com/view/mediqa2021      |
 
 
 
 
-## 二. 数据集
 
-> 此部分包含大型的或者具有特色的中英文数据集，基本按数据集大小(问题数量)降序排序。
+## 4. 开源预训练模型
 
-### 1. 中文数据集
+### 4.1 中文医疗 请参考[这里](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#%E5%8C%BB%E7%96%97)
 
-> 此部分包含大型的或者具有特色的中英文数据集，基本按数据集大小(问题数量)降序排序。
+### 4.2 中文通用大模型 请参考[这里](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM)
 
-#### 1.1 中文医患问答对话数据 (1.1M)
 
-- 介绍: 来自haodf.com 的中文医患对话数据。
 
-- [项目地址](https://github.com/UCSD-AI4H/Medical-Dialogue-System)
 
-- 度盘下载地址: https://pan.baidu.com/s/1ZwzNgvAAMQk4klerTspsoA   提取码: lbo4
 
-
-
-#### 1.2 中文医疗对话数据集（792K）
-
-- 介绍：包含六个科室的医学问答数据，github开源数据 ，来源不明。
-
-- [项目地址](https://github.com/Toyhom/Chinese-medical-dialogue-data)
-
-
-
-#### 1.3 CPubMed-KG (4.4M三元组)
-
-- 来源：中国中文信息学会医疗健康与生物信息处理专业委员会、语言与知识计算专委会医疗知识图谱专业组、深圳计算机学会人工智能专委会、哈尔滨工业大学（深圳）联合国内高水平医疗机构、中华医学会。
-- 介绍：中华医学会高质量全文期刊数据所构建的大规模中文开放医学知识图谱及开放式医学知识在线协同构建平台，旨在通过完全开放、协作的机制来打破中文医学知识的瓶颈，支撑智慧医疗技术的发展。
-- [项目地址](https://cpubmed.openi.org.cn/graph/wiki)
-
-
-
-#### 1.4 CBLUE测评 
-
-- CBLUE 1.0：
-  - 来源：中国中文信息学会医疗健康与生物信息处理专业委员会在合法开放共享的理念下发起，由阿里云天池平台承办，并由医渡云（北京）技术有限公司、平安医疗科技、北京大学、郑州大学、鹏城实验室、哈尔滨工业大学(深圳）、同济大学、夸克、阿里巴巴达摩院等开展智慧医疗研究的单位共同协办，旨在推动中文医学NLP技术和社区的发展。**由CHIP会议往届的学术评测比赛和阿里夸克医疗搜索业务的数据集组成。**
-  - 介绍：涵盖了医学文本信息抽取（实体识别、关系抽取）、医学术语归一化、医学文本分类、医学句子语义相关性判定4大类常见的医疗信息处理任务，共包含8个子任务。
-- CBLUE 2.0：
-  - 来源：相比1.0 新增 复旦大学、腾讯天衍实验室和中山大学。
-  - 介绍：涵盖了医学文本信息抽取（实体识别、关系抽取）、医学术语归一化、医学文本分类、医学句子语义相关性判定、医疗对话理解和生成5大类常见的医疗信息处理任务，共包含15个子任务。
-    - 详细对比请参考 https://zhuanlan.zhihu.com/p/469465499 
-
-- [CBLUE评测官方地址](https://tianchi.aliyun.com/dataset/dataDetail?dataId=95414)
-- [论文地址](https://arxiv.org/abs/2106.08087)
-- [Github项目地址](https://github.com/CBLUEbenchmark/CBLUE)
-
-
-
-
-
-#### 1.5 中文医学知识图谱 CMeKG (1M三元组)
-
-- 介绍：CMeKG（Chinese Medical Knowledge Graph）是利用自然语言处理与文本挖掘技术，基于大规模医学文本数据，以人机结合的方式研发的中文医学知识图谱。CMeKG的构建参考了ICD、ATC、SNOMED、MeSH等权威的国际医学标准以及规模庞大、多源异构的临床指南、行业标准、诊疗规范与医学百科等医学文本信息。CMeKG 1.0包括：6310种疾病、19853种药物（西药、中成药、中草药）、1237种诊疗技术及设备的结构化知识描述，涵盖疾病的临床症状、发病部位、药物治疗、手术治疗、鉴别诊断、影像学检查、高危因素、传播途径、多发群体、就诊科室等以及药物的成分、适应症、用法用量、有效期、禁忌证等30余种常见关系类型，CMeKG描述的概念关系实例及属性三元组达100余万。
-
-- [项目地址](http://cmekg.pcl.ac.cn/)
-
-
-
-####  1.6 cMedQA2 (108K)
-
-- 介绍：中文医药方面的问答数据集，超过10万条。
-
-  - questions.csv：所有的问题及其内容。answers.csv ：所有问题的答案。
-
-  - train_candidates.txt， dev_candidates.txt， test_candidates.txt ：将上述两个文件进行了拆分。
-
-- [数据集地址](https://www.kesci.com/home/dataset/5d313070cf76a60036e4b023/document)
-
-- [数据集github地址](https://github.com/zhangsheng93/cMedQA2)
-
-
-
-#### 1.7 xywy-KG(294K三元组)
-
-- 来源：寻医问药网
-- 介绍：44.1K实体  294.1K 三元组
-- [项目地址](https://github.com/baiyang2464/chatbot-base-on-Knowledge-Graph)
-
-
-
-#### 1.8 39Health-KG (210K三元组)
-
-- 来源：39健康网。
-- 介绍：包括15项信息，其中7类实体，约3.7万实体，21万实体关系。
-- [项目地址](https://github.com/zhihao-chen/QASystemOnMedicalGraph)
-
-
-
-#### 1.9 CHIP历年测评 (官方测评)
-
-1. CHIP2022:  http://cips-chip.org.cn/2022/callforeval
-2. CHIP2021: http://www.cips-chip.org.cn/2021/
-3. CHIP2020: http://cips-chip.org.cn/2020/
-
-
-
-#### 1.10 瑞金医院糖尿病数据集 (糖尿病)
-
-- 介绍：数据集来自天池大赛。此数据集旨在通过糖尿病相关的教科书、研究论文来做糖尿病文献挖掘并构建糖尿病知识图谱。参赛选手需要设计高准确率，高效的算法来挑战这一科学难题。第一赛季课题为“基于糖尿病临床指南和研究论文的实体标注构建”，第二赛季课题为“基于糖尿病临床指南和研究论文的实体间关系构建”。
-  - 官方提供的数据只包含训练集，真正用于最终排名的测试集没有给出。
-
-- [数据集地址](https://tianchi.aliyun.com/competition/entrance/231687/information)
-
-- 度盘下载地址：https://pan.baidu.com/s/1CWKblBNBqR-vs2h0xiXSdQ   提取码：0c54
-
-
-
-#### 1.11 天池新冠肺炎问句匹配比赛 (新冠)
-
-- 介绍：本次大赛数据包括：脱敏之后的医疗问题数据对和标注数据。医疗问题涉及“肺炎”、“支原体肺炎”、“支气管炎”、“上呼吸道感染”、“肺结核”、“哮喘”、“胸膜炎”、“肺气肿”、“感冒”、“咳血”等10个病种。
-
-- [数据集地址(需注册)](https://tianchi.aliyun.com/competition/entrance/231776/information)
-
-- [线上第四名解决方案及代码](https://github.com/Makaixin/similar-sentence-pairs-in-epidemic)
-
-- [线上第一名解决方案及代码](https://github.com/zzy99/epidemic-sentence-pair) 
-
-
-
-
-
-### 2. 中国临床医生常用知识信息源
-
-#### 2.1 pubMed
-
- https://pubmed.ncbi.nlm.nih.gov/ 
-
-#### 2.2 Up-to-date
-
-https://www.wolterskluwer.com/en/expert-insights/health
-
-#### 2.3 临床指南
-
- https://guide.medlive.cn/
-
-#### 2.4 用药助手
-
- https://drugs.dxy.cn/
-
-#### 2.5 丁香园
-
- https://www.dxy.cn/
-
-#### 2.6 丁香医生
-
- https://dxy.com/
-
-
-
-
-
-
-
-
-
-
-### 3. 英文数据集
-
-#### 3.1 PubMedQA
-
-- 介绍： 基于Pubmed提取的医学问答数据集。PubMedQA has 1k expert-annotated, 61.2k unlabeled and 211.3k artificially gen- erated QA instances. 
-- [论文地址](https://arxiv.org/abs/1909.06146)
-
-#### 3.2 COMETA
-
-- 介绍： 社交媒体中的医疗实体链接数据。发表于EMNLP2020。
-
-
-- 数据获取方式： https://www.siphs.org/      https://github.com/cambridgeltl/cometa
-
-
-- [论文地址](https://arxiv.org/pdf/2010.03295.pdf)
-
-#### 3.3 MedMentions
-
-- 介绍： 基于Pubmed摘要的生物医学实体链接数据集。发表于AKBC 2019。
-
-
-- [数据集地址](https://github.com/chanzuckerberg/MedMentions)
-
-- [论文地址](https://arxiv.org/abs/1902.09476)
-
-
-
-
-
-## 三. 开源预训练模型
-
-该部分介绍医疗NLP领域的大型语言模型，为从业人员提供初始化参数参考和训练方法参考。 基本按照模型大小降序排序。
-
-
-
-### 0. ChatGPT后 Medical NLP大模型
-
-#### 0.0 HuatuoGPT  (Bloom  ChatGLM Llama based)
-
-- 来源： Chinese University of Hong Kong, Shenzhen (CUHKSZ)
-
-- 介绍：HuatuoGPT是一个在庞大的中文医学语料库上训练的大型语言模型 (LLM)。我们与HuatuoGPT的目标是为医疗咨询场景构建更专业的“ChatGPT”。以下是已发布内容的列表：
-
-  1. Huatuo-200K (Medical Instruction Dataset)：从 HuatuoGPT 训练语料库中采样的高质量指令数据集。
-  2. Medical-Chat LLM：一组在我们的 Huatuo-200K 上训练的流行 LLM 的权重。
-  3. HuatuoGPT：HuatuoGPT 在线测试版。
-  4. 医学评估基准：用于评估医学领域多个LLM的评估方法。
-
-  希望我们的知识库将有助于增强智能医学及其相关应用领域。
-
-- [项目地址](https://github.com/FreedomIntelligence/HuatuoGPT)
-
-- [模型](https://github.com/FreedomIntelligence/HuatuoGPT)
-
-
-
-#### 0.1 ChatDoctor (LLaMa based)
-
-- 来源： University of Texas Southwestern Medical Center, Dallas, USA ， University of Illinois at Urbana-Champaign, Urbana, USA  Ohio State University, Columbus, USA  Hangzhou Dianzi University, Hangzhou, China
-- 介绍：通用领域中最近的大型语言模型 (LLM)，例如 ChatGPT，在遵循指令和产生类似人类的响应方面取得了显着的成功。然而，此类语言模型并未针对医学领域量身定制，导致答案准确性较差，无法为医学诊断、药物等提供合理的建议。为了解决这个问题，我们收集了 700 多种疾病及其相应的症状，需要医学测试和推荐的药物，我们从中产生了 5K 次医患对话。此外，我们还从在线问答医疗咨询网站获得了 20 万条真实的医患对话。通过使用这些 205,000 次医患对话对 LLM 进行微调，由此产生的模型具有理解患者需求、提供明智建议、并在各种医疗相关领域提供有价值的帮助。将这些高级语言模型集成到医疗保健中可以彻底改变医疗保健专业人员和患者的沟通方式，最终提高患者护理和结果的整体效率和质量。此外，我们公开了所有源代码、数据集和模型权重，以促进医疗领域对话模型的进一步发展。本项目的训练数据、代码和权重可在： 本项目的训练数据、代码和权重可在：最终提高患者护理和结果的整体效率和质量。此外，我们公开了所有源代码、数据集和模型权重，以促进医疗领域对话模型的进一步发展。本项目的训练数据、代码和权重可在： 本项目的训练数据、代码和权重可在：最终提高患者护理和结果的整体效率和质量。此外，我们公开了所有源代码、数据集和模型权重，以促进医疗领域对话模型的进一步发展。
-- [项目地址](https://github.com/Kent0n-Li/ChatDoctor)
-- [解读文章](https://arxiv.org/abs/2303.14070)
-- [模型](https://github.com/Kent0n-Li/ChatDoctor)
-
-
-
-#### 0.2 DoctorGLM  (GLM based)
-
-- 来源：ShanghaiTech University, hanghai Jiao Tong University, United Imaging Intelligence, Huashan Hospital, Fudan University
-- 介绍：包括 ChatGPT 和 GPT-4 在内的大型语言模型 (LLM) 最近在理解和响应人类指令方面取得了显着进展。然而，这些模型通常在英语中表现更好，并且没有针对医学领域进行明确的训练，导致诊断、药物推荐和其他医学建议的精度不佳。此外，医院仍然认为培训和部署对话模型是不可能的，这阻碍了法学硕士的推广。为了应对这些挑战，我们在 ChatGPT 的帮助下收集了中文医学对话数据库，并采用了多种技术来训练易于部署的 LLM。值得注意的是，我们能够在 13 小时内在单个 A100 80G 上微调 ChatGLM-6B，这意味着拥有医疗保健用途的 LLM 是非常实惠的。DoctorGLM目前是一个早期的工程尝试，存在各种错误。 
-
-- [项目地址](https://github.com/xionghonglin/doctorglm)
-- [解读文章](https://arxiv.org/abs/2304.01097)
-- [模型](https://github.com/xionghonglin/doctorglm) 
-
-
-
-#### 0.3  Huatuo-Llama-Med-Chinese (LLaMa based)
-
-- 来源： Research Center for Social Computing and Information Retrieval, Harbin Institute of Technology, China
-- 介绍：大型语言模型 (LLM)，例如 LLaMA 模型，已经证明了它们在各种通用领域自然语言处理 (NLP) 任务中的有效性。然而，由于响应中需要医学专业知识，法学硕士尚未在生物医学领域的任务中表现最佳。为了应对这一挑战，我们提出了 HuaTuo，这是一种基于 LLaMA 的模型，该模型已通过生成的 QA（问题-答案）实例进行了监督微调。实验结果表明，华佗生成的响应具有更可靠的医学知识。
-- [项目地址](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese)
-- [解读文章](https://arxiv.org/pdf/2304.06975.pdf)
-- [模型](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese)
-
-
-
-#### 0.4  visual-med-alpaca (LLaMa based)
-
-- 来源： University of Cambridge , Ruiping Health, Monash University
-- 介绍：引入Visual Med-Alpaca，这是一种开源、参数高效的生物医学基础模型，可以与医学“视觉专家”集成，用于多模态生物医学任务。该模型基于LLaMa-7B架构（Touvron 等人，2023 年）构建，使用由 GPT-3.5-Turbo 和人类专家共同策划的指令集进行训练。利用几个小时的指令调整和即插即用视觉模块的包含，Visual Med-Alpaca 可以执行各种各样的任务，从解释放射图像到解决复杂的临床查询。该模型可以轻松复制，只需要一个消费类 GPU。
-- [项目地址](https://github.com/cambridgeltl/visual-med-alpaca)
-- [解读文章](https://cambridgeltl.github.io/visual-med-alpaca/)
-- [模型](https://github.com/cambridgeltl/visual-med-alpaca)
-
-
-
-
-
-### 1. ChatGPT前 Medical NLP大模型
-
-#### 1.1 BioMedLM (2.7B)
-
-- 来源：Stanford  Chris Manning and Percy Liang Group
-- 介绍：引入了一种新的 2.7B 参数语言模型，该模型在生物医学文献上进行了训练，为医学问答提供了改进的技术水平。（注意：应持有“PubMed”商标的 NIH 的要求，该模型已重命名为 BioMedLM。未来的更新将参考 BioMedLM）
-
-- [项目地址](https://github.com/stanford-crfm/BioMedLM)
-
-- [解读文章](https://crfm.stanford.edu/2022/12/15/pubmedgpt.html)
-
-- [模型](https://huggingface.co/stanford-crfm/pubmedgpt/tree/main)
-
-
-
-#### 1.2 BioGPT  (1.5B)
-
-- 来源：Microsoft  Tie-Yan Liu Group
-- 介绍：BioGPT是一种在大规模生物医学文献上预训练的特定领域生成式 Transformer 语言模型，在 PubMedQA上的准确率为 78.2%，创造了新的记录
-
-- [项目地址](https://github.com/microsoft/BioGPT)
-
-
-
-
-
-#### 1.3 BioBERT
-
-- 来源：Department of Computer Science and Engineering, Korea University，Interdisciplinary Graduate Program in Bioinformatics, Korea University, 
-- 介绍： BioBERT（用于生物医学文本挖掘的 Transformers 的双向编码器表示）是一个在大规模生物医学语料库上预训练的特定领域语言表示模型。
-- [项目地址](https://github.com/dmis-lab/biobert)
-- [论文地址](https://arxiv.org/ftp/arxiv/papers/1901/1901.08746.pdf)
-
-
-
-#### 1.4 PubMedBERT
-
-- 来源：National Center for Biotechnology Information National Library of Medicine, National Institutes of Health Bethesda, MD, USA
-- 介绍：PubMedBERT使用PubMed 的摘要从头开始预训练。
-- [论文地址](https://arxiv.org/pdf/2007.15779.pdf)
-- [模型地址](https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract)
-
-
-
-
-
-### 2. 其他可供在医疗领域微调的中文大模型
-
-#### 2.1 [Awesome List](https://github.com/lonePatient/awesome-pretrained-chinese-nlp-models#GPT) 
-
-#### 2.2 模型参数规模 0B-5B:
-
-##### 2.2.1 [孟子(1B)](https://github.com/Langboat/Mengzi)
-
-##### 2.2.2 [GLM-2b](https://github.com/THUDM/glm)
-
-##### 2.2.3 [CPM-1(2.6B)](https://github.com/TsinghuaAI/CPM-1-Generate)
-
-##### 2.2.4 [gpt2-ml(1.5B)](https://github.com/imcaspar/gpt2-ml)
-
-##### 2.2.5 [Pangu-Alpha(2.6B)](https://openi.pcl.ac.cn/PCL-Platform.Intelligence/PanGu-Alpha)
-
-##### 2.2.6 [Chinese-Transformer-XL(2.9B)](https://github.com/THUDM/Chinese-Transformer-XL)
-
-#### 2.3  模型参数规模 5B-10B:
-
-##### 2.3.1 [**ChatGLM-6B**](https://github.com/THUDM/ChatGLM-6B)  
-
-##### 2.3.2 [Stanford Alpaca(7B)](https://github.com/tatsu-lab/stanford_alpaca)
-
-##### 2.3.2 [GLM-10B](https://github.com/THUDM/glm)
-
-##### 2.3.3 [ERNIE3.0(10B)](https://github.com/PaddlePaddle/ERNIE)
-
-#### 2.4  模型参数规模 10B-100B:
-
-##### 2.4.1 [Pangu-Alpha(13B)](https://openi.pcl.ac.cn/PCL-Platform.Intelligence/PanGu-Alpha)
-
-##### 2.4.2 [CPM-2(11B)](https://github.com/TsinghuaAI/CPM-2-Finetune)
-
-#### 2.5  模型参数规模 100B--:
-
-##### 2.5.1 [**GLM-130B**](https://github.com/THUDM/GLM-130B)   向坚定地克服困难最终实现该项目 并且无私分享[细节经验](https://keg.cs.tsinghua.edu.cn/glm-130b/zh/posts/glm-130b)的大佬们献上尊敬！
-
-##### 2.5.2 [CPM-2-MoE(198B)](https://openi.pcl.ac.cn/BAAI/WuDao-Model/src/branch/master/CPM)
-
-##### 2.5.3 [Pangu-Alpha(200B)](https://openi.pcl.ac.cn/PCL-Platform.Intelligence/PanGu-Alpha)
-
-##### 2.5.4 [源1.0(245B)](https://github.com/Shawn-Inspur/Yuan-1.0)
-
-
-
-
-
-## 四. 相关论文
+## 5. 相关论文
 
 此部分 更加侧重于收集 后ChatGPT时代的相关论文，大致以论文发表时间为序。
 
@@ -1018,7 +535,7 @@ https://www.wolterskluwer.com/en/expert-insights/health
 
 
 
-## 五. 开源工具包
+## 6. 开源工具包
 
 ### 1. 分词工具：PKUSEG
 
@@ -1029,7 +546,7 @@ https://www.wolterskluwer.com/en/expert-insights/health
 
 
 
-## 六. 工业级产品解决方案
+## 7. 工业级产品解决方案
 
 ### 1. [灵医智慧](https://01.baidu.com/index.html)
 
@@ -1045,7 +562,7 @@ https://www.wolterskluwer.com/en/expert-insights/health
 
 
 
-## 七. blog分享
+## 8. blog分享
 
 ### 1. 后ChatGPT时代 可能有帮助的博客(持续更新)
 
@@ -1065,7 +582,7 @@ https://www.wolterskluwer.com/en/expert-insights/health
 
 
 
-## 八. 友情链接
+## 9. 友情链接
 
 ### 1. [awesome_Chinese_medical_NLP](https://github.com/GanjinZero/awesome_Chinese_medical_NLP)
 
