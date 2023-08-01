@@ -36,18 +36,18 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 ### 1.1  中文医疗基准测评：CMB / CMExam / PromptCBLUE 
 
-| 名称        | 来源                                                         | 介绍                                                         | github地址                                  | 官方测评网站地址                                             |
-| ----------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------- | ------------------------------------------------------------ |
-| CMB         | 各个临床医学工种各阶段考试；临床复杂病例问诊                 | 300K选择题，高质量病例问诊题目；全方位多层次注入和测评医疗知识和复杂临床问诊能力 | https://github.com/FreedomIntelligence/CMB  | [https://cmedbenchmark.llmzoo.com](https://cmedbenchmark.llmzoo.com/) |
-| CMExam      | 执业医师资格考试往年题                                       | 60K+ 多项选择题和 5 个附加问题注释                           | https://github.com/williamliujl/CMExam      |                                                              |
-| PromptCBLUE | CBLUE                                                        | 将CBLUE基准进行二次开发，将16种不同的医疗场景NLP任务全部转化为基于提示的语言生成任务,形成首个中文医疗场景的LLM评测基准。 | https://github.com/michael-wzhu/PromptCBLUE | https://tianchi.aliyun.com/competition/entrance/532085/introduction |
-| CBLUE       | CHIP会议往届的学术评测比赛和阿里夸克医疗搜索业务的数据集组成 | 医学文本信息抽取（实体识别、关系抽取）、医学术语归一化、医学文本分类、医学句子关系判定和医学QA共5大类任务8个子任务 | https://github.com/CBLUEbenchmark/CBLUE     | https://tianchi.aliyun.com/dataset/95414                     |
+| 名称        | 来源                                                         | github地址                                  |
+| ----------- | ------------------------------------------------------------ | ------------------------------------------- |
+| CMB         | 各个临床医学工种各阶段考试；临床复杂病例问诊                 | https://github.com/FreedomIntelligence/CMB  |
+| CMExam      | 执业医师资格考试往年题                                       | https://github.com/williamliujl/CMExam      |
+| PromptCBLUE | CBLUE                                                        | https://github.com/michael-wzhu/PromptCBLUE |
+| CBLUE       | CHIP会议往届的学术评测比赛和阿里夸克医疗搜索业务的数据集组成 | https://github.com/CBLUEbenchmark/CBLUE     |
 
 ### 1.2  英文医疗基准测评: 
 
-| 名称          | 来源   | 介绍                                                         | github地址 | 官方测评网站地址 |
-| ------------- | ------ | ------------------------------------------------------------ | ---------- | ---------------- |
-| MultiMedBench | Google | 是一种大型多模态生成模型，可以使用相同的模型权重集灵活地编码和解释生物医学数据，包括临床语言、成像和基因组学 |            |                  |
+| 名称          | 来源   | 介绍                     | github地址 | 官方测评网站地址 |
+| ------------- | ------ | ------------------------ | ---------- | ---------------- |
+| MultiMedBench | Google | 是一种大型多模态生成模型 |            |                  |
 
 
 
@@ -64,7 +64,7 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 | 名称                                     | 来源                        | 介绍                                                         | 地址                                                         |
 | ---------------------------------------- | --------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | BioNLP Workshop 2023 共享任务            | BioNLP Workshop             | 问题列表总结;放射学报告摘要;生物医学研究文章的外行摘要       | https://aclweb.org/aclwiki/BioNLP_Workshop#SHARED_TASKS_2023 |
-| MedVidQA 2023                            | 美国国立卫生研究院          | 在线视频可用性的激增改变了获取信息和知识的方式。以类似的方式，医疗教学视频更适合和有益于通过视觉和口头交流向消费者需要指导的医疗保健问题传递关键信息。本任务由两个主要任务组成：视频语料库视觉答案定位  (VCVAL) 和医学教学问题生成 (MIQG)。 | https://medvidqa.github.io/index.html                        |
+| MedVidQA 2023                            | 美国国立卫生研究院          | 在线视频可用性的激增改变了获取信息和知识的方式。             | https://medvidqa.github.io/index.html                        |
 | MEDIQA-2021                              | NAACL-BioNLP 2021 workshop. | 解决医疗领域的三项摘要任务：消费者健康问题摘要、多答案摘要和放射报告摘要，并探索使用不同的评估指标进行总结。 | https://sites.google.com/view/mediqa2021                     |
 | ICLR-2021-医疗对话生成与自动诊断国际竞赛 | ICLR 2021 workshop          | 本次竞赛以自动医疗诊断对话系统的开发为主题，目前设置了两大赛道：医疗对话生成赛道和自动医疗诊断赛道。 | https://mlpcp21.github.io/pages/challenge                    |
 
@@ -72,10 +72,10 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 | 名称                                         | 来源                                | 介绍                                                         | 地址                                                         |
 | -------------------------------------------- | ----------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 影像学NLP —— 医学影像诊断报告生成            | 2023全球人工智能技术创新大赛 赛道一 | 本赛道任务要求参赛队伍根据医生对CT的影像描述文本数据（即对医学影像特征的描述），生成诊断报告文本。与传统文本生成任务不同的是，医学影像诊断报告内容具有专业性、明确性和离散性，因此也需要针对性的算法与模型设计。报告生成结果按照指定评价指标进行评测和排名，得分最优者获胜。 | https://gaiic.caai.cn/ai2023/                                |
-| 非标准化疾病诉求的简单分诊挑战赛2.0          | 科大讯飞                            | 进行简单分诊需要一定的数据和经验知识进行支撑。本次比赛提供了部分好大夫在线的真实问诊数据，经过严格脱敏，提供给参赛者进行单分类任务。具体为：通过处理文字诉求，给出20个常见的就诊方向之一和61个疾病方向之一。 | http://challenge.xfyun.cn/topic/info?type=disease-claims-2022&ch=ds22-dw-sq03 |
+| 影像学NLP —— 医学影像诊断报告生成            | 2023全球人工智能技术创新大赛 赛道一 | 本赛道任务要求参赛队伍根据医生对CT的影像描述文本数据         | https://gaiic.caai.cn/ai2023/                                |
+| 非标准化疾病诉求的简单分诊挑战赛2.0          | 科大讯飞                            | 进行简单分诊需要一定的数据和经验知识进行支撑。               | http://challenge.xfyun.cn/topic/info?type=disease-claims-2022&ch=ds22-dw-sq03 |
 | 第八届中国健康信息处理大会(CHIP2022)测评任务 | CHIP2022                            | 面向“基因-疾病”的关联语义挖掘任务;  医疗因果实体关系抽取任务;从医疗文本中抽取诊疗决策树;医疗纸质文档电子档(ePaper)OCR识别;临床诊断编码任务 | http://cips-chip.org.cn/)                                    |
-| 科大讯飞-医疗实体及关系识别挑战赛            | 科大讯飞                            | 针对医技报告单(一种半结构化的数据，不同医生的表述风格不一致，文本形式缺乏统一的规范)的命名实体识别和实体关系抽取。 | http://www.fudan-disc.com/sharedtask/imcs21/index.html       |
+| 科大讯飞-医疗实体及关系识别挑战赛            | 科大讯飞                            | 针对医技报告单                                               | http://www.fudan-disc.com/sharedtask/imcs21/index.html       |
 
 
 
@@ -87,20 +87,20 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 | 名称                              | 介绍                                                         | 地址                                                         |
 | --------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Huatuo-26M                        | Huatuo-26M 是迄今为止最大的中医问答数据集。该数据集包含超过 2600  万条高质量医学问答对，涵盖疾病、症状、治疗和药物信息等广泛主题。Huatuo-26M  对于希望增强医疗领域人工智能应用（例如聊天机器人、智能诊断系统等）的研究人员、开发人员和公司来说是宝贵的资源。 | https://github.com/FreedomIntelligence/Huatuo-26M            |
+| Huatuo-26M                        | Huatuo-26M 是迄今为止最大的中医问答数据集。                  | https://github.com/FreedomIntelligence/Huatuo-26M            |
 | Yidu-S4K                          | 命名实体识别,实体及属性抽取                                  | http://openkg.cn/dataset/yidu-s4k                            |
 | Yidu-N7K                          | 临床语标准化                                                 | http://openkg.cn/dataset/yidu-n7k                            |
 | 中文医药方面的问答数据集          | 医疗问答                                                     | https://github.com/zhangsheng93/cMedQA2                      |
 | 中文医患问答对话数据              | 医疗问答                                                     | https://github.com/UCSD-AI4H/Medical-Dialogue-System         |
-| 中文医疗对话数据集                | 包含六个科室的医学问答数据，github开源数据 ，来源不明。      | https://github.com/Toyhom/Chinese-medical-dialogue-data      |
-| CPubMed-KG (4.4M三元组)           | 中华医学会高质量全文期刊数据所构建的大规模中文开放医学知识图谱及开放式医学知识在线协同构建平台，旨在通过完全开放、协作的机制来打破中文医学知识的瓶颈，支撑智慧医疗技术的发展。 | https://cpubmed.openi.org.cn/graph/wiki                      |
-| CBLUE                             | 涵盖了医学文本信息抽取（实体识别、关系抽取）、医学术语归一化、医学文本分类、医学句子语义相关性判定、医疗对话理解和生成5大类常见的医疗信息处理任务，共包含15个子任务。 | https://github.com/CBLUEbenchmark/CBLUE                      |
+| 中文医疗对话数据集                | 包含六个科室的医学问答数据                                   | https://github.com/Toyhom/Chinese-medical-dialogue-data      |
+| CPubMed-KG (4.4M三元组)           | 中华医学会高质量全文期刊数据                                 | https://cpubmed.openi.org.cn/graph/wiki                      |
+| CBLUE                             | 涵盖了医学文本信息抽取（实体识别、关系抽取）                 | https://github.com/CBLUEbenchmark/CBLUE                      |
 | 中文医学知识图谱 CMeKG (1M三元组) | CMeKG（Chinese Medical Knowledge  Graph）是利用自然语言处理与文本挖掘技术，基于大规模医学文本数据，以人机结合的方式研发的中文医学知识图谱。 | http://cmekg.pcl.ac.cn/                                      |
 | cMedQA2 (108K)                    | 中文医药方面的问答数据集，超过10万条。                       | https://github.com/zhangsheng93/cMedQA2                      |
 | xywy-KG(294K三元组)               | 44.1K实体 294.1K 三元组                                      | https://github.com/baiyang2464/chatbot-base-on-Knowledge-Graph |
 | 39Health-KG (210K三元组)          | 包括15项信息，其中7类实体，约3.7万实体，21万实体关系。       | https://github.com/zhihao-chen/QASystemOnMedicalGraph        |
 | CHIP历年测评 (官方测评)           | CHIP历年测评 (官方测评)                                      | http://cips-chip.org.cn/2022/callforeval ;  http://www.cips-chip.org.cn/2021/ ;   http://cips-chip.org.cn/2020/ |
-| 瑞金医院糖尿病数据集 (糖尿病)     | 数据集来自天池大赛。此数据集旨在通过糖尿病相关的教科书、研究论文来做糖尿病文献挖掘并构建糖尿病知识图谱。参赛选手需要设计高准确率，高效的算法来挑战这一科学难题。第一赛季课题为“基于糖尿病临床指南和研究论文的实体标注构建”，第二赛季课题为“基于糖尿病临床指南和研究论文的实体间关系构建”。 | https://tianchi.aliyun.com/competition/entrance/231687/information |
+| 瑞金医院糖尿病数据集 (糖尿病)     | 数据集来自天池大赛。此数据集旨在通过糖尿病相关的教科书、研究论文来做糖尿病文献挖掘并构建糖尿病知识图谱 | https://tianchi.aliyun.com/competition/entrance/231687/information |
 | 天池新冠肺炎问句匹配比赛 (新冠)   | 本次大赛数据包括：脱敏之后的医疗问题数据对和标注数据。医疗问题涉及“肺炎”、“支原体肺炎”、“支气管炎”、“上呼吸道感染”、“肺结核”、“哮喘”、“胸膜炎”、“肺气肿”、“感冒”、“咳血”等10个病种。 | https://tianchi.aliyun.com/competition/entrance/231776/information |
 
 ### 3.2 英文
