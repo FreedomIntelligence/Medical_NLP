@@ -300,3 +300,13 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 3. [medical-data(海量医疗相关数据)](https://github.com/beamandrew/medical-data)
 4. [天池数据集(其中包含多个医疗NLP数据集)](https://tianchi.aliyun.com/dataset)
 
+```bibtex
+@misc{medical_NLP_github,
+  author = {Xidong Wang},
+  title = {Medical NLP},
+  year = {2023},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/FreedomIntelligence/Medical_NLP}}
+}
+```
