@@ -55,7 +55,7 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 
 
-## 2. 比赛
+## 2. 比赛-
 
 ### 2.1 正在进行的比赛
 
