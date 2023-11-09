@@ -121,11 +121,86 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 ## 4. 开源预训练模型
 
-### 4.1 中文医疗 请参考[这里](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#%E5%8C%BB%E7%96%97)
+### 4.1 医疗LLM 
 
-### 4.2 中文通用大模型 请参考[这里](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM)
+#### 4.1.1 中文医疗大语言模型
 
+* BenTsao：
+  * 地址：https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese
+    ![](https://img.shields.io/github/stars/SCIR-HI/Huatuo-Llama-Med-Chinese)
+  * 简介：BenTsao以LLaMA-7B为基础，经过中文医学指令精调/指令微调得到。研究人员通过医学知识图谱和GPT3.5 API构建了中文医学指令数据集，并在此基础上对LLaMA进行了指令微调，提高了LLaMA在医疗领域的问答效果。
+* BianQue：
+  * 地址：https://github.com/scutcyr/BianQue
+    ![](https://img.shields.io/github/stars/scutcyr/BianQue)
+  * 简介：一个经过指令与多轮问询对话联合微调的医疗对话大模型，以ClueAI/ChatYuan-large-v2作为底座，使用中文医疗问答指令与多轮问询对话混合数据集进行微调。
+* SoulChat：
+  * 地址：https://github.com/scutcyr/SoulChat
+    ![](https://img.shields.io/github/stars/scutcyr/SoulChat)
+  * 简介：灵心以ChatGLM-6B作为初始化模型，经过百万规模心理咨询领域中文长文本指令与多轮共情对话数据联合指令微调，提升模型的共情能力、引导用户倾诉能力以及提供合理建议的能力。
+* DoctorGLM：
+  * 地址：https://github.com/Kent0n-Li/ChatDoctor
+    ![](https://img.shields.io/github/stars/Kent0n-Li/ChatDoctor)
+  * 简介：一个基于 ChatGLM-6B的中文问诊大模型。该模型通过中文医疗对话数据集进行微调，实现了包括lora、p-tuningv2等微调及部署。
+* HuatuoGPT：
+  * 地址：https://github.com/FreedomIntelligence/HuatuoGPT
+    ![](https://img.shields.io/github/stars/FreedomIntelligence/HuatuoGPT)
+  * 简介：华佗GPT是一个经过中文医学指令精调/指令微调(Instruct-tuning)得到的一个GPT-like模型。该模型是专门为医疗咨询设计的中文LLM，它的训练数据包含了从ChatGPT处蒸馏得到的数据和来自医生的真实数据，在训练过程中加入了RLHF的反馈。
 
+#### 4.1.2 英文医疗大语言模型
+
+* GatorTron：
+  * 地址：https://github.com/uf-hobi-informatics-lab/GatorTron
+    ![](https://img.shields.io/github/stars/uf-hobi-informatics-lab/GatorTron)
+  * 简介：一个医疗健康领域的早期大模型，致力于研究使用非结构化的电子健康病例的系统是如何从有数十亿参数的医疗大模型中获益。
+* Codex-Med：
+  * 地址：https://github.com/vlievin/medical-reasoning
+    ![](https://img.shields.io/github/stars/uf-hobi-informatics-lab/GatorTron)
+  * 简介：致力于研究GPT-3.5模型回答和推理实际医疗问题的能力。使用了医疗测试数据集USMLE和MedMCQA， 医疗阅读理解数据集PubMedQA。
+* Galactica：
+  * 地址：https://galactica.org/
+  * 简介：Galactica致力于解决科学领域的信息过载问题，储存合并了包括医疗医疗健康领域在内的科学知识。Galactica在大型论文语料库，参考文献的基础上训练而成，尝试发现不同领域研究之间的潜在关系。
+* DeID-GPT：
+  * 地址：https://github.com/yhydhx/ChatGPT-API
+    ![](https://img.shields.io/github/stars/yhydhx/ChatGPT-API)
+  * 简介：一个创新的的支持GPT4的去识别框架，可以自动识别和删除识别信息。
+* ChatDoctor：
+  * 地址：https://github.com/Kent0n-Li/ChatDoctor
+    ![](https://img.shields.io/github/stars/Kent0n-Li/ChatDoctor)
+  * 简介：一个利用医疗领域基础知识，基于LLaMA进行微调得到的医疗对话模型。
+* MedAlpaca：
+  * 地址：https://github.com/kbressem/medAlpaca
+    ![](https://img.shields.io/github/stars/kbressem/medAlpaca)
+  * 简介：MedAlpaca采用了一种开源策略，致力于解决医疗系统中的隐私问题。该模型基于70亿和130亿参数量的LLaMa构建。
+* PMC-LLaMA：
+  * 地址：https://github.com/chaoyi-wu/PMC-LLaMA
+    ![](https://img.shields.io/github/stars/chaoyi-wu/PMC-LLaMA)
+  * 简介： PMC-LLaMA是一个开源语言模型，通过对LLaMA-7B在总计480万篇生物医学学术论文上进行调质，进一步灌输医学知识，以增强其在医学领域的能力。
+* Visual Med-Alpaca：
+  * 地址：https://github.com/cambridgeltl/visual-med-alpaca
+    ![](https://img.shields.io/github/stars/cambridgeltl/visual-med-alpaca)
+  * 简介： Visual Med-Alpaca是一个开源的、参数高效的生物医学基础模型，可以与医学的“视觉专家”集成，用于多模式生物医学任务。该模型基于LLaMa-7B架构构建，使用由GPT-3.5-Turbo和人类专家共同策划的指令集进行训练。
+* GatorTronGPT：
+  * 地址：https://github.com/uf-hobi-informatics-lab/GatorTronGPT
+    ![](https://img.shields.io/github/stars/uf-hobi-informatics-lab/GatorTronGPT)
+  * 简介：GatorTronGPT 是一个医疗生成大语言模型。该模型基于GPT-3构建，含有50亿或200亿参数。该模型使用了含有2770亿单词的，由临床和英语文本组成的庞大语料库。
+* MedAGI：
+  * 地址：https://github.com/JoshuaChou2018/MedAGI
+    ![](https://img.shields.io/github/stars/JoshuaChou2018/MedAGI)
+  * 简介：MedAGI一个范例，以最低的成本将领域特定的医疗语言模型统一起来，为实现医疗通用人工智能提供了一条可能的途径。
+* LLaVA-Med：
+  * 地址：https://github.com/microsoft/LLaVA-Med
+    ![](https://img.shields.io/github/stars/microsoft/LLaVA-Med)
+  * 简介：LLaVA- med使用通用领域LLaVA进行初始化，然后以课程学习方式进行持续训练(首先是生物医学概念对齐，然后是全面的指令调整)。  
+* Med-Flamingo：
+  * 地址：https://github.com/snap-stanford/med-flamingo
+    ![](https://img.shields.io/github/stars/snap-stanford/med-flamingo)
+  * 简介：Med-Flamingo是一个视觉语言模型，专门设计用于处理包含图像和文本的交错多模态数据。以Flamingo为基础，Med-Flamingo通过对不同医学学科的多种多模式知识来源进行预训练，进一步增强了在这些医学领域的能力。
+
+###  
+
+### 4.2 中文医疗 请参考[这里](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#%E5%8C%BB%E7%96%97)
+
+### 4.3 中文通用大模型 请参考[这里](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM)
 
 
 
