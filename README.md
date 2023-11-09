@@ -21,6 +21,7 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
       * [3.1 中文](#31-中文)
       * [3.2 英文](#32-英文)
    * [4. 开源预训练模型](#4-开源预训练模型)
+      * [4.1 医疗LLM](#41-医疗LLM)
       * [4.1 中文医疗 请参考<a href="https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#%E5%8C%BB%E7%96%97">这里</a>](#41-中文医疗-请参考这里)
       * [4.2 中文通用大模型 请参考<a href="https://github.com/HqWu-HITCS/Awesome-Chinese-LLM">这里</a>](#42-中文通用大模型-请参考这里)
    * [5. 相关论文](#5-相关论文)
@@ -195,8 +196,6 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
   * 地址：https://github.com/snap-stanford/med-flamingo
     ![](https://img.shields.io/github/stars/snap-stanford/med-flamingo)
   * 简介：Med-Flamingo是一个视觉语言模型，专门设计用于处理包含图像和文本的交错多模态数据。以Flamingo为基础，Med-Flamingo通过对不同医学学科的多种多模式知识来源进行预训练，进一步增强了在这些医学领域的能力。
-
-###  
 
 ### 4.2 中文医疗 请参考[这里](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#%E5%8C%BB%E7%96%97)
 
