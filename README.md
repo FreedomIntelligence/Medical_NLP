@@ -138,7 +138,7 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
   * 简介：灵心以ChatGLM-6B作为初始化模型，经过百万规模心理咨询领域中文长文本指令与多轮共情对话数据联合指令微调，提升模型的共情能力、引导用户倾诉能力以及提供合理建议的能力。
 * DoctorGLM：
   * 地址：https://github.com/Kent0n-Li/ChatDoctor
-    ![](https://img.shields.io/github/stars/Kent0n-Li/ChatDoctor)
+    ![](https://github.com/xionghonglin/DoctorGLM)
   * 简介：一个基于 ChatGLM-6B的中文问诊大模型。该模型通过中文医疗对话数据集进行微调，实现了包括lora、p-tuningv2等微调及部署。
 * HuatuoGPT：
   * 地址：https://github.com/FreedomIntelligence/HuatuoGPT
