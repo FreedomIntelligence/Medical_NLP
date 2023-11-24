@@ -8,32 +8,32 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 > 由于[Cris Lee](https://github.com/lrs1353281004)2021年离开医疗NLP领域，此repo现由[Xidong Wang](https://github.com/wangxidong06)，[Ziyue Lin](https://github.com/RobinLin2002)继续维护。
 
+[Medical_NLP](#medical_nlp)
 
-
-* [Medical_NLP](#medical_nlp)
-   * [1. 评测](#1-评测)
-      * [1.1  中文医疗基准测评：CMB / CMExam / PromptCBLUE](#11--中文医疗基准测评cmb--cmexam--promptcblue)
-      * [1.2  英文医疗基准测评:](#12--英文医疗基准测评)
-   * [2. 比赛](#2-比赛)
-      * [2.1 正在进行的比赛](#21-正在进行的比赛)
-      * [2.2 已经结束的比赛](#22-已经结束的比赛)
-   * [3. 数据集](#3-数据集)
-      * [3.1 中文](#31-中文)
-      * [3.2 英文](#32-英文)
-   * [4. 开源预训练模型](#4-开源预训练模型)
-      * [4.1 医疗LLM](#41-医疗LLM)
-      * [4.2 中文医疗 请参考<a href="https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#%E5%8C%BB%E7%96%97">这里</a>](#41-中文医疗-请参考这里)
-      * [4.3 中文通用大模型 请参考<a href="https://github.com/HqWu-HITCS/Awesome-Chinese-LLM">这里</a>](#42-中文通用大模型-请参考这里)
-   * [5. 相关论文](#5-相关论文)
-      * [5.1 OpenAI](#51-openai)
-      * [5.2 后ChatGPT时代 可能有帮助的论文(持续更新)](#52-后chatgpt时代-可能有帮助的论文持续更新)
-      * [5.3 综述类文章](#53-综述类文章)
-      * [5.4 特定任务文章](#54-特定任务文章)
-      * [5.4 会议索引](#54-会议索引)
-   * [6. 开源工具包](#6-开源工具包)
-   * [7. 工业级产品解决方案](#7-工业级产品解决方案)
-   * [8. blog分享](#8-blog分享)
-   * [9. 友情链接](#9-友情链接) 
+* [1. 评测](#1-评测)
+   * [1.1  中文医疗基准测评：CMB / CMExam / PromptCBLUE](#11--中文医疗基准测评cmb--cmexam--promptcblue)
+   * [1.2  英文医疗基准测评:](#12--英文医疗基准测评)
+* [2. 比赛](#2-比赛)
+   * [2.1 正在进行的比赛](#21-正在进行的比赛)
+   * [2.2 已经结束的比赛](#22-已经结束的比赛)
+* [3. 数据集](#3-数据集)
+   * [3.1 中文](#31-中文)
+   * [3.2 英文](#32-英文)
+* [4. 开源预训练模型](#4-开源预训练模型)
+   * [4.1 医疗PLM](#41-医疗PLM)
+   * [4.2 医疗LLM](#42-医疗LLM)
+   * [4.3 中文医疗 请参考<a href="https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#%E5%8C%BB%E7%96%97">这里</a>](#41-中文医疗-请参考这里)
+   * [4.4 中文通用大模型 请参考<a href="https://github.com/HqWu-HITCS/Awesome-Chinese-LLM">这里</a>](#42-中文通用大模型-请参考这里)
+* [5. 相关论文](#5-相关论文)
+   * [5.1 OpenAI](#51-openai)
+   * [5.2 后ChatGPT时代 可能有帮助的论文(持续更新)](#52-后chatgpt时代-可能有帮助的论文持续更新)
+   * [5.3 综述类文章](#53-综述类文章)
+   * [5.4 特定任务文章](#54-特定任务文章)
+   * [5.4 会议索引](#54-会议索引)
+* [6. 开源工具包](#6-开源工具包)
+* [7. 工业级产品解决方案](#7-工业级产品解决方案)
+* [8. blog分享](#8-blog分享)
+* [9. 友情链接](#9-友情链接) 
 
 
 
@@ -120,9 +120,49 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 ## 4. 开源预训练模型
 
-### 4.1 医疗LLM 
+### 4.1 医疗PLM
 
-#### 4.1.1 中文医疗大语言模型
+* BioBERT：
+
+  * 地址：https://github.com/naver/biobert-pretrained
+    ![](https://img.shields.io/github/stars/naver/biobert-pretrained)
+  * 简介：BioBERT是一种生物医学领域的语言表示模型，专门用于生物医学文本挖掘任务，如生物医学命名实体识别、关系提取、问答等。
+
+* BlueBERT：
+
+  * 地址：https://github.com/ncbi-nlp/BLUE_Benchmark
+    ![](https://img.shields.io/github/stars/ncbi-nlp/BLUE_Benchmark)
+  * 简介：BLUE基准包括5个不同的生物医学文本挖掘任务和10个语料库。BLUE基准依赖于预先存在的数据集，因为它们已被BioNLP社区广泛用作共享任务。这些任务涵盖了各种文本类型(生物医学文献和临床笔记)、数据集大小和难度，更重要的是，突出了常见的生物医学文本挖掘挑战。
+
+* BioFLAIR：
+
+  * 地址：https://github.com/flairNLP/flair
+    ![](https://img.shields.io/github/stars/flairNLP/flair)
+  * 简介：Flair是一个强大的NLP库，能将最先进的自然语言处理(NLP)模型应用于文本，例如命名实体识别(NER)，情感分析，词性标记(PoS)，对[生物医学数据](https://github.com/flairNLP/flair/blob/master/resources/docs/HUNFLAIR.md)的特殊支持，语义消歧和分类，支持快速增长的语言数量。Flair 还是一个文本嵌入库，一个基于PyTorch的自然语言处理框架。
+
+* COVID-Twitter-BERT：
+
+  * 地址：https://github.com/digitalepidemiologylab/covid-twitter-bert
+    ![](https://img.shields.io/github/stars/digitalepidemiologylab/covid-twitter-bert)
+  * 简介：COVID-Twitter-BERT（简称CT-BERT）是一种基于Transformer的模型，它在关于COVID-19主题的大量推特消息上进行了预训练。v2模型是在9700万条推文（12亿训练样本）上训练的。
+
+* bio-lm (Biomedical and Clinical Language Models)
+
+  * 地址：https://github.com/facebookresearch/bio-lm
+    ![](https://img.shields.io/github/stars/facebookresearch/bio-lm)
+  * 简介：这项工作评估了用于生物医学和临床自然语言处理任务的许多模型，并训练了一些性能更佳的新模型。
+
+* BioALBERT
+
+  * 地址：https://github.com/usmaann/BioALBERT
+    ![](https://img.shields.io/github/stars/usmaann/BioALBERT)
+  * 简介：这是一种针对大型领域特定(生物医学)语料库训练的生物医学语言表示模型，专为生物医学文本挖掘任务而设计。
+
+  
+
+### 4.2 医疗LLM 
+
+#### 4.2.1 中文医疗大语言模型
 
 * BenTsao：
   * 地址：https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese
@@ -145,7 +185,7 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
     ![](https://img.shields.io/github/stars/FreedomIntelligence/HuatuoGPT)
   * 简介：华佗GPT是一个经过中文医学指令精调/指令微调(Instruct-tuning)得到的一个GPT-like模型。该模型是专门为医疗咨询设计的中文LLM，它的训练数据包含了从ChatGPT处蒸馏得到的数据和来自医生的真实数据，在训练过程中加入了RLHF的反馈。
 
-#### 4.1.2 英文医疗大语言模型
+#### 4.2.2 英文医疗大语言模型
 
 * GatorTron：
   * 地址：https://github.com/uf-hobi-informatics-lab/GatorTron
@@ -195,9 +235,9 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
     ![](https://img.shields.io/github/stars/snap-stanford/med-flamingo)
   * 简介：Med-Flamingo是一个视觉语言模型，专门设计用于处理包含图像和文本的交错多模态数据。以Flamingo为基础，Med-Flamingo通过对不同医学学科的多种多模式知识来源进行预训练，进一步增强了在这些医学领域的能力。
 
-### 4.2 中文医疗 请参考[这里](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#%E5%8C%BB%E7%96%97)
+### 4.3 中文医疗 请参考[这里](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#%E5%8C%BB%E7%96%97)
 
-### 4.3 中文通用大模型 请参考[这里](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM)
+### 4.4 中文通用大模型 请参考[这里](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM)
 
 
 

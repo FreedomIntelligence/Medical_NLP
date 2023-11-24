@@ -1,37 +1,38 @@
 # Medical_NLP
 
-
->Since [Cris Lee](https://github.com/lrs1353281004) left the medical NLP field in 2021, this repo is now maintained by [Xidong Wang](https://github.com/wangxidong06).
-
 Summary of medical NLP evaluations/competitions, datasets, papers and pre-trained models.
 
 [中文版本](https://github.com/FreedomIntelligence/Chinese_medical_NLP) [English_version](https://github.com/FreedomIntelligence/Chinese_medical_NLP/blob/master/English_vision.md)
 
-* [Medical_NLP](#medical_nlp)
-   * [1. Evaluation](#1-evaluation)
-      * [1.1 Chinese Medical Benchmark Evaluation: CMB / CMExam / PromptCBLUE](#11-chinese-medical-benchmark-evaluation-cmb--cmexam--promptcblue)
-      * [1.2 English Medical Benchmark Evaluation:](#12-english-medical-benchmark-evaluation)
-   * [2. Competitions](#2-competitions)
-      * [2.1 Ongoing Competitions](#21-ongoing-competitions)
-      * [2.2 Completed Competitions](#22-completed-competitions)
-   * [3. Datasets](#3-datasets)
-      * [3.1 Chinese](#31-chinese)
-      * [3.2 English](#32-english)
-   * [4. Open-source Models](#4-open-source-models)
-      * [4.1 Medical LLMs](#41-medical-LLMs)
-      * [4.2 Chinese Medical - Refer <a href="https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#%E5%8C%BB%E7%96%97">here</a>](#41-chinese-medical---refer-here)
-      * [4.3 General Large-scale Chinese Models - Refer <a href="https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#%E9%80%9A%E7%94%A8">here</a>](#42-general-large-scale-chinese-models---refer-here)
-   * [5. Relevant Papers](#5-relevant-papers)
-      * [5.1 OpenAI](#51-openai)
-      * [5.2 Papers That Might Be Helpful in the Post-ChatGPT Era (Continuously Updated)](#52-papers-that-might-be-helpful-in-the-post-chatgpt-era-continuously-updated)
-      * [5.2 The Post-ChatGPT Era: Helpful Papers (Continuous Updates)](#52-the-post-chatgpt-era-helpful-papers-continuous-updates)
-      * [5.3 Review Articles](#53-review-articles)
-      * [5.4 Task-Specific Articles](#54-task-specific-articles)
-      * [5.4 Conference Index](#54-conference-index)
-   * [6. Open-source Toolkits](#6-open-source-toolkits)
-   * [7. Industrial Solutions](#7-industrial-solutions)
-   * [8. Blog Sharing](#8-blog-sharing)
-   * [9. Friendly Links](#9-friendly-links)
+>Since [Cris Lee](https://github.com/lrs1353281004) left the medical NLP field in 2021, this repo is now maintained by [Xidong Wang](https://github.com/wangxidong06)，[Ziyue Lin](https://github.com/RobinLin2002).
+
+[Medical_NLP](#medical_nlp)
+
+* [1. Evaluation](#1-evaluation)
+   * [1.1 Chinese Medical Benchmark Evaluation: CMB / CMExam / PromptCBLUE](#11-chinese-medical-benchmark-evaluation-cmb--cmexam--promptcblue)
+   * [1.2 English Medical Benchmark Evaluation:](#12-english-medical-benchmark-evaluation)
+* [2. Competitions](#2-competitions)
+   * [2.1 Ongoing Competitions](#21-ongoing-competitions)
+   * [2.2 Completed Competitions](#22-completed-competitions)
+* [3. Datasets](#3-datasets)
+   * [3.1 Chinese](#31-chinese)
+   * [3.2 English](#32-english)
+* [4. Open-source Models](#4-open-source-models)
+   * [4.1 Medical PLMs](#41-medical-PLMs)
+   * [4.2 Medical LLMs](#42-medical-LLMs)
+   * [4.3 Chinese Medical - Refer <a href="https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#%E5%8C%BB%E7%96%97">here</a>](#41-chinese-medical---refer-here)
+   * [4.4 General Large-scale Chinese Models - Refer <a href="https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#%E9%80%9A%E7%94%A8">here</a>](#42-general-large-scale-chinese-models---refer-here)
+* [5. Relevant Papers](#5-relevant-papers)
+   * [5.1 OpenAI](#51-openai)
+   * [5.2 Papers That Might Be Helpful in the Post-ChatGPT Era (Continuously Updated)](#52-papers-that-might-be-helpful-in-the-post-chatgpt-era-continuously-updated)
+   * [5.2 The Post-ChatGPT Era: Helpful Papers (Continuous Updates)](#52-the-post-chatgpt-era-helpful-papers-continuous-updates)
+   * [5.3 Review Articles](#53-review-articles)
+   * [5.4 Task-Specific Articles](#54-task-specific-articles)
+   * [5.4 Conference Index](#54-conference-index)
+* [6. Open-source Toolkits](#6-open-source-toolkits)
+* [7. Industrial Solutions](#7-industrial-solutions)
+* [8. Blog Sharing](#8-blog-sharing)
+* [9. Friendly Links](#9-friendly-links)
 
 
 ## 1. Evaluation
@@ -111,9 +112,36 @@ None at the moment. Additions are welcome~
 
 ## 4. Open-source Models
 
-### 4.1 Medical LLMs
+### 4.1 Medical PLMs
 
-#### 4.1.1 Chinese Medical Large Language Models
+* BioBERT：
+  * Website: https://github.com/naver/biobert-pretrained
+    ![](https://img.shields.io/github/stars/naver/biobert-pretrained)
+  * Introduction: A language representation model for biomedical domain, especially designed for biomedical text mining tasks such as biomedical named entity recognition, relation extraction, question answering, etc.
+* BlueBERT：
+  * Website: https://github.com/ncbi-nlp/BLUE_Benchmark
+    ![](https://img.shields.io/github/stars/ncbi-nlp/BLUE_Benchmark)
+  * Introduction: BLUE benchmark consists of five different biomedicine text-mining tasks with ten corpora.   BLUE benchmark rely on preexisting datasets because they have been widely used by the BioNLP community as shared tasks.  These tasks cover a diverse range of text genres (biomedical literature and clinical notes), dataset sizes, and degrees of difficulty and, more importantly, highlight common biomedicine text-mining challenges.
+* BioFLAIR：
+  * Website: https://github.com/flairNLP/flair
+    ![](https://img.shields.io/github/stars/flairNLP/flair)
+  * Introduction: Flair is a powerful NLP library, which allows you to apply our state-of-the-art natural language processing (NLP) models to your text, such as named entity recognition (NER), sentiment analysis, part-of-speech tagging (PoS), special support for [biomedical data](https://github.com/flairNLP/flair/blob/master/resources/docs/HUNFLAIR.md), sense disambiguation and classification, with support for a rapidly growing number of languages. Flair is also a A text embedding library and a PyTorch NLP framework.
+* COVID-Twitter-BERT：
+  * Website: https://github.com/digitalepidemiologylab/covid-twitter-bert
+    ![](https://img.shields.io/github/stars/digitalepidemiologylab/covid-twitter-bert)
+  * Introduction: COVID-Twitter-BERT (CT-BERT) is a transformer-based model pretrained on a large corpus of Twitter messages on the topic of COVID-19.  The v2 model is trained on 97M tweets (1.2B training examples).
+* bio-lm (Biomedical and Clinical Language Models)
+  * Website: https://github.com/facebookresearch/bio-lm
+    ![](https://img.shields.io/github/stars/facebookresearch/bio-lm)
+  * Introduction: This work evaluates many models used for biomedical and clinical nlp tasks, and train new models that perform much better.
+* BioALBERT
+  * Website: https://github.com/usmaann/BioALBERT
+    ![](https://img.shields.io/github/stars/usmaann/BioALBERT)
+  * Introduction: A biomedical language representation model trained on large domain specific (biomedical) corpora for designed for biomedical text mining tasks. 
+
+### 4.2 Medical LLMs
+
+#### 4.2.1 Chinese Medical Large Language Models
 
 * BenTsao：
   * Website: https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese
@@ -136,7 +164,7 @@ None at the moment. Additions are welcome~
     ![](https://img.shields.io/github/stars/FreedomIntelligence/HuatuoGPT)
   * HuaTuo GPT is a GPT-like model that has undergone fine-tuning with specific medical instructions in Chinese. This model is a Chinese Language Model (LLM) designed specifically for medical consultation. Its training data includes distilled data from ChatGPT and real data from doctors. During the training process, reinforcement learning from human feedback (RLHF) has been incorporated to improve its performance.
 
-#### 4.1.2 English Medical Large Language Models
+#### 4.2.2 English Medical Large Language Models
 
 * GatorTron：
   * Website: https://github.com/uf-hobi-informatics-lab/GatorTron
@@ -186,9 +214,9 @@ None at the moment. Additions are welcome~
     ![](https://img.shields.io/github/stars/snap-stanford/med-flamingo)
   * Introduction: Med-Flamingo is a vision language model specifically designed to handle interleaved multimodal data comprising both images and text. Building on the achievements of Flamingo,  Med-Flamingo further enhances these capabilities for the medical domain by pre-training diverse multimodal knowledge sources across various medical disciplines.
 
-### 4.2 Chinese Medical - Refer [here](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#医疗)
+### 4.3 Chinese Medical - Refer [here](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#医疗)
 
-### 4.3 General Large-scale Chinese Models - Refer [here](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#通用)
+### 4.4 General Large-scale Chinese Models - Refer [here](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#通用)
 
 
 
