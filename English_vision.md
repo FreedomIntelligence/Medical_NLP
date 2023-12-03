@@ -20,8 +20,6 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 * [4. Open-source Models](#4-open-source-models)
    * [4.1 Medical PLMs](#41-medical-PLMs)
    * [4.2 Medical LLMs](#42-medical-LLMs)
-   * [4.3 Chinese Medical - Refer <a href="https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#%E5%8C%BB%E7%96%97">here</a>](#41-chinese-medical---refer-here)
-   * [4.4 General Large-scale Chinese Models - Refer <a href="https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#%E9%80%9A%E7%94%A8">here</a>](#42-general-large-scale-chinese-models---refer-here)
 * [5. Relevant Papers](#5-relevant-papers)
    * [5.1 OpenAI](#51-openai)
    * [5.2 Papers That Might Be Helpful in the Post-ChatGPT Era (Continuously Updated)](#52-papers-that-might-be-helpful-in-the-post-chatgpt-era-continuously-updated)
@@ -39,76 +37,199 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 ### 1.1 Chinese Medical Benchmark Evaluation: CMB / CMExam / PromptCBLUE
 
-| Name        | Source                                                       | GitHub Link                                 |
-| ----------- | ------------------------------------------------------------ | ------------------------------------------- |
-| CMB         | Various clinical medical examinations; complex clinical case consultations | https://github.com/FreedomIntelligence/CMB  |
-| CMExam      | Past questions from the Medical Practitioner Qualification Examination | https://github.com/williamliujl/CMExam      |
-| PromptCBLUE | CBLUE                                                        | https://github.com/michael-wzhu/PromptCBLUE |
-| CBLUE       | Academic evaluation competitions from past CHIP conferences and datasets from Alibaba Quark's medical search service | https://github.com/CBLUEbenchmark/CBLUE     |
+* CMB
 
-### 1.2 English Medical Benchmark Evaluation:
+  * GitHub Link：https://github.com/FreedomIntelligence/CMB
+    ![](https://img.shields.io/github/stars/FreedomIntelligence/CMB)
+  * Source：Various clinical medical examinations; complex clinical case consultations
+* CMExam
 
-| Name          | Source | Description                               | GitHub Link | Official Evaluation Website Link |
-| ------------- | ------ | ----------------------------------------- | ----------- | -------------------------------- |
-| MultiMedBench | Google | A large-scale multimodal generative model |             |                                  |
+  * GitHub Link：https://github.com/williamliujl/CMExam
+    ![](https://img.shields.io/github/stars/williamliujl/CMExam)
+  * Source：Past questions from the Medical Practitioner Qualification Examination
+* PromptCBLUE
+  * GitHub Link：https://github.com/michael-wzhu/PromptCBLUE
+    ![](https://img.shields.io/github/stars/michael-wzhu/PromptCBLUE)
+  * Source：CBLUE
+* PromptCBLUE
+  * GitHub Link：https://github.com/CBLUEbenchmark/CBLUE
+    ![](https://img.shields.io/github/stars/CBLUEbenchmark/CBLUE)
+  * Source：Academic evaluation competitions from past CHIP conferences and datasets from Alibaba Quark's medical search service
+
+### 1.2 English Medical Benchmark Evaluation:、
+
+* MultiMedBench
+
+  * Desription: A large-scale multimodal generative model
+
+
 
 ## 2. Competitions
 
 ### 2.1 Ongoing Competitions
 
-None at the moment. Additions are welcome~
+* None at the moment. Additions are welcome~
 
 ### 2.2 Completed Competitions
 
-**English**
+#### 2.2.1 English competitions
 
-| Name                                                         | Source                        | Link                                                         |
-| ------------------------------------------------------------ | ----------------------------- | ------------------------------------------------------------ |
-| BioNLP Workshop 2023 Shared Task                             | BioNLP Workshop               | https://aclweb.org/aclwiki/BioNLP_Workshop#SHARED_TASKS_2023 |
-| MedVidQA 2023                                                | National Institutes of Health | https://medvidqa.github.io/index.html                        |
-| MEDIQA-2021                                                  | NAACL-BioNLP 2021 workshop    | https://sites.google.com/view/mediqa2021                     |
-| ICLR-2021 International Competition for Medical Dialogue Generation and Automatic Diagnosis | ICLR 2021 workshop            | https://mlpcp21.github.io/pages/challenge                    |
+* BioNLP Workshop 2023 Shared Task
 
-**Chinese**
+  * Link:  https://aclweb.org/aclwiki/BioNLP_Workshop#SHARED_TASKS_2023
+  * Source: BioNLP Workshop
 
-| Name                                                         | Source                                                       | Link                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| NLP for Medical Imaging - Medical Imaging Diagnostic Report Generation | Track One of 2023 Global AI Technology Innovation Competition | https://gaiic.caai.cn/ai2023/                                |
-| Non-standard Disease Claims Simple Triage Challenge 2.0      | iFlytek                                                      | http://challenge.xfyun.cn/topic/info?type=disease-claims-2022&ch=ds22-dw-sq03 |
-| Evaluation Task of the 8th China Health Information Processing Conference (CHIP2022) | CHIP2022                                                     | http://cips-chip.org.cn/)                                    |
-| iFlytek - Medical Entity and Relationship Recognition Challenge | iFlytek                                                      | http://www.fudan-disc.com/sharedtask/imcs21/index.html       |
+* MedVidQA 2023
+
+  * Link:  https://medvidqa.github.io/index.html
+  * Source: National Institutes of Health
+
+* MEDIQA-2021
+
+  * Link:  https://sites.google.com/view/mediqa2021
+  * Source: NAACL-BioNLP 2021 workshop
+
+* ICLR-2021 International Competition for Medical Dialogue Generation and Automatic Diagnosis
+
+  * Link:  https://mlpcp21.github.io/pages/challenge
+
+  * Source: ICLR 2021 workshop
+
+    
+
+#### **2.2.1 Chinese competitions**
+
+* NLP for Medical Imaging - Medical Imaging Diagnostic Report Generation
+
+  * Link: https://gaiic.caai.cn/ai2023/
+  * Source: NLP for Medical Imaging - Medical Imaging Diagnostic Report Generation
+* NLP for Medical Imaging - Medical Imaging Diagnostic Report Generation
+
+  * Link: http://challenge.xfyun.cn/topic/info?type=disease-claims-2022&ch=ds22-dw-sq03
+  * Source: iFlytek
+* Evaluation Task of the 8th China Health Information Processing Conference (CHIP2022)
+
+  * Link: http://cips-chip.org.cn/
+  * Source: CHIP2022
+* iFlytek - Medical Entity and Relationship Recognition Challenge
+
+  * Link: http://www.fudan-disc.com/sharedtask/imcs21/index.html
+  * Source: iFlytek
+
+
 
 ## 3. Datasets
 
 ### 3.1 Chinese
 
-| Name                                                         | Description                                                  | Link                                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Huatuo-26M                                                   | Huatuo-26M is the largest Traditional Chinese Medicine (TCM) Q&A dataset to date. | https://github.com/FreedomIntelligence/Huatuo-26M            |
-| Yidu-S4K                                                     | Named Entity Recognition, Entity and Attribute Extraction    | http://openkg.cn/dataset/yidu-s4k                            |
-| Yidu-N7K                                                     | Clinical Language Standardization                            | http://openkg.cn/dataset/yidu-n7k                            |
-| Chinese Medical Q&A Dataset                                  | Medical Q&A                                                  | https://github.com/zhangsheng93/cMedQA2                      |
-| Chinese Doctor-Patient Dialogue Data                         | Medical Q&A                                                  | https://github.com/UCSD-AI4H/Medical-Dialogue-System         |
-| Chinese Medical Dialogue Dataset                             | Medical Q&A data from six departments                        | https://github.com/Toyhom/Chinese-medical-dialogue-data      |
-| CPubMed-KG (4.4M triples)                                    | Full-text journal data of high quality from the Chinese Medical Association | https://cpubmed.openi.org.cn/graph/wiki                      |
-| CBLUE                                                        | Covers medical text information extraction (entity recognition, relation extraction) | https://github.com/CBLUEbenchmark/CBLUE                      |
-| Chinese Medical Knowledge Graph CMeKG (1M triples)           | CMeKG (Chinese Medical Knowledge Graph)                      | http://cmekg.pcl.ac.cn/                                      |
-| cMedQA2 (108K)                                               | Chinese medical Q&A dataset with over 100,000 entries.       | https://github.com/zhangsheng93/cMedQA2                      |
-| xywy-KG(294K triples)                                        | 44.1K entities 294.1K triples                                | https://github.com/baiyang2464/chatbot-base-on-Knowledge-Graph |
-| 39Health-KG (210K triples)                                   | Includes 15 pieces of information, with 7 types of entities, about 37,000 entities, and 210,000 entity relationships. | https://github.com/zhihao-chen/QASystemOnMedicalGraph        |
-| CHIP Annual Evaluation (Official Evaluation)                 | CHIP Annual Evaluation (Official Evaluation)                 | http://cips-chip.org.cn/2022/callforeval ; http://www.cips-chip.org.cn/2021/ ; http://cips-chip.org.cn/2020/ |
-| Ruijin Hospital Diabetes Dataset (Diabetes)                  | Diabetes literature mining and knowledge graph construction using diabetes-related textbooks and research papers | https://tianchi.aliyun.com/competition/entrance/231687/information |
-| Tianchi Novel Coronavirus Pneumonia Question Matching Competition (Novel Coronavirus) | The competition data includes: anonymized medical problem data pairs and annotated data. | https://tianchi.aliyun.com/competition/entrance/231776/information |
+* Huatuo-26M
+
+  * Link: https://github.com/FreedomIntelligence/Huatuo-26M
+    ![](https://img.shields.io/github/stars/FreedomIntelligence/Huatuo-26M)
+  * Description: Huatuo-26M is the largest Traditional Chinese Medicine (TCM) Q&A dataset to date.
+
+* Chinese Medical Dialogue Dataset
+
+  * Link: https://github.com/FreedomIntelligence/Huatuo-26M
+    ![](https://img.shields.io/github/stars/Toyhom/Chinese-medical-dialogue-data)
+  * Description: Medical Q&A data from six departments
+
+* CBLUE
+
+  * Link: https://github.com/CBLUEbenchmark/CBLUE
+    ![](https://img.shields.io/github/stars/CBLUEbenchmark/CBLUE)
+  * Description: Covers medical text information extraction (entity recognition, relation extraction)
+
+* cMedQA2 (108K)
+
+  * Link: https://github.com/zhangsheng93/cMedQA2
+    ![](https://img.shields.io/github/stars/zhangsheng93/cMedQA2)
+  * Description: Chinese medical Q&A dataset with over 100,000 entries.
+
+* xywy-KG(294K triples)
+
+  * Link: https://github.com/baiyang2464/chatbot-base-on-Knowledge-Graph
+    ![](https://img.shields.io/github/stars/baiyang2464/chatbot-base-on-Knowledge-Graph)
+  * Description: 44.1K entities 294.1K triples
+
+* 39Health-KG (210K triples)
+
+  * Link: https://github.com/zhihao-chen/QASystemOnMedicalGraph
+    ![](https://img.shields.io/github/stars/zhihao-chen/QASystemOnMedicalGraph)
+  * Desription: Includes 15 pieces of information, with 7 types of entities, about 37,000 entities, and 210,000 entity relationships.
+
+* Yidu-S4K
+
+  * Link: http://openkg.cn/dataset/yidu-s4k
+  * Description: Named Entity Recognition, Entity and Attribute Extraction
+
+* Yidu-N7K
+
+  * Link: http://openkg.cn/dataset/yidu-n7k
+  * Description: Clinical Language Standardization
+
+* Chinese Medical Q&A Dataset
+
+  * Link: https://github.com/zhangsheng93/cMedQA2
+  * Description: Medical Q&A
+
+* Chinese Doctor-Patient Dialogue Data
+
+  * 地址：https://github.com/UCSD-AI4H/Medical-Dialogue-System
+  * Description: Medical Q&A
+
+* CPubMed-KG (4.4M triples)
+
+  * Link: https://cpubmed.openi.org.cn/graph/wiki
+  * Description: Full-text journal data of high quality from the Chinese Medical Association
+
+* Chinese Medical Knowledge Graph CMeKG (1M triples)
+
+  * Link: http://cmekg.pcl.ac.cn/
+  * Description: CMeKG（Chinese Medical Knowledge  Graph）
+
+* CHIP Annual Evaluation (Official Evaluation)
+
+  * Link: http://cips-chip.org.cn/2022/callforeval ;  http://www.cips-chip.org.cn/2021/ ;   http://cips-chip.org.cn/2020/
+  * Description: CHIP Annual Evaluation (Official Evaluation)
+
+* Ruijin Hospital Diabetes Dataset (Diabetes)
+
+  * Link: https://tianchi.aliyun.com/competition/entrance/231687/information
+  * Description: Diabetes literature mining and knowledge graph construction using diabetes-related textbooks and research papers
+
+* Tianchi Novel Coronavirus Pneumonia Question Matching Competition (Novel Coronavirus)
+
+  * Link: https://tianchi.aliyun.com/competition/entrance/231776/information
+
+  * Description: The competition data includes: anonymized medical problem data pairs and annotated data.
+
+    
 
 ### 3.2 English
 
-| Name        | Description                                                  | Link                                          |
-| ----------- | ------------------------------------------------------------ | --------------------------------------------- |
-| PubMedQA    | Medical Q&A dataset extracted from PubMed                    | https://arxiv.org/abs/1909.06146              |
-| COMETA      | Medical entity linking data in social media. Published at EMNLP2020 | https://www.siphs.org/                        |
-| MedMentions | Biomedical entity linking dataset based on PubMed abstracts  | https://github.com/chanzuckerberg/MedMentions |
-| webMedQA    | Medical Q&A                                                  | https://github.com/hejunqing/webMedQA         |
-| MediQA      | Text summarization                                           | https://sites.google.com/view/mediqa2021      |
+- MedMentions
+
+  * Link:  https://github.com/chanzuckerberg/MedMentions
+    ![](https://img.shields.io/github/stars/chanzuckerberg/MedMentions)
+  * Desription: Biomedical entity linking dataset based on PubMed abstracts
+- webMedQA
+  - Link:  https://github.com/hejunqing/webMedQA
+    ![](https://img.shields.io/github/stars/hejunqing/webMedQA)
+  - Description: Medical Q&A
+- COMETA
+
+  * Link:  https://www.siphs.org/
+  * Description: Medical entity linking data in social media. Published at EMNLP2020
+- PubMedQA
+
+  * Link:  https://arxiv.org/abs/1909.06146
+  * Description: Medical entity linking data in social media. Published at EMNLP2020
+- MediQA
+  - Link:  https://sites.google.com/view/mediqa2021
+  - Description: Text summarization
+
+
 
 ## 4. Open-source Models
 

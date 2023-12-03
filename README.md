@@ -11,25 +11,23 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 [Medical_NLP](#medical_nlp)
 
 * [1. 评测](#1-评测)
-   * [1.1  中文医疗基准测评：CMB / CMExam / PromptCBLUE](#11--中文医疗基准测评cmb--cmexam--promptcblue)
-   * [1.2  英文医疗基准测评:](#12--英文医疗基准测评)
+  * [1.1  中文医疗基准测评：CMB / CMExam / PromptCBLUE](#11--中文医疗基准测评cmb--cmexam--promptcblue)
+  * [1.2  英文医疗基准测评:](#12--英文医疗基准测评)
 * [2. 比赛](#2-比赛)
-   * [2.1 正在进行的比赛](#21-正在进行的比赛)
-   * [2.2 已经结束的比赛](#22-已经结束的比赛)
+  * [2.1 正在进行的比赛](#21-正在进行的比赛)
+  * [2.2 已经结束的比赛](#22-已经结束的比赛)
 * [3. 数据集](#3-数据集)
-   * [3.1 中文](#31-中文)
-   * [3.2 英文](#32-英文)
+  * [3.1 中文](#31-中文)
+  * [3.2 英文](#32-英文)
 * [4. 开源预训练模型](#4-开源预训练模型)
-   * [4.1 医疗PLM](#41-医疗PLM)
-   * [4.2 医疗LLM](#42-医疗LLM)
-   * [4.3 中文医疗 请参考<a href="https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#%E5%8C%BB%E7%96%97">这里</a>](#41-中文医疗-请参考这里)
-   * [4.4 中文通用大模型 请参考<a href="https://github.com/HqWu-HITCS/Awesome-Chinese-LLM">这里</a>](#42-中文通用大模型-请参考这里)
+  * [4.1 医疗PLM](#41-医疗PLM)
+  * [4.2 医疗LLM](#42-医疗LLM)
 * [5. 相关论文](#5-相关论文)
-   * [5.1 OpenAI](#51-openai)
-   * [5.2 后ChatGPT时代 可能有帮助的论文(持续更新)](#52-后chatgpt时代-可能有帮助的论文持续更新)
-   * [5.3 综述类文章](#53-综述类文章)
-   * [5.4 特定任务文章](#54-特定任务文章)
-   * [5.4 会议索引](#54-会议索引)
+  * [5.1 OpenAI](#51-openai)
+  * [5.2 后ChatGPT时代 可能有帮助的论文(持续更新)](#52-后chatgpt时代-可能有帮助的论文持续更新)
+  * [5.3 综述类文章](#53-综述类文章)
+  * [5.4 特定任务文章](#54-特定任务文章)
+  * [5.4 会议索引](#54-会议索引)
 * [6. 开源工具包](#6-开源工具包)
 * [7. 工业级产品解决方案](#7-工业级产品解决方案)
 * [8. blog分享](#8-blog分享)
@@ -41,44 +39,82 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 ### 1.1  中文医疗基准测评：CMB / CMExam / PromptCBLUE 
 
-| 名称        | 来源                                                         | github地址                                  |
-| ----------- | ------------------------------------------------------------ | ------------------------------------------- |
-| CMB         | 各个临床医学工种各阶段考试；临床复杂病例问诊                 | https://github.com/FreedomIntelligence/CMB  |
-| CMExam      | 执业医师资格考试往年题                                       | https://github.com/williamliujl/CMExam      |
-| PromptCBLUE | CBLUE                                                        | https://github.com/michael-wzhu/PromptCBLUE |
-| CBLUE       | CHIP会议往届的学术评测比赛和阿里夸克医疗搜索业务的数据集组成 | https://github.com/CBLUEbenchmark/CBLUE     |
+* CMB
+
+  * 地址：https://github.com/FreedomIntelligence/CMB
+    ![](https://img.shields.io/github/stars/FreedomIntelligence/CMB)
+  * 来源：各个临床医学工种各阶段考试；临床复杂病例问诊
+* CMExam
+
+  * 地址：https://github.com/williamliujl/CMExam
+    ![](https://img.shields.io/github/stars/williamliujl/CMExam)
+  * 来源：执业医师资格考试往年题
+* PromptCBLUE
+  * 地址：https://github.com/michael-wzhu/PromptCBLUE
+    ![](https://img.shields.io/github/stars/michael-wzhu/PromptCBLUE)
+  * 来源：CBLUE
+* PromptCBLUE
+  * 地址：https://github.com/CBLUEbenchmark/CBLUE
+    ![](https://img.shields.io/github/stars/CBLUEbenchmark/CBLUE)
+  * 来源：CHIP会议往届的学术评测比赛和阿里夸克医疗搜索业务的数据集组成
 
 ### 1.2  英文医疗基准测评: 
 
-| 名称          | 来源   | 介绍                     | github地址 | 官方测评网站地址 |
-| ------------- | ------ | ------------------------ | ---------- | ---------------- |
-| MultiMedBench | Google | 是一种大型多模态生成模型 |            |                  |
+* MultiMedBench
+
+  * 简介：是一种源自Google的大型多模态生成模型
+
+
+
+
 
 ## 2. 比赛
 
 ### 2.1 正在进行的比赛
 
-暂无 欢迎补充~
+* 暂无 欢迎补充~
 
 ### 2.2 已经结束的比赛
 
-**英文**
+#### 2.2.1 英文比赛
 
-| 名称                                     | 来源                        | 地址                                                         |
-| ---------------------------------------- | --------------------------- | ------------------------------------------------------------ |
-| BioNLP Workshop 2023 共享任务            | BioNLP Workshop             | https://aclweb.org/aclwiki/BioNLP_Workshop#SHARED_TASKS_2023 |
-| MedVidQA 2023                            | 美国国立卫生研究院          | https://medvidqa.github.io/index.html                        |
-| MEDIQA-2021                              | NAACL-BioNLP 2021 workshop. | https://sites.google.com/view/mediqa2021                     |
-| ICLR-2021-医疗对话生成与自动诊断国际竞赛 | ICLR 2021 workshop          | https://mlpcp21.github.io/pages/challenge                    |
+* BioNLP Workshop 2023 共享任务
 
-**中文**
+  * 地址：https://aclweb.org/aclwiki/BioNLP_Workshop#SHARED_TASKS_2023
+  * 来源：BioNLP Workshop
+* MedVidQA 2023
 
-| 名称                                         | 来源                                | 地址                                                         |
-| -------------------------------------------- | ----------------------------------- | ------------------------------------------------------------ |
-| 影像学NLP —— 医学影像诊断报告生成            | 2023全球人工智能技术创新大赛 赛道一 | https://gaiic.caai.cn/ai2023/                                |
-| 非标准化疾病诉求的简单分诊挑战赛2.0          | 科大讯飞                            | http://challenge.xfyun.cn/topic/info?type=disease-claims-2022&ch=ds22-dw-sq03 |
-| 第八届中国健康信息处理大会(CHIP2022)测评任务 | CHIP2022                            | http://cips-chip.org.cn/)                                    |
-| 科大讯飞-医疗实体及关系识别挑战赛            | 科大讯飞                            | http://www.fudan-disc.com/sharedtask/imcs21/index.html       |
+  * 地址：https://medvidqa.github.io/index.html
+  * 来源：美国国立卫生研究院
+* MEDIQA-2021
+
+  * 地址：https://sites.google.com/view/mediqa2021
+  * 来源：NAACL-BioNLP 2021 workshop
+* ICLR-2021-医疗对话生成与自动诊断国际竞赛
+
+  * 地址：https://mlpcp21.github.io/pages/challenge
+  * 来源：ICLR 2021 workshop
+
+#### 2.2.2 中文比赛
+
+* 影像学NLP —— 医学影像诊断报告生成
+
+  * 地址：https://gaiic.caai.cn/ai2023/
+  * 来源：2023全球人工智能技术创新大赛 赛道一
+* 非标准化疾病诉求的简单分诊挑战赛2.0
+
+  * 地址：http://challenge.xfyun.cn/topic/info?type=disease-claims-2022&ch=ds22-dw-sq03
+  * 来源：科大讯飞
+* 第八届中国健康信息处理大会(CHIP2022)测评任务
+
+  * 地址：http://cips-chip.org.cn/
+  * 来源：CHIP2022
+* 科大讯飞-医疗实体及关系识别挑战赛
+
+  * 地址：http://www.fudan-disc.com/sharedtask/imcs21/index.html
+  * 来源：科大讯飞
+
+
 
 
 
@@ -86,33 +122,92 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 ### 3.1 中文
 
-| 名称                              | 介绍                                                         | 地址                                                         |
-| --------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Huatuo-26M                        | Huatuo-26M 是迄今为止最大的中医问答数据集。                  | https://github.com/FreedomIntelligence/Huatuo-26M            |
-| Yidu-S4K                          | 命名实体识别,实体及属性抽取                                  | http://openkg.cn/dataset/yidu-s4k                            |
-| Yidu-N7K                          | 临床语标准化                                                 | http://openkg.cn/dataset/yidu-n7k                            |
-| 中文医药方面的问答数据集          | 医疗问答                                                     | https://github.com/zhangsheng93/cMedQA2                      |
-| 中文医患问答对话数据              | 医疗问答                                                     | https://github.com/UCSD-AI4H/Medical-Dialogue-System         |
-| 中文医疗对话数据集                | 包含六个科室的医学问答数据                                   | https://github.com/Toyhom/Chinese-medical-dialogue-data      |
-| CPubMed-KG (4.4M三元组)           | 中华医学会高质量全文期刊数据                                 | https://cpubmed.openi.org.cn/graph/wiki                      |
-| CBLUE                             | 涵盖了医学文本信息抽取（实体识别、关系抽取）                 | https://github.com/CBLUEbenchmark/CBLUE                      |
-| 中文医学知识图谱 CMeKG (1M三元组) | CMeKG（Chinese Medical Knowledge  Graph）                    | http://cmekg.pcl.ac.cn/                                      |
-| cMedQA2 (108K)                    | 中文医药方面的问答数据集，超过10万条。                       | https://github.com/zhangsheng93/cMedQA2                      |
-| xywy-KG(294K三元组)               | 44.1K实体 294.1K 三元组                                      | https://github.com/baiyang2464/chatbot-base-on-Knowledge-Graph |
-| 39Health-KG (210K三元组)          | 包括15项信息，其中7类实体，约3.7万实体，21万实体关系。       | https://github.com/zhihao-chen/QASystemOnMedicalGraph        |
-| CHIP历年测评 (官方测评)           | CHIP历年测评 (官方测评)                                      | http://cips-chip.org.cn/2022/callforeval ;  http://www.cips-chip.org.cn/2021/ ;   http://cips-chip.org.cn/2020/ |
-| 瑞金医院糖尿病数据集 (糖尿病)     | 通过糖尿病相关的教科书、研究论文来做糖尿病文献挖掘并构建糖尿病知识图谱 | https://tianchi.aliyun.com/competition/entrance/231687/information |
-| 天池新冠肺炎问句匹配比赛 (新冠)   | 本次大赛数据包括：脱敏之后的医疗问题数据对和标注数据。       | https://tianchi.aliyun.com/competition/entrance/231776/information |
+* Huatuo-26M
+
+  * 地址：https://github.com/FreedomIntelligence/Huatuo-26M
+    ![](https://img.shields.io/github/stars/FreedomIntelligence/Huatuo-26M)
+  * 简介：Huatuo-26M 是迄今为止最大的中医问答数据集。
+* 中文医疗对话数据集
+
+  * 地址：https://github.com/FreedomIntelligence/Huatuo-26M
+    ![](https://img.shields.io/github/stars/Toyhom/Chinese-medical-dialogue-data)
+  * 简介：包含六个科室的医学问答数据
+* CBLUE
+
+  * 地址：https://github.com/CBLUEbenchmark/CBLUE
+    ![](https://img.shields.io/github/stars/CBLUEbenchmark/CBLUE)
+  * 简介：涵盖了医学文本信息抽取（实体识别、关系抽取）
+* cMedQA2 (108K)
+
+  * 地址：https://github.com/zhangsheng93/cMedQA2
+    ![](https://img.shields.io/github/stars/zhangsheng93/cMedQA2)
+  * 简介：中文医药方面的问答数据集，超过10万条
+* xywy-KG(294K三元组)
+
+  * 地址：https://github.com/baiyang2464/chatbot-base-on-Knowledge-Graph
+    ![](https://img.shields.io/github/stars/baiyang2464/chatbot-base-on-Knowledge-Graph)
+  * 简介：44.1K实体 294.1K 三元组
+* 39Health-KG (210K三元组)
+  * 地址：https://github.com/zhihao-chen/QASystemOnMedicalGraph
+    ![](https://img.shields.io/github/stars/zhihao-chen/QASystemOnMedicalGraph)
+  * 简介：包括15项信息，其中7类实体，约3.7万实体，21万实体关系。
+* Yidu-S4K
+
+  * 地址：http://openkg.cn/dataset/yidu-s4k
+  * 简介：命名实体识别, 实体及属性抽取
+* Yidu-N7K
+
+  * 地址：http://openkg.cn/dataset/yidu-n7k
+  * 简介：临床语标准化
+* 中文医药方面的问答数据集
+
+  * 地址：https://github.com/zhangsheng93/cMedQA2
+  * 简介：医疗问答
+* 中文医患问答对话数据
+
+  * 地址：https://github.com/UCSD-AI4H/Medical-Dialogue-System
+  * 简介：医疗问答
+* CPubMed-KG (4.4M三元组)
+
+  * 地址：https://cpubmed.openi.org.cn/graph/wiki
+  * 简介：中华医学会高质量全文期刊数据
+* 中文医学知识图谱 CMeKG (1M三元组)
+
+  * 地址：http://cmekg.pcl.ac.cn/
+  * 简介：CMeKG（Chinese Medical Knowledge  Graph）
+* CHIP历年测评 (官方测评)
+  * 地址：http://cips-chip.org.cn/2022/callforeval ;  http://www.cips-chip.org.cn/2021/ ;   http://cips-chip.org.cn/2020/
+  * 简介：CHIP历年测评 (官方测评)
+* 瑞金医院糖尿病数据集 (糖尿病)
+  * 地址：https://tianchi.aliyun.com/competition/entrance/231687/information
+  * 简介：瑞金医院糖尿病数据集 (糖尿病)
+* 天池新冠肺炎问句匹配比赛 (新冠)
+  * 地址：https://tianchi.aliyun.com/competition/entrance/231776/information
+  * 简介：本次大赛数据包括：脱敏之后的医疗问题数据对和标注数据。
 
 ### 3.2 英文
 
-| 名称        | 介绍                                          | 地址                                          |
-| ----------- | --------------------------------------------- | --------------------------------------------- |
-| PubMedQA    | 基于Pubmed提取的医学问答数据集                | https://arxiv.org/abs/1909.06146              |
-| COMETA      | 社交媒体中的医疗实体链接数据。发表于EMNLP2020 | https://www.siphs.org/                        |
-| MedMentions | 基于Pubmed摘要的生物医学实体链接数据集        | https://github.com/chanzuckerberg/MedMentions |
-| webMedQA    | 医疗问答                                      | https://github.com/hejunqing/webMedQA         |
-| MediQA      | 文本概括                                      | https://sites.google.com/view/mediqa2021      |
+- MedMentions
+
+  * 地址：https://github.com/chanzuckerberg/MedMentions
+    ![](https://img.shields.io/github/stars/chanzuckerberg/MedMentions)
+  * 简介：基于Pubmed摘要的生物医学实体链接数据集
+- webMedQA
+  - 地址：https://github.com/hejunqing/webMedQA
+    ![](https://img.shields.io/github/stars/hejunqing/webMedQA)
+  - 简介：医疗问答
+
+- COMETA
+
+  * 地址：https://www.siphs.org/
+  * 简介：社交媒体中的医疗实体链接数据。发表于EMNLP2020
+- PubMedQA
+
+  * 地址：https://arxiv.org/abs/1909.06146
+  * 简介：基于Pubmed提取的医学问答数据集
+- MediQA
+  - 地址：https://sites.google.com/view/mediqa2021
+  - 简介：文本概括
 
 
 
@@ -122,10 +217,10 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 ### 4.1 医疗PLM
 
-* BioBERT：
+- BioBERT：
 
-  * 地址：https://github.com/naver/biobert-pretrained
-    ![](https://img.shields.io/github/stars/naver/biobert-pretrained)
+  * 地址：https://github.com/naver/biobert-pretrained 
+    ![](https://img.shields.io/github/stars/naver/biobert-pretrained )
   * 简介：BioBERT是一种生物医学领域的语言表示模型，专门用于生物医学文本挖掘任务，如生物医学命名实体识别、关系提取、问答等。
 
 * BlueBERT：
@@ -235,10 +330,6 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
     ![](https://img.shields.io/github/stars/snap-stanford/med-flamingo)
   * 简介：Med-Flamingo是一个视觉语言模型，专门设计用于处理包含图像和文本的交错多模态数据。以Flamingo为基础，Med-Flamingo通过对不同医学学科的多种多模式知识来源进行预训练，进一步增强了在这些医学领域的能力。
 
-### 4.3 中文医疗 请参考[这里](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#%E5%8C%BB%E7%96%97)
-
-### 4.4 中文通用大模型 请参考[这里](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM)
-
 
 
 ## 5. 相关论文
@@ -257,7 +348,7 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 **openai RLHF思维链路**
 
 1. 高效反馈(2015) Start from this [blog](https://ai-alignment.com/efficient-feedback-a347748b1557#.exjnsupts)！  地址：https://ai-alignment.com/efficient-feedback-a347748b1557#.exjnsupts
-2.  [使用损坏的奖励渠道进行强化学习](https://openai.com/research/faulty-reward-functions)(2017.3 openai) openai对RL Policy安全性的考虑 4/5的尝试 论文地址：https://arxiv.org/abs/1705.08417   Blog: https://openai.com/research/faulty-reward-functions
+2. [使用损坏的奖励渠道进行强化学习](https://openai.com/research/faulty-reward-functions)(2017.3 openai) openai对RL Policy安全性的考虑 4/5的尝试 论文地址：https://arxiv.org/abs/1705.08417   Blog: https://openai.com/research/faulty-reward-functions
 3. [从人类偏好中深度强化学习](https://openai.com/research/learning-from-human-preferences)(2017.6 openai) RLHF in RL 初探  论文地址：https://arxiv.org/abs/1706.03741
 4. [通过辩论提升人工智能安全](https://openai.com/research/debate) (2018.5 openai)  通过辩论 实现RL安全 解决2 论文地址：https://arxiv.org/abs/1805.00899
 
@@ -409,8 +500,8 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 1.  [awesome_Chinese_medical_NLP](https://github.com/GanjinZero/awesome_Chinese_medical_NLP)
 2.  [中文NLP数据集搜索](https://www.cluebenchmarks.com/dataSet_search.html)
-3. [medical-data(海量医疗相关数据)](https://github.com/beamandrew/medical-data)
-4. [天池数据集(其中包含多个医疗NLP数据集)](https://tianchi.aliyun.com/dataset)
+3.  [medical-data(海量医疗相关数据)](https://github.com/beamandrew/medical-data)
+4.  [天池数据集(其中包含多个医疗NLP数据集)](https://tianchi.aliyun.com/dataset)
 
 
 ## 10. reference
