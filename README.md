@@ -279,6 +279,10 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
   * 地址：https://github.com/FreedomIntelligence/HuatuoGPT
     ![](https://img.shields.io/github/stars/FreedomIntelligence/HuatuoGPT)
   * 简介：华佗GPT是一个经过中文医学指令精调/指令微调(Instruct-tuning)得到的一个GPT-like模型。该模型是专门为医疗咨询设计的中文LLM，它的训练数据包含了从ChatGPT处蒸馏得到的数据和来自医生的真实数据，在训练过程中加入了RLHF的反馈。
+* HuatuoGPT-II：
+  * 地址：https://github.com/FreedomIntelligence/HuatuoGPT-II
+    ![](https://img.shields.io/github/stars/FreedomIntelligence/HuatuoGPT-II)
+  * 简介：华佗GPT2采用了创新的领域适应方法，大大提高了其医学知识和对话能力。它在多个医疗基准测试中表现出了一流的性能，尤其是在专家评估和新医学执业资格考试中超越了 GPT-4。
 
 #### 4.2.2 英文医疗大语言模型
 
@@ -396,8 +400,9 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 ### 5.3 综述类文章
 
-1. 生物医学领域的预训练语言模型：系统调查   论文地址：https://arxiv.org/abs/2110.05006
+1. 生物医学领域的预训练语言模型：系统调查   [论文地址 ](https://arxiv.org/abs/2110.05006) 
 2. 医疗保健深度学习指南  [论文地址 ](https://www.nature.com/articles/s41591-018-0316-z)   nature medicine发表的综述  
+3. 医疗保健领域大语言模型综述    [论文地址 ](https://arxiv.org/abs/2310.05694) 
 
 
 

@@ -283,7 +283,11 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 * HuatuoGPT：
   * Website: https://github.com/FreedomIntelligence/HuatuoGPT
     ![](https://img.shields.io/github/stars/FreedomIntelligence/HuatuoGPT)
-  * HuaTuo GPT is a GPT-like model that has undergone fine-tuning with specific medical instructions in Chinese. This model is a Chinese Language Model (LLM) designed specifically for medical consultation. Its training data includes distilled data from ChatGPT and real data from doctors. During the training process, reinforcement learning from human feedback (RLHF) has been incorporated to improve its performance.
+  * Introduction: HuaTuo GPT is a GPT-like model that has undergone fine-tuning with specific medical instructions in Chinese. This model is a Chinese Language Model (LLM) designed specifically for medical consultation. Its training data includes distilled data from ChatGPT and real data from doctors. During the training process, reinforcement learning from human feedback (RLHF) has been incorporated to improve its performance.
+* HuatuoGPT-II：
+  * Website: https://github.com/FreedomIntelligence/HuatuoGPT-II
+    ![](https://img.shields.io/github/stars/FreedomIntelligence/HuatuoGPT-II)
+  * Introduction: HuatuoGPT2 employs an innovative domain adaptation method to significantly boost its medical knowledge and dialogue proficiency. It showcases state-of-the-art performance in several medical benchmarks, especially surpassing GPT-4 in expert evaluations and the fresh medical licensing exams.
 
 #### 4.2.2 English Medical Large Language Models
 
@@ -408,6 +412,7 @@ Iteration of models
 
 1. Pretrained Language Models in Biomedical Field: A Systematic Review. [Paper Link](https://arxiv.org/abs/2110.05006)
 2. Deep Learning Guide for Healthcare. [Paper Link](https://www.nature.com/articles/s41591-018-0316-z) Published in Nature Medicine.
+3. A Survey of Large Language Models for Healthcare. [Paper Link](https://arxiv.org/abs/2310.05694) 
 
 ### 5.4 Task-Specific Articles
 
