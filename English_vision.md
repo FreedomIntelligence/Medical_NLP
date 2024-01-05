@@ -21,11 +21,9 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
    * [4.1 Medical PLMs](#41-medical-PLMs)
    * [4.2 Medical LLMs](#42-medical-LLMs)
 * [5. Relevant Papers](#5-relevant-papers)
-   * [5.1 OpenAI](#51-openai)
-   * [5.2 Papers That Might Be Helpful in the Post-ChatGPT Era (Continuously Updated)](#52-papers-that-might-be-helpful-in-the-post-chatgpt-era-continuously-updated)
-   * [5.2 The Post-ChatGPT Era: Helpful Papers (Continuous Updates)](#52-the-post-chatgpt-era-helpful-papers-continuous-updates)
-   * [5.3 Review Articles](#53-review-articles)
-   * [5.4 Task-Specific Articles](#54-task-specific-articles)
+   * [5.1 The Post-ChatGPT Era: Helpful Papers](#51-the-post-chatgpt-era-helpful-papers)
+   * [5.2 Review Articles](#52-review-articles)
+   * [5.3 Task-Specific Articles](#53-task-specific-articles)
    * [5.4 Conference Index](#54-conference-index)
 * [6. Open-source Toolkits](#6-open-source-toolkits)
 * [7. Industrial Solutions](#7-industrial-solutions)
@@ -95,7 +93,6 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
   * Source: ICLR 2021 workshop
 
-    
 
 #### **2.2.1 Chinese competitions**
 
@@ -204,7 +201,6 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
   * Description: The competition data includes: anonymized medical problem data pairs and annotated data.
 
-    
 
 ### 3.2 English
 
@@ -339,67 +335,11 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
     ![](https://img.shields.io/github/stars/snap-stanford/med-flamingo)
   * Introduction: Med-Flamingo is a vision language model specifically designed to handle interleaved multimodal data comprising both images and text. Building on the achievements of Flamingo,  Med-Flamingo further enhances these capabilities for the medical domain by pre-training diverse multimodal knowledge sources across various medical disciplines.
 
-### 4.3 Chinese Medical - Refer [here](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#医疗)
-
-### 4.4 General Large-scale Chinese Models - Refer [here](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM#通用)
-
 
 
 ## 5. Relevant Papers
 
-### 5.1 OpenAI
-
-**Previous works in the RLHF domain before RLHF + NLP by OpenAI**
-
-- Bayesian Methods for Policy Learning from Preference Queries in Trajectories (NIPS 2012) Paper link: https://papers.nips.cc/paper/2012/hash/16c222aa19898e5058938167c8ab6c57-Abstract.html
-- Training Robots Through Human Feedback: A Case Study (ICSR 2013) Paper link: https://link.springer.com/chapter/10.1007/978-3-319-02675-6_46
-- APRIL: Active Preference Learning-based Reinforcement Learning (2012) Paper link: https://arxiv.org/abs/1208.0984
-- Programming by Feedback (2014) Paper link: https://hal.inria.fr/hal-00980839
-- Learning Rewards from Human Preferences and Demonstrations in Atari (2018) Paper link: https://arxiv.org/abs/1811.06521
-
-**OpenAI RLHF thought chain**
-
-1. Efficient Feedback (2015) Start from this [blog](https://ai-alignment.com/efficient-feedback-a347748b1557#.exjnsupts)! Address: https://ai-alignment.com/efficient-feedback-a347748b1557#.exjnsupts
-2. [Reinforcement Learning with Corrupted Reward Channel](https://openai.com/research/faulty-reward-functions)(2017.3 openai) OpenAI's consideration on RL Policy safety, 4/5 of the attempts Paper link: https://arxiv.org/abs/1705.08417 Blog: https://openai.com/research/faulty-reward-functions
-3. [Deep Reinforcement Learning from Human Preferences](https://openai.com/research/learning-from-human-preferences)(2017.6 openai) An initial exploration of RLHF in RL Paper link: https://arxiv.org/abs/1706.03741
-4. [Improving AI Safety by Debate](https://openai.com/research/debate) (2018.5 openai) Implementing RL safety through debate, addressing 2. Paper link: https://arxiv.org/abs/1805.00899
-5. [Supervising Strong Learners by Amplifying Weak Experts](https://openai.com/research/learning-complex-goals-with-iterated-amplification) (2018.10 openai) Iterative amplification of RL safety technology, addressing 2. Paper link: https://arxiv.org/abs/1810.08575
-6. [Fine-Tuning GPT-2 from Human Preferences](https://openai.com/research/fine-tuning-gpt-2) (2019 openai) First NLP+RLHF! Paper link: https://arxiv.org/abs/1909.08593
-7. [Learning to Summarize with Human Feedback](https://openai.com/research/learning-to-summarize-with-human-feedback)(openai 2020) Second try NLP+RLHF! Paper link: https://arxiv.org/abs/2009.01325
-8. [TruthfulQA](https://openai.com/research/truthfulqa): Measuring the Capacity of Models to Mimic Human Lies (2021.8.9) Last sentence of the abstract: The largest models are usually the least truthful, and we suggest that tuning the training objective separately rather than enlarging the model alone improves truthfulness. This directly leads to 9. Paper link: https://arxiv.org/abs/2109.07958
-9. [Instruct GPT](https://openai.com/research/instruction-following)(2022.1 openai) The technology explored in 0.0.2.6/7 finally aligns with GPT-3! Key point: Despite having over 100 times fewer parameters, our label creators prefer the outputs of the 1.3B InstructGPT model to those of the 175B GPT-3 model. Paper link: https://arxiv.org/abs/2203.02155
-
-**Iteration process of GPT-x and its variants**
-
-Iteration of hardware resources and scheduling
-
-1. [Kubernetes](https://kubernetes.io/)
-2. [Scaling Kubernetes to 2,500 Nodes](https://openai.com/research/scaling-kubernetes-to-2500-nodes) Blog link: https://openai.com/research/scaling-kubernetes-to-2500-nodes
-3. [Scaling Kubernetes to 7,500 Nodes](https://openai.com/research/scaling-kubernetes-to-7500-nodes) Provides scalable infrastructure for large models. It also provides infrastructure for fast small-scale iterative research such as neural language model scaling laws. Blog link: https://openai.com/research/scaling-kubernetes-to-7500-nodes
-
-Iteration of models
-
-1. [GPT](https://openai.com/research/language-unsupervised)(2018.6.11 openai) Paper link: https://cdn.openai.com/research-covers/language-unsupervised/language_understanding_paper.pdf
-2. [GPT-2](https://openai.com/research/better-language-models)(2019.2.14 openai) Paper link: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
-3. [GPT-3: Language Models are Few-Shot Learners](https://openai.com/research/language-models-are-few-shot-learners) (2020.3.28 openai) Paper link: https://arxiv.org/abs/2005.14165
-4. [CLIP](https://openai.com/research/clip) Learning Transferable Visual Models from Natural Language Supervision (2021.1.5openai) Paper link: https://arxiv.org/abs/2103.00020
-5. [CodeX](https://openai.com/blog/openai-codex) Evaluating Large Language Models Trained on Code (2021.6.7 openai) Paper link: https://arxiv.org/abs/2107.03374
-6. [Instruct GPT](https://openai.com/research/instruction-following)(2022.6.27 openai) Paper link: https://arxiv.org/abs/2203.02155
-7. [GPT-4](https://openai.com/research/gpt-4) (openai 2023.3.14) Paper link: https://cdn.openai.com/papers/gpt-4.pdf
-
-### 5.2 Papers That Might Be Helpful in the Post-ChatGPT Era (Continuously Updated)
-
-1. Large Language Models Encode Clinical Knowledge Paper link: https://arxiv.org/abs/2212.13138
-2. Performance of ChatGPT on USMLE: The Potential for AI-Assisted Medical Education Paper link: https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0000198
-3. AI-Generated Writing Imitates Human Writing in Biomedical Research: A Double-Blind Randomized Study Paper link: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2787608
-
-4. Potential Pitfalls and Promises of Artificial Intelligence in Health Care Paper link: https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2787599
-5. Using ChatGPT-4 to Answer Questions about Medicines: A Validation Study Paper link: https://www.jmir.org/2023/7/e33683/
-6. The Impact of OpenAI's ChatGPT on Patient-Doctor Communication: An Empirical Study Paper link: https://www.jmir.org/2023/7/e33684/
-
-
-
-### 5.2 The Post-ChatGPT Era: Helpful Papers (Continuous Updates)
+### 5.1 The Post-ChatGPT Era: Helpful Papers
 
 1. Large Language Models Encode Clinical Knowledge. [Paper Link](https://arxiv.org/abs/2212.13138)
 2. Performance of ChatGPT on USMLE: The Potential of Large Language Models for AI-Assisted Medical Education. [Paper Link](https://journals.plos.org/digitalhealth/article?id=10.1371/journal.pdig.0000198)
@@ -408,13 +348,13 @@ Iteration of models
 5. Check Your Facts and Try Again: Improving Large Language Models with External Knowledge and Automatic Feedback. [Paper Link](https://arxiv.org/abs/2302.12813)
 6. Capability of GPT-4 in Medical Challenge Questions. [Paper Link](https://arxiv.org/abs/2303.13375)
 
-### 5.3 Review Articles
+### 5.2 Review Articles
 
 1. Pretrained Language Models in Biomedical Field: A Systematic Review. [Paper Link](https://arxiv.org/abs/2110.05006)
 2. Deep Learning Guide for Healthcare. [Paper Link](https://www.nature.com/articles/s41591-018-0316-z) Published in Nature Medicine.
 3. A Survey of Large Language Models for Healthcare. [Paper Link](https://arxiv.org/abs/2310.05694) 
 
-### 5.4 Task-Specific Articles
+### 5.3 Task-Specific Articles
 
 **Articles Related to Electronic Health Records**
 
@@ -476,6 +416,8 @@ Iteration of models
 
 1. Tokenization tool: PKUSEG [Project Link](https://github.com/lancopku/pkuseg-python) Project Description: A multi-domain Chinese tokenization tool launched by Peking University, which supports selection in the medical field.
 
+
+
 ## 7. Industrial Solutions
 
 1. [Lingyi Wisdom](https://01.baidu.com/index.html)
@@ -484,6 +426,8 @@ Iteration of models
 4. [Baidu - Medical Text Structuring](https://ai.baidu.com/solution/mtp)
 5. [Alibaba Cloud - Medical Natural Language Processing](https://help.aliyun.com/document_detail/179395.html)
 
+
+
 ## 8. Blog Sharing
 
 1. [Alpaca: A Powerful Open Source Instruction Following Model](https://crfm.stanford.edu/2023/03/13/alpaca.html)
@@ -491,9 +435,12 @@ Iteration of models
 3. [Introduction to Medical Public Databases and Data Mining Techniques in the Big Data Era](https://mp.weixin.qq.com/s/tA44U4bJUttnROfrzpNYcQ)
 4. [Looking at the Development of NLP Application in the Medical Field from ACL 2021, with Resource Download](https://mp.weixin.qq.com/s/RhcHvRWHRnYUg6u9vXoIGA)
 
+
+
 ## 9. Friendly Links
 
 1. [awesome_Chinese_medical_NLP](https://github.com/GanjinZero/awesome_Chinese_medical_NLP)
 2. [Chinese NLP Dataset Search](https://www.cluebenchmarks.com/dataSet_search.html)
 3. [medical-data(Large Amount of Medical Related Data)](https://github.com/beamandrew/medical-data)
 4. [Tianchi Dataset (Includes Multiple Medical NLP Datasets)](https://tianchi.aliyun.com/dataset)
+
