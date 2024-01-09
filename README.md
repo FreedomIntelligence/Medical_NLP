@@ -204,7 +204,6 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
   - 地址：https://github.com/hejunqing/webMedQA
     ![](https://img.shields.io/github/stars/hejunqing/webMedQA)
   - 简介：医疗问答
-
 - COMETA
 
   * 地址：https://www.siphs.org/
@@ -216,6 +215,16 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 - MediQA
   - 地址：https://sites.google.com/view/mediqa2021
   - 简介：文本概括
+- ChatDoctor Dataset-1
+  - 地址：https://drive.google.com/file/d/1lyfqIwlLSClhgrCutWuEe_IACNq6XNUt/view?usp=sharing
+  - 简介：来自 HealthCareMagic.com 的 10 万条病人与医生之间的真实对话
+- ChatDoctor Dataset-2
+  - 地址：https://drive.google.com/file/d/1ZKbqgYqWc7DJHs3N9TQYQVPdDQmZaClA/view?usp=sharing
+  - 简介：来自 icliniq.com 的 10k 条病人与医生之间的真实对话
+- Visual Med-Alpaca Data
+  - 地址：https://github.com/cambridgeltl/visual-med-alpaca/tree/main/data
+  - 简介：用于Visual Med-Alpaca训练的数据，源自 [BigBio](https://huggingface.co/bigbio), [ROCO](https://github.com/razorx89/roco-dataset) and [GPT-3.5-Turbo](https://chat.openai.com/chat)
+
 
 
 

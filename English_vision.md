@@ -218,6 +218,17 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 - MediQA
   - Link:  https://sites.google.com/view/mediqa2021
   - Description: Text summarization
+- ChatDoctor Dataset-1
+  - Link:  https://drive.google.com/file/d/1lyfqIwlLSClhgrCutWuEe_IACNq6XNUt/view?usp=sharing
+  - Description: 100k real conversations between patients and doctors from HealthCareMagic.com
+- ChatDoctor Dataset-2
+  - Link:  https://drive.google.com/file/d/1ZKbqgYqWc7DJHs3N9TQYQVPdDQmZaClA/view?usp=sharing
+  - Description:  10k real conversations between patients and doctors from icliniq.com
+- Visual Med-Alpaca Data
+  - Link:  https://github.com/cambridgeltl/visual-med-alpaca/tree/main/data
+  - Description: These data are used for Visual Med-Alpaca traning, being produced based on  [BigBio](https://huggingface.co/bigbio), [ROCO](https://github.com/razorx89/roco-dataset) and [GPT-3.5-Turbo](https://chat.openai.com/chat)
+
+
 
 
 
