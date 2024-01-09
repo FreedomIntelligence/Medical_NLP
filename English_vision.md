@@ -124,77 +124,71 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
   * Link: https://github.com/FreedomIntelligence/Huatuo-26M
     ![](https://img.shields.io/github/stars/FreedomIntelligence/Huatuo-26M)
   * Description: Huatuo-26M is the largest Traditional Chinese Medicine (TCM) Q&A dataset to date.
-
 * Chinese Medical Dialogue Dataset
 
   * Link: https://github.com/FreedomIntelligence/Huatuo-26M
     ![](https://img.shields.io/github/stars/Toyhom/Chinese-medical-dialogue-data)
   * Description: Medical Q&A data from six departments
-
 * CBLUE
 
   * Link: https://github.com/CBLUEbenchmark/CBLUE
     ![](https://img.shields.io/github/stars/CBLUEbenchmark/CBLUE)
   * Description: Covers medical text information extraction (entity recognition, relation extraction)
-
 * cMedQA2 (108K)
 
   * Link: https://github.com/zhangsheng93/cMedQA2
     ![](https://img.shields.io/github/stars/zhangsheng93/cMedQA2)
   * Description: Chinese medical Q&A dataset with over 100,000 entries.
-
 * xywy-KG(294K triples)
 
   * Link: https://github.com/baiyang2464/chatbot-base-on-Knowledge-Graph
     ![](https://img.shields.io/github/stars/baiyang2464/chatbot-base-on-Knowledge-Graph)
   * Description: 44.1K entities 294.1K triples
-
 * 39Health-KG (210K triples)
 
   * Link: https://github.com/zhihao-chen/QASystemOnMedicalGraph
     ![](https://img.shields.io/github/stars/zhihao-chen/QASystemOnMedicalGraph)
   * Desription: Includes 15 pieces of information, with 7 types of entities, about 37,000 entities, and 210,000 entity relationships.
-
+* Medical-Dialogue-System
+  * Link: https://github.com/UCSD-AI4H/Medical-Dialogue-System
+    ![](https://img.shields.io/github/stars/UCSD-AI4H/Medical-Dialogue-System)
+  * The MedDialog dataset (Chinese) contains conversations (in Chinese) between doctors and patients. It has 1.1 million dialogues and 4 million utterances. The data is continuously growing and more dialogues will be added.
+* Chinese medical dialogue data
+  * 地址：https://github.com/Toyhom/Chinese-medical-dialogue-data
+    ![](https://img.shields.io/github/stars/Toyhom/Chinese-medical-dialogue-data)
+  * The dataset contains a total of 792,099 data from six different departments including Male, Pediatrics, Obstetrics and Gynecology, Internal Medicine, Surgery, and Oncology.
 * Yidu-S4K
 
   * Link: http://openkg.cn/dataset/yidu-s4k
   * Description: Named Entity Recognition, Entity and Attribute Extraction
-
 * Yidu-N7K
 
   * Link: http://openkg.cn/dataset/yidu-n7k
   * Description: Clinical Language Standardization
-
 * Chinese Medical Q&A Dataset
 
   * Link: https://github.com/zhangsheng93/cMedQA2
   * Description: Medical Q&A
-
 * Chinese Doctor-Patient Dialogue Data
 
   * 地址：https://github.com/UCSD-AI4H/Medical-Dialogue-System
   * Description: Medical Q&A
-
 * CPubMed-KG (4.4M triples)
 
   * Link: https://cpubmed.openi.org.cn/graph/wiki
   * Description: Full-text journal data of high quality from the Chinese Medical Association
-
 * Chinese Medical Knowledge Graph CMeKG (1M triples)
 
   * Link: http://cmekg.pcl.ac.cn/
   * Description: CMeKG（Chinese Medical Knowledge  Graph）
-
 * CHIP Annual Evaluation (Official Evaluation)
 
   * Link: http://cips-chip.org.cn/2022/callforeval ;  http://www.cips-chip.org.cn/2021/ ;   http://cips-chip.org.cn/2020/
   * Description: CHIP Annual Evaluation (Official Evaluation)
-
 * Ruijin Hospital Diabetes Dataset (Diabetes)
 
   * Link: https://tianchi.aliyun.com/competition/entrance/231687/information
   * Description: Diabetes literature mining and knowledge graph construction using diabetes-related textbooks and research papers
-
 * Tianchi Novel Coronavirus Pneumonia Question Matching Competition (Novel Coronavirus)
 
   * Link: https://tianchi.aliyun.com/competition/entrance/231776/information

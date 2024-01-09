@@ -150,6 +150,15 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
   * 地址：https://github.com/zhihao-chen/QASystemOnMedicalGraph
     ![](https://img.shields.io/github/stars/zhihao-chen/QASystemOnMedicalGraph)
   * 简介：包括15项信息，其中7类实体，约3.7万实体，21万实体关系。
+* Medical-Dialogue-System
+  * 地址：https://github.com/UCSD-AI4H/Medical-Dialogue-System
+    ![](https://img.shields.io/github/stars/UCSD-AI4H/Medical-Dialogue-System)
+  * MedDialog 数据集（中文）包含医生和病人之间的对话（中文）。该数据集有 110 万条对话和 400 万条语句。数据还在不断增长，未来有更多的对话将被添加进来。
+* Chinese medical dialogue data
+  * 地址：https://github.com/Toyhom/Chinese-medical-dialogue-data
+    ![](https://img.shields.io/github/stars/Toyhom/Chinese-medical-dialogue-data)
+  * 该数据集含有包括男科，儿科，妇产科，内科，外科，肿瘤科在内的六个不同科室总计792099条数据。
+
 * Yidu-S4K
 
   * 地址：http://openkg.cn/dataset/yidu-s4k
