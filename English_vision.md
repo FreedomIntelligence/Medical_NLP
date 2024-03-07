@@ -1,4 +1,4 @@
-![image](https://github.com/FreedomIntelligence/Medical_NLP/assets/38195038/f2cd9a2d-bc4d-4bfb-8c91-9a9bc839d80c)# Medical_NLP
+# Medical_NLP
 
 Summary of medical NLP evaluations/competitions, datasets, papers and pre-trained models.
 
