@@ -273,7 +273,21 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 ### 4.2 医疗LLM 
 
-#### 4.2.1 中文医疗大语言模型
+
+#### 4.2.1 多语言医疗大模型
+
+* Apollo：
+  * 地址：https://github.com/FreedomIntelligence/Apollo
+    ![](https://img.shields.io/github/stars/FreedomIntelligence/Apollo)
+  * 简介：轻量级多语言医学LLM，将医疗人工智能普及到 6B 人群
+
+* MMedLM：
+  * 地址：https://github.com/MAGIC-AI4Med/MMedLM
+    ![](https://img.shields.io/github/stars/MAGIC-AI4Med/MMedLM)
+  * 简介：第一个开源的多语言医学语言模型
+
+  
+#### 4.2.2 中文医疗大语言模型
 
 * BenTsao：
   * 地址：https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese
@@ -300,7 +314,7 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
     ![](https://img.shields.io/github/stars/FreedomIntelligence/HuatuoGPT-II)
   * 简介：华佗GPT2采用了创新的领域适应方法，大大提高了其医学知识和对话能力。它在多个医疗基准测试中表现出了一流的性能，尤其是在专家评估和新医学执业资格考试中超越了 GPT-4。
 
-#### 4.2.2 英文医疗大语言模型
+#### 4.2.3 英文医疗大语言模型
 
 * GatorTron：
   * 地址：https://github.com/uf-hobi-informatics-lab/GatorTron
