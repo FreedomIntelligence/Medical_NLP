@@ -1,10 +1,10 @@
-# Medical_NLP
+![image](https://github.com/FreedomIntelligence/Medical_NLP/assets/38195038/f2cd9a2d-bc4d-4bfb-8c91-9a9bc839d80c)# Medical_NLP
 
 Summary of medical NLP evaluations/competitions, datasets, papers and pre-trained models.
 
 [中文版本](https://github.com/FreedomIntelligence/Chinese_medical_NLP) [English_version](https://github.com/FreedomIntelligence/Chinese_medical_NLP/blob/master/English_vision.md)
 
->Since [Cris Lee](https://github.com/lrs1353281004) left the medical NLP field in 2021, this repo is now maintained by [Xidong Wang](https://github.com/wangxidong06)，[Ziyue Lin](https://github.com/RobinLin2002).
+>Since [Cris Lee](https://github.com/lrs1353281004) left the medical NLP field in 2021, this repo is now maintained by [Xidong Wang](https://github.com/wangxidong06), [Ziyue Lin](https://github.com/RobinLin2002), [Jing Tang](https://github.com/vaew).
 
 [Medical_NLP](#medical_nlp)
 
