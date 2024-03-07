@@ -279,7 +279,7 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 * Apollo：
   * 地址：https://github.com/FreedomIntelligence/Apollo
     ![](https://img.shields.io/github/stars/FreedomIntelligence/Apollo)
-  * 简介：轻量级多语言医学LLM，将医疗人工智能普及到 6B 人群
+  * 简介：轻量级多语言医学LLM，将医疗人工智能普及到 60亿人群
 
 * MMedLM：
   * 地址：https://github.com/MAGIC-AI4Med/MMedLM
