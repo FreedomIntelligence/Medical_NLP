@@ -449,3 +449,16 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 3. [medical-data(Large Amount of Medical Related Data)](https://github.com/beamandrew/medical-data)
 4. [Tianchi Dataset (Includes Multiple Medical NLP Datasets)](https://tianchi.aliyun.com/dataset)
 
+## 10. reference
+
+
+```bibtex
+@misc{medical_NLP_github,
+  author = {Xidong Wang, Ziyue Lin and Jing Tang},
+  title = {Medical NLP},
+  year = {2023},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/FreedomIntelligence/Medical_NLP}}
+}
+```
