@@ -56,6 +56,10 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
   * 地址：https://github.com/CBLUEbenchmark/CBLUE
     ![](https://img.shields.io/github/stars/CBLUEbenchmark/CBLUE)
   * 来源：CHIP会议往届的学术评测比赛和阿里夸克医疗搜索业务的数据集组成
+* MedBench
+  * 地址：https://arxiv.org/abs/2312.12806
+  * ![](https://arxiv.org/abs/2312.12806)
+  * 来源：包含来自执医考试和报告的40,041个问题，覆盖各个专科。
 
 ### 1.2  英文医疗基准测评: 
 
