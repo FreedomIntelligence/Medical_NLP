@@ -75,6 +75,7 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 ### 2.1 正在进行的比赛
 
 * 医学搜索Query相关性判断
+  
   * 地址：https://tianchi.aliyun.com/competition/entrance/532001/introduction
   * 来源：阿里天池
 
@@ -118,6 +119,13 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
   * 地址：http://www.fudan-disc.com/sharedtask/imcs21/index.html
   * 来源：科大讯飞
+    
+* “肝”柔相济，大模型开创肝病医患交互服务新格局
+
+  * 地址：http://www.fudan-disc.com/sharedtask/imcs21/index.html](https://www.dcic-china.com/competitions/10090
+  * 来源：数字中国建设峰会组委会
+
+
 
 
 
