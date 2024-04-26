@@ -74,7 +74,10 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 ### 2.1 正在进行的比赛
 
-* 暂无 欢迎补充~
+* 医学搜索Query相关性判断
+  * 地址：https://tianchi.aliyun.com/competition/entrance/532001/introduction
+  * 来源：阿里天池
+
 
 ### 2.2 已经结束的比赛
 
