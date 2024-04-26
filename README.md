@@ -131,7 +131,7 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
   * 简介：Huatuo-26M 是迄今为止最大的中医问答数据集。
 * 中文医疗对话数据集
 
-  * 地址：https://github.com/FreedomIntelligence/Huatuo-26M
+  * 地址：https://github.com/Toyhom/Chinese-medical-dialogue-data
     ![](https://img.shields.io/github/stars/Toyhom/Chinese-medical-dialogue-data)
   * 简介：包含六个科室的医学问答数据
 * CBLUE
