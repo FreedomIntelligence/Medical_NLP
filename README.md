@@ -235,6 +235,9 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 - ChatDoctor Dataset-2
   - 地址：https://drive.google.com/file/d/1ZKbqgYqWc7DJHs3N9TQYQVPdDQmZaClA/view?usp=sharing
   - 简介：来自 icliniq.com 的 10k 条病人与医生之间的真实对话
+- BioInstruct
+  - 地址：https://github.com/bio-nlp/BioInstruct
+  - 简介： 超过25,000条为生物医学任务量身定制的指令，包括但不限于问答（QA）、信息提取（IE）和文本生成
 - Visual Med-Alpaca Data
   - 地址：https://github.com/cambridgeltl/visual-med-alpaca/tree/main/data
   - 简介：用于Visual Med-Alpaca训练的数据，源自 [BigBio](https://huggingface.co/bigbio), [ROCO](https://github.com/razorx89/roco-dataset) and [GPT-3.5-Turbo](https://chat.openai.com/chat)
