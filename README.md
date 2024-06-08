@@ -241,7 +241,10 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 - Visual Med-Alpaca Data
   - 地址：https://github.com/cambridgeltl/visual-med-alpaca/tree/main/data
   - 简介：用于Visual Med-Alpaca训练的数据，源自 [BigBio](https://huggingface.co/bigbio), [ROCO](https://github.com/razorx89/roco-dataset) and [GPT-3.5-Turbo](https://chat.openai.com/chat)
-
+- CheXpert Plus
+  - 地址：https://github.com/Stanford-AIMI/chexpert-plus
+  - 简介： 放射学领域公开发布的最大文本数据集，共有 3600 万个文本tokens，均配有 DICOM 格式的高质量图像，以及涵盖各种临床和社会群体的大量图像和患者元数据，以及许多病理标签和 RadGraph注释
+  
 
 
 
