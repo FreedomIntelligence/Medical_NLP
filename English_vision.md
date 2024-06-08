@@ -227,6 +227,11 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 - Visual Med-Alpaca Data
   - Link:  https://github.com/cambridgeltl/visual-med-alpaca/tree/main/data
   - Description: These data are used for Visual Med-Alpaca traning, being produced based on  [BigBio](https://huggingface.co/bigbio), [ROCO](https://github.com/razorx89/roco-dataset) and [GPT-3.5-Turbo](https://chat.openai.com/chat)
+- CheXpert Plus
+  - Link:  https://github.com/Stanford-AIMI/chexpert-plus
+  - Description: The largest publicly available text dataset in the field of radiology consists of 36 million text tokens, each paired with high-quality images in DICOM format. Additionally, the dataset includes a vast array of images and patient metadata covering various clinical and social groups, as well as numerous pathology labels and RadGraph annotations.
+  
+    
 
 
 
