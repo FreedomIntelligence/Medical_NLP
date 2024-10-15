@@ -296,6 +296,11 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 #### 4.2.1 多语言医疗大模型
 
+* ApolloMoE：
+  * 地址：https://github.com/FreedomIntelligence/ApolloMoE
+    ![](https://img.shields.io/github/stars/FreedomIntelligence/ApolloMoE)
+  * 简介：通过语言家族专家的混合，有效地实现 50 种语言医学LLM的民主化
+    
 * Apollo：
   * 地址：https://github.com/FreedomIntelligence/Apollo
     ![](https://img.shields.io/github/stars/FreedomIntelligence/Apollo)
