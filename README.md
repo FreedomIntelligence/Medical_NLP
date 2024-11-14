@@ -31,12 +31,12 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 * [3. LLM 数据集](#3-LLM数据集)
   * [3.1 中文](#31-中文)
   * [3.2 英文](#32-英文)
-* [4. VLM 数据集](#4-VLM数据集)
+* [4. VLM 数据集](#4-VLM数据集) 🔥
 * [5. 开源预训练模型](#5-开源预训练模型)
   * [5.1 医疗PLM](#51-医疗PLM)
   * [5.2 医疗LLM](#52-医疗LLM)
-  * [5.3 医疗VLM](#53-医疗VLM)
-  * [5.4 医疗VLM Benmark](#54-医疗VLM-Benmark)
+  * [5.3 医疗VLM](#53-医疗VLM) 🔥
+  * [5.4 医疗VLM Benmark](#54-医疗VLM-Benmark) 🔥
 * [6. 相关论文](#6-相关论文)
   * [6.1 后ChatGPT时代 可能有帮助的论文](#61-后chatgpt时代-可能有帮助的论文)
   * [6.2 综述类文章](#62-综述类文章)
