@@ -36,7 +36,7 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
   * [5.1 医疗PLM](#51-医疗PLM)
   * [5.2 医疗LLM](#52-医疗LLM)
   * [5.3 医疗VLM](#53-医疗VLM) 🔥
-  * [5.4 医疗VLM Benmark](#54-医疗VLM-Benmark) 🔥
+  * [5.4 医疗VLM Benchmark](#54-医疗VLM-Benchmark) 🔥
 * [6. 相关论文](#6-相关论文)
   * [6.1 后ChatGPT时代 可能有帮助的论文](#61-后chatgpt时代-可能有帮助的论文)
   * [6.2 综述类文章](#62-综述类文章)
