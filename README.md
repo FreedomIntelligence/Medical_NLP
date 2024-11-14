@@ -269,7 +269,11 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 |Dataset|Paper|Github|Keywords|
 |:-|:-|:-|:-|
-|MedTrinity-25M|[link](https://arxiv.org/abs/2408.02900)|[link](https://github.com/UCSC-VLAA/MedTrinity-25M)|`25 million images`、`10 modalities`、`65 diseases`、`VQA`|
+|MedTrinity-25M|[link](https://arxiv.org/abs/2408.02900)|[link](https://github.com/UCSC-VLAA/MedTrinity-25M)|`25 million images`、`10 modalities`、`65 diseases`、`VQA`、`EN`|
+|LLaVA-Med|[link](https://arxiv.org/abs/2306.00890)|[link](https://github.com/microsoft/LLaVA-Med)|`630k images`、`VQA`、`EN`|
+|Chinese-LLaVA-Med|-|[link](https://github.com/BUAADreamer/Chinese-LLaVA-Med)|`60k images`、`VQA`、`ZH`|
+|HuatuoGPT-Vision|[link](https://arxiv.org/abs/2406.19280)|[link](https://github.com/FreedomIntelligence/HuatuoGPT-Vision)|`647k images`、`VQA`、`EN`|
+|MedVidQA|[link](https://www.nature.com/articles/s41597-023-02036-y)|[link](https://github.com/deepaknlp/MedVidQACL)|`7k videos`、`VQA`、`EN`|
 
 <div align="right">
     <b><a href="#Contents">↥ back to top</a></b>
