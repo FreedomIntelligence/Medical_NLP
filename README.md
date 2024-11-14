@@ -4,14 +4,21 @@
 
 Summary of medical NLP evaluations/competitions, datasets, papers and pre-trained models.
 
+<p>
+  <a href="https://github.com/FreedomIntelligence/Medical_NLP"><img src=https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg ></a>
+  <a href="https://github.com/FreedomIntelligence/Medical_NLP"><img src=https://img.shields.io/github/forks/FreedomIntelligence/Medical_NLP.svg?style=social ></a>
+  <a href="https://github.com/FreedomIntelligence/Medical_NLP"><img src=https://img.shields.io/github/stars/FreedomIntelligence/Medical_NLP.svg?style=social ></a>
+  <a href="https://github.com/FreedomIntelligence/Medical_NLP"><img src=https://img.shields.io/github/watchers/FreedomIntelligence/Medical_NLP.svg?style=social ></a>
+</p>
+
 <!--
 [中文版本](https://github.com/FreedomIntelligence/Chinese_medical_NLP)  [English_version](https://github.com/FreedomIntelligence/Chinese_medical_NLP/blob/master/English_vision.md)
 -->
 
 #### News
 
-- *2024/11/14* 新增 [`4. VLM数据集`](#4-VLM数据集)、[`5.3 医疗VLM`](#53-医疗VLM)，**后续将重点维护 Medical VLM 方向相关资源汇总**，repo由[Rongsheng Wang](https://github.com/WangRongsheng)维护。
-- *2024/11/14之前* 由于[Cris Lee](https://github.com/lrs1353281004)2021年离开医疗NLP领域，此repo现由[Xidong Wang](https://github.com/wangxidong06), [Ziyue Lin](https://github.com/RobinLin2002), [Jing Tang](https://github.com/vaew)继续维护。
+- 🟡*2024/11/14* 新增 [`4. VLM数据集`](#4-VLM数据集)、[`5.3 医疗VLM`](#53-医疗VLM)，**后续将重点维护 Medical VLM 方向相关资源汇总**，repo由[Rongsheng Wang](https://github.com/WangRongsheng)维护。
+- 🟡*2024/11/14之前* 由于[Cris Lee](https://github.com/lrs1353281004)2021年离开医疗NLP领域，此repo现由[Xidong Wang](https://github.com/wangxidong06), [Ziyue Lin](https://github.com/RobinLin2002), [Jing Tang](https://github.com/vaew)继续维护。
 
 #### Contents
 
