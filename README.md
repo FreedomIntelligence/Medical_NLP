@@ -4,11 +4,13 @@
 
 Summary of medical NLP evaluations/competitions, datasets, papers and pre-trained models.
 
-[中文版本](https://github.com/FreedomIntelligence/Chinese_medical_NLP) [English_version](https://github.com/FreedomIntelligence/Chinese_medical_NLP/blob/master/English_vision.md)
+<!--
+[中文版本](https://github.com/FreedomIntelligence/Chinese_medical_NLP)  [English_version](https://github.com/FreedomIntelligence/Chinese_medical_NLP/blob/master/English_vision.md)
+-->
 
-## News
+#### News
 
-- *2024/11/14* 新增`4. VLM数据集`
+- *2024/11/14* 新增 [`4. VLM数据集`](#4-VLM数据集)、[`5.3 医疗VLM`](#53-医疗VLM)，**后续将重点维护 Medical VLM 方向相关资源汇总**，repo由[Rongsheng Wang](https://github.com/WangRongsheng)维护。
 - *2024/11/14之前* 由于[Cris Lee](https://github.com/lrs1353281004)2021年离开医疗NLP领域，此repo现由[Xidong Wang](https://github.com/wangxidong06), [Ziyue Lin](https://github.com/RobinLin2002), [Jing Tang](https://github.com/vaew)继续维护。
 
 #### Contents
