@@ -22,8 +22,6 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 #### Contents
 
-[Medical_NLP](#medical_nlp)
-
 * [1. 评测](#1-评测)
   * [1.1  中文医疗基准测评：CMB / CMExam / PromptCBLUE](#11--中文医疗基准测评cmb--cmexam--promptcblue)
   * [1.2  英文医疗基准测评:](#12--英文医疗基准测评)
@@ -34,8 +32,6 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
   * [3.1 中文](#31-中文)
   * [3.2 英文](#32-英文)
 * [4. VLM 数据集](#4-VLM数据集)
-  * [4.1 中文](#41-中文)
-  * [4.2 英文](#42-英文)
 * [5. 开源预训练模型](#5-开源预训练模型)
   * [5.1 医疗PLM](#51-医疗PLM)
   * [5.2 医疗LLM](#52-医疗LLM)
@@ -268,6 +264,10 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 
 ## 4. VLM数据集
+
+|Dataset|Paper|Github|Keywords|
+|:-|:-|:-|:-|
+|MedTrinity-25M|[link](https://arxiv.org/abs/2408.02900)|[link](https://github.com/UCSC-VLAA/MedTrinity-25M)|`25 million images`、`10 modalities`、`65 diseases`、`VQA`|
 
 
 ## 5. 开源预训练模型
