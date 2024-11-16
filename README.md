@@ -274,6 +274,8 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 |Chinese-LLaVA-Med|-|[link](https://github.com/BUAADreamer/Chinese-LLaVA-Med)|`60k images`、`VQA`、`ZH`|
 |HuatuoGPT-Vision|[link](https://arxiv.org/abs/2406.19280)|[link](https://github.com/FreedomIntelligence/HuatuoGPT-Vision)|`647k images`、`VQA`、`EN`|
 |MedVidQA|[link](https://www.nature.com/articles/s41597-023-02036-y)|[link](https://github.com/deepaknlp/MedVidQACL)|`7k videos`、`VQA`、`EN`|
+|ChiMed-VL|[link](https://arxiv.org/abs/2310.17956)|[link](https://github.com/williamliujl/Qilin-Med-VL)|`1M images`、`VQA`、`EN`、`ZH`|
+|RadFM|[link](http://arxiv.org/abs/2308.02463)|[link](https://github.com/chaoyi-wu/RadFM)|`16M images`、`5000 diseases`、`VQA`、`EN`、`2D/3D`|
 
 <div align="right">
     <b><a href="#Contents">↥ back to top</a></b>
@@ -419,6 +421,16 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
   * 简介：Med-Flamingo是一个视觉语言模型，专门设计用于处理包含图像和文本的交错多模态数据。以Flamingo为基础，Med-Flamingo通过对不同医学学科的多种多模式知识来源进行预训练，进一步增强了在这些医学领域的能力。
 
 ### 5.3 医疗VLM
+
+|Model|Paper|Github|
+|:-|:-|:-|
+|MedVInT|[link](https://arxiv.org/abs/2305.10415)|[link](https://github.com/xiaoman-zhang/PMC-VQA)|
+|Med-Flamingo|[link](https://arxiv.org/abs/2307.15189)|[link](https://github.com/snap-stanford/med-flamingo)|
+|LLaVA-Med|[link](https://arxiv.org/abs/2306.00890)|[link](https://github.com/microsoft/LLaVA-Med)|
+|Qilin-Med-VL|[link](https://arxiv.org/abs/2310.17956)|[link](https://github.com/williamliujl/Qilin-Med-VL)|
+|RadFM|[link](http://arxiv.org/abs/2308.02463)|[link](https://github.com/chaoyi-wu/RadFM)|
+|MedDr|[link](https://arxiv.org/abs/2404.15127)|[link](https://github.com/sunanhe/MedDr)|
+|HuatuoGPT-Vision|[link](https://arxiv.org/abs/2406.19280)|[link](https://github.com/FreedomIntelligence/HuatuoGPT-Vision)|
 
 ### 5.4 医疗VLM Benchmark
 
