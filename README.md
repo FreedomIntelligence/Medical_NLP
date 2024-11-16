@@ -267,6 +267,12 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 ## 4. VLM数据集
 
+<!--
+参考：
+https://github.com/lab-rasool/Awesome-Medical-VLMs-and-Datasets
+https://github.com/openmedlab/Awesome-Medical-Dataset
+-->
+
 |Dataset|Paper|Github|Keywords|
 |:-|:-|:-|:-|
 |MedTrinity-25M|[link](https://arxiv.org/abs/2408.02900)|[link](https://github.com/UCSC-VLAA/MedTrinity-25M)|`25 million images`、`10 modalities`、`65 diseases`、`VQA`、`EN`|
@@ -431,6 +437,7 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 |RadFM|[link](http://arxiv.org/abs/2308.02463)|[link](https://github.com/chaoyi-wu/RadFM)|
 |MedDr|[link](https://arxiv.org/abs/2404.15127)|[link](https://github.com/sunanhe/MedDr)|
 |HuatuoGPT-Vision|[link](https://arxiv.org/abs/2406.19280)|[link](https://github.com/FreedomIntelligence/HuatuoGPT-Vision)|
+|BiomedGPT|[link](https://arxiv.org/abs/2305.17100)|[link](https://github.com/taokz/BiomedGPT)|
 
 ### 5.4 医疗VLM Benchmark
 
@@ -439,6 +446,7 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 |GMAI-MMBench|[link](https://arxiv.org/abs/2408.03361)|[link](https://github.com/uni-medical/GMAI-MMBench)|
 |OmniMedVQA|[link](https://arxiv.org/abs/2402.09181)|[link](https://github.com/OpenGVLab/Multi-Modality-Arena?tab=readme-ov-file#omnimedvqa-a-new-large-scale-comprehensive-evaluation-benchmark-for-medical-lvlm)|
 |MMMU|[link](https://arxiv.org/abs/2311.16502)|[link](https://github.com/MMMU-Benchmark/MMMU)|
+|MultiMedEval|[link](https://openreview.net/pdf?id=inACgoTK0O)|[link](https://github.com/corentin-ryr/MultiMedEval)|
 
 <div align="right">
     <b><a href="#Contents">↥ back to top</a></b>
