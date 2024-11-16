@@ -422,6 +422,12 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 
 ### 5.4 医疗VLM Benchmark
 
+|Benchmark|Paper|Github|
+|:-|:-|:-|
+|GMAI-MMBench|[link](https://arxiv.org/abs/2408.03361)|[link](https://github.com/uni-medical/GMAI-MMBench)|
+|OmniMedVQA|[link](https://arxiv.org/abs/2402.09181)|[link](https://github.com/OpenGVLab/Multi-Modality-Arena?tab=readme-ov-file#omnimedvqa-a-new-large-scale-comprehensive-evaluation-benchmark-for-medical-lvlm)|
+|MMMU|[link](https://arxiv.org/abs/2311.16502)|[link](https://github.com/MMMU-Benchmark/MMMU)|
+
 <div align="right">
     <b><a href="#Contents">↥ back to top</a></b>
 </div>
