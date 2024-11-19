@@ -282,7 +282,7 @@ https://github.com/openmedlab/Awesome-Medical-Dataset
 |MedVidQA|[link](https://www.nature.com/articles/s41597-023-02036-y)|[link](https://github.com/deepaknlp/MedVidQACL)|`7k videos`、`VQA`、`EN`|
 |ChiMed-VL|[link](https://arxiv.org/abs/2310.17956)|[link](https://github.com/williamliujl/Qilin-Med-VL)|`1M images`、`VQA`、`EN`、`ZH`|
 |RadFM|[link](http://arxiv.org/abs/2308.02463)|[link](https://github.com/chaoyi-wu/RadFM)|`16M images`、`5000 diseases`、`VQA`、`EN`、`2D/3D`|
-|BiomedParseData|[link](https://arxiv.org/abs/2405.12971)|[link](https://huggingface.co/datasets/microsoft/BiomedParseData)|`6.8 million image-mask-description`、`45 biomedical image segmentation datasets`、`EN`、`2D`|
+|BiomedParseData|[link](https://arxiv.org/abs/2405.12971)|[link](https://huggingface.co/datasets/microsoft/BiomedParseData)|`6.8 million image-mask-description`、`45 biomedical image segmentation datasets`、`9 modalities`、`EN`、`2D`|
 
 <div align="right">
     <b><a href="#Contents">↥ back to top</a></b>
