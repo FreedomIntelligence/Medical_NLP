@@ -442,6 +442,7 @@ https://github.com/openmedlab/Awesome-Medical-Dataset
 |BiomedGPT|[link](https://arxiv.org/abs/2305.17100)|[link](https://github.com/taokz/BiomedGPT)|
 |Med-MoE|[link](https://arxiv.org/abs/2404.10237v3)|[link](https://github.com/jiangsongtao/Med-MoE)|
 |R-LLaVA|[link](https://arxiv.org/abs/2410.20327)|-|
+|Med-2E3|[link](https://arxiv.org/abs/2411.12783)|-|
 
 ### 5.4 医疗VLM Benchmark
 
