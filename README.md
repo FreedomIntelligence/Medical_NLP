@@ -284,6 +284,7 @@ https://github.com/openmedlab/Awesome-Medical-Dataset
 |RadFM|[link](http://arxiv.org/abs/2308.02463)|[link](https://github.com/chaoyi-wu/RadFM)|`16M images`、`5000 diseases`、`VQA`、`EN`、`2D/3D`|
 |BiomedParseData|[link](https://arxiv.org/abs/2405.12971)|[link](https://huggingface.co/datasets/microsoft/BiomedParseData)|`6.8 million image-mask-description`、`45 biomedical image segmentation datasets`、`9 modalities`、`EN`、`2D`|
 |OmniMedVQA|[link](https://arxiv.org/abs/2402.09181)|[link](https://github.com/OpenGVLab/Multi-Modality-Arena)|`118,010 images`、`12 modalities`、`2D`、`20 human anatomical regions`|
+|PreCT|[link](https://arxiv.org/abs/2410.09890)|[link](https://github.com/Luffy03/Large-Scale-Medical)|`160K volumes`、`42M slices`、`3D`、`CT`|
 
 <div align="right">
     <b><a href="#Contents">↥ back to top</a></b>
