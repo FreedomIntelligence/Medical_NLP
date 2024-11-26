@@ -271,6 +271,7 @@ Summary of medical NLP evaluations/competitions, datasets, papers and pre-traine
 参考：
 https://github.com/lab-rasool/Awesome-Medical-VLMs-and-Datasets
 https://github.com/openmedlab/Awesome-Medical-Dataset
+多模态病理数据集：https://github.com/FreedomIntelligence/Medical_NLP/blob/master/images/pathology_datasets.jpg
 -->
 
 |Dataset|Paper|Github|Keywords|
@@ -285,6 +286,7 @@ https://github.com/openmedlab/Awesome-Medical-Dataset
 |BiomedParseData|[link](https://arxiv.org/abs/2405.12971)|[link](https://huggingface.co/datasets/microsoft/BiomedParseData)|`6.8 million image-mask-description`、`45 biomedical image segmentation datasets`、`9 modalities`、`EN`、`2D`|
 |OmniMedVQA|[link](https://arxiv.org/abs/2402.09181)|[link](https://github.com/OpenGVLab/Multi-Modality-Arena)|`118,010 images`、`12 modalities`、`2D`、`20 human anatomical regions`|
 |PreCT|[link](https://arxiv.org/abs/2410.09890)|[link](https://github.com/Luffy03/Large-Scale-Medical)|`160K volumes`、`42M slices`、`3D`、`CT`|
+|GMAI-VL-5.5M|[link](https://arxiv.org/abs/2411.14522v1)|[link](https://github.com/uni-medical/GMAI-VL)|`5.5m image and text`、`219 specialized medical imaging datasets`、`2D`、`VQA`|
 
 <div align="right">
     <b><a href="#Contents">↥ back to top</a></b>
@@ -444,6 +446,7 @@ https://github.com/openmedlab/Awesome-Medical-Dataset
 |Med-MoE|[link](https://arxiv.org/abs/2404.10237v3)|[link](https://github.com/jiangsongtao/Med-MoE)|
 |R-LLaVA|[link](https://arxiv.org/abs/2410.20327)|-|
 |Med-2E3|[link](https://arxiv.org/abs/2411.12783)|-|
+|GMAI-VL|[link](https://arxiv.org/abs/2411.14522v1)|[link](https://github.com/uni-medical/GMAI-VL)|
 
 ### 5.4 医疗VLM Benchmark
 
