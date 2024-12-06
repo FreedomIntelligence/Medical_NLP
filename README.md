@@ -288,6 +288,7 @@ https://github.com/openmedlab/Awesome-Medical-Dataset
 |PreCT|[link](https://arxiv.org/abs/2410.09890)|[link](https://github.com/Luffy03/Large-Scale-Medical)|`160K volumes`、`42M slices`、`3D`、`CT`|
 |GMAI-VL-5.5M|[link](https://arxiv.org/abs/2411.14522v1)|[link](https://github.com/uni-medical/GMAI-VL)|`5.5m image and text`、`219 specialized medical imaging datasets`、`2D`、`VQA`|
 |SA-Med2D-20M|[link](https://arxiv.org/abs/2311.11969)|[link](https://github.com/OpenGVLab/SAM-Med2D)|`4.6 million 2D medical images and 19.7 million corresponding masks`、`2D`、`EN`|
+|IMIS-Bench|[link](https://arxiv.org/pdf/2411.12814)|[link](https://github.com/uni-medical/IMIS-Bench)|`6.4 million images, 273.4 million masks (56 masks per image), 14 imaging modalities, and 204 segmentation targets`、`EN`|
 
 <div align="right">
     <b><a href="#Contents">↥ back to top</a></b>
