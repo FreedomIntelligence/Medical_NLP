@@ -108,6 +108,7 @@ Table of Contents:
 |`SA-Med2D`|[[arXiv](https://arxiv.org/abs/2311.11969)]|[[HF](https://huggingface.co/datasets/OpenGVLab/SA-Med2D-20M)]|20,000,000|
 |`IMIS`|[[arXiv](https://arxiv.org/pdf/2411.12814)]|[[HF](https://huggingface.co/datasets/General-Medical-AI/IMed-361M)]|361,000,000|
 |`PreCT`|[[arXiv](https://arxiv.org/abs/2410.09890)]|[[HF](https://huggingface.co/datasets/Luffy503/PreCT-160K)]|160,000|
+|`BIOMEDICA`|[[arXiv](https://arxiv.org/abs/2505.22787)]|[[HF](https://huggingface.co/datasets/BIOMEDICA/biomedica_webdataset_24M)]|24M|
 
 <div align="right">
   <b><a href="#contents">↥ back to top</a></b>
