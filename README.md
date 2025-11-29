@@ -88,6 +88,9 @@ Table of Contents:
 |`Huatuo-26M`|[[arXiv](https://arxiv.org/abs/2305.01526)]|[[Github](https://github.com/FreedomIntelligence/Huatuo-26M)]|26,000,000|
 |`medical-o1-reasoning-SFT`|[[arXiv](https://arxiv.org/pdf/2412.18925)]|[[HF](https://huggingface.co/datasets/FreedomIntelligence/medical-o1-reasoning-SFT)]|25,000|
 |`ReasonMed`|[[arXiv](https://arxiv.org/abs/2506.09513)]|[[HF](https://huggingface.co/datasets/YuSun-AI/ReasonMed)]|370,000|
+|`Multilingual-Medical-Corpus`|[[arXiv](https://arxiv.org/abs/2404.07613)]|[[HF](https://huggingface.co/datasets/HiTZ/Multilingual-Medical-Corpus)]|3M|
+|`AI Medical Dataset`|[[arXiv](https://arxiv.org/abs/2404.07613)]|[[HF](https://huggingface.co/datasets/ruslanmv/ai-medical-dataset)]|27,000,000|
+
 
 <div align="right">
   <b><a href="#contents">↥ back to top</a></b>
@@ -109,6 +112,7 @@ Table of Contents:
 |`IMIS`|[[arXiv](https://arxiv.org/pdf/2411.12814)]|[[HF](https://huggingface.co/datasets/General-Medical-AI/IMed-361M)]|361,000,000|
 |`PreCT`|[[arXiv](https://arxiv.org/abs/2410.09890)]|[[HF](https://huggingface.co/datasets/Luffy503/PreCT-160K)]|160,000|
 |`BIOMEDICA`|[[arXiv](https://arxiv.org/abs/2505.22787)]|[[HF](https://huggingface.co/datasets/BIOMEDICA/biomedica_webdataset_24M)]|24M|
+|`MedVision`|[[arXiv](https://arxiv.org/abs/2511.18676)]|[[HF](https://huggingface.co/datasets/YongchengYAO/MedVision)]|30.8M|
 
 <div align="right">
   <b><a href="#contents">↥ back to top</a></b>
